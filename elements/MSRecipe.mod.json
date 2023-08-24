@@ -1,0 +1,46 @@
+{
+  "_fv": 39,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "group": "",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:RawKatchin"
+      },
+      {
+        "value": "Items.REDSTONE"
+      },
+      {
+        "value": "CUSTOM:RawKatchin"
+      },
+      {
+        "value": "CUSTOM:RawKatchin"
+      },
+      {
+        "value": "Blocks.REDSTONE_LAMP"
+      },
+      {
+        "value": "CUSTOM:RawKatchin"
+      },
+      {
+        "value": "CUSTOM:RawKatchin"
+      },
+      {
+        "value": "Blocks.STAINED_GLASS_PANE"
+      },
+      {
+        "value": "CUSTOM:RawKatchin"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:MiniScreen"
+    },
+    "name": "ms_recipe",
+    "namespace": "mod"
+  }
+}

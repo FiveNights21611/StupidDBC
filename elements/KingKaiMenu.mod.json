@@ -1,0 +1,186 @@
+{
+  "_fv": 39,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 200,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "label",
+        "data": {
+          "name": "label_tp_cost_varintegercostofkai",
+          "text": {
+            "fixedValue": " TP Cost: <VAR:integer:costOfKaioken>",
+            "name": "TPCostKaio"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "DoNotShowKaiokenInVendor"
+          },
+          "x": 183,
+          "y": 58
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_already_bought_kaioken",
+          "text": {
+            "fixedValue": "Already Bought Kaioken"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "ShowKaioken"
+          },
+          "x": 183,
+          "y": 58
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_button",
+          "image": "buttonnew.png",
+          "hoveredImage": "buttonhovernew.png",
+          "onClick": {
+            "name": "ObtainKaioken"
+          },
+          "displayCondition": {
+            "name": "DoNotShowKaiokenInVendor"
+          },
+          "x": 121,
+          "y": 55
+        }
+      },
+      {
+        "type": "entitymodel",
+        "data": {
+          "entityModel": {
+            "name": "KingKaiEntityShowInMenu"
+          },
+          "scale": 50,
+          "rotationX": 0,
+          "followMouseMovement": true,
+          "x": 274,
+          "y": 177
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_kaioken",
+          "text": {
+            "fixedValue": "Kaioken: "
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 138,
+          "y": 58
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_king_kai",
+          "text": {
+            "fixedValue": "King Kai"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 192,
+          "y": 40
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_button1",
+          "image": "buttonnew.png",
+          "hoveredImage": "buttonhovernew.png",
+          "onClick": {
+            "name": "PurchaseUltimate"
+          },
+          "displayCondition": {
+            "name": "ShowThePrice"
+          },
+          "x": 121,
+          "y": 86
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_ultimate",
+          "text": {
+            "fixedValue": "Ultimate: "
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 138,
+          "y": 89
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_priceofultimate",
+          "text": {
+            "fixedValue": "priceOfUltimate",
+            "name": "GetThePrice"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "ShowThePrice"
+          },
+          "x": 184,
+          "y": 89
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_already_bought_ultimate",
+          "text": {
+            "fixedValue": "Already Bought Ultimate"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "AlreadyBoughtUltimate"
+          },
+          "x": 183,
+          "y": 89
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

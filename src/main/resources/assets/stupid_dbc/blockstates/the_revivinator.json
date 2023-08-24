@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "stupid_dbc:block/the_revivinator"
+    },
+    "facing=east": {
+      "model": "stupid_dbc:block/the_revivinator",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "stupid_dbc:block/the_revivinator",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "stupid_dbc:block/the_revivinator",
+      "y": 270
+    }
+  }
+}

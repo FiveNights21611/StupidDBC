@@ -1,0 +1,8 @@
+{
+  "type": "forge:add_features",
+  "biomes": {
+    "type": "forge:any"
+  },
+  "features": "stupid_dbc:go_revive",
+  "step": "surface_structures"
+}

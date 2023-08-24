@@ -1,0 +1,182 @@
+{
+  "_fv": 39,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 225,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "label",
+        "data": {
+          "name": "label_ssblue2training",
+          "text": {
+            "fixedValue": "SSBlue2Training",
+            "name": "GetSSBlue2Training"
+          },
+          "color": {
+            "value": -16777114,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "ShowSSBlue2Training"
+          },
+          "x": 105,
+          "y": 41
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_ssblue3training",
+          "text": {
+            "fixedValue": "SSBlue3Training",
+            "name": "GetSSBlue3Training"
+          },
+          "color": {
+            "value": -16777165,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "ShowSSBlue3"
+          },
+          "x": 105,
+          "y": 51
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_ssrose2training",
+          "text": {
+            "fixedValue": "SSRose2Training",
+            "name": "GetSSRose2Training"
+          },
+          "color": {
+            "value": -6750055,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "ShowSSRose2Training"
+          },
+          "x": 105,
+          "y": 41
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_ssrose3training",
+          "text": {
+            "fixedValue": "SSRose3Training",
+            "name": "GetSSRose3Training"
+          },
+          "color": {
+            "value": -10092442,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "ShowSSRose3Training"
+          },
+          "x": 105,
+          "y": 51
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_tpgtraining",
+          "text": {
+            "fixedValue": "TPGTraining",
+            "name": "TPGTraining"
+          },
+          "color": {
+            "value": -13421824,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "ShowTPG"
+          },
+          "x": 105,
+          "y": 63
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_previous",
+          "image": "previousnew.png",
+          "hoveredImage": "previoushovernew.png",
+          "onClick": {
+            "name": "ToTransformationTraining"
+          },
+          "x": 105,
+          "y": 20
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_stats",
+          "image": "statsnew.png",
+          "hoveredImage": "statshovernew.png",
+          "onClick": {
+            "name": "ToStats"
+          },
+          "x": 103,
+          "y": 204
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_skillsbutton",
+          "image": "skillsnew.png",
+          "hoveredImage": "skillshovernew.png",
+          "onClick": {
+            "name": "ToSkills"
+          },
+          "x": 122,
+          "y": 204
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_transformationtraining",
+          "image": "transformationtrainingnew.png",
+          "hoveredImage": "transformationtraininghovernew.png",
+          "onClick": {
+            "name": "ToTransformationTraining"
+          },
+          "x": 142,
+          "y": 204
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_techniquetraining",
+          "image": "techniquetrainingnew.png",
+          "hoveredImage": "techniquetraininghovernew.png",
+          "onClick": {
+            "name": "OpenTechniqueTraining"
+          },
+          "x": 162,
+          "y": 204
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "stupid_dbc:block/gravity_simulator"
+    }
+  }
+}

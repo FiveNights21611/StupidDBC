@@ -1,0 +1,128 @@
+
+["Racial TP Gain"]
+	"Saiyan TP Gain" = 5.0
+	"Half-Saiyan TP Gain" = 7.0
+	"Human TP Gain" = 1.0
+
+["Transformation Multipliers"]
+	"SS Multiplier" = 1.5
+	"SS Grade 2 Multiplier" = 1.675
+	"SS Grade 3 Multiplier" = 1.75
+	"Full Power SS Multiplier" = 1.6
+	"SS2 Mutliplier" = 2.0
+	"SS3 Mutliplier" = 4.0
+	"SSGod Multiplier" = 10.0
+	"SSBlue Multiplier" = 15.0
+	"Buffed Multiplier" = 1.5
+	"Oozaru Multiplier" = 1.1
+	"SS Blue Evolved Multiplier" = 16.75
+	"Golden Oozaru Multiplier" = 5.0
+	"Super Saiyan 4 Multiplier" = 15.0
+	"Super Saiyan 4 - Limit Breaker Multiplier" = 16.75
+	"SS Rose Multiplier" = 16.0
+	"SS Rose Grade 2 Multiplier" = 17.75
+	"Ultimate Multiplier" = 4.0
+	"Beast Multiplier" = 60.0
+	"SS Blue 2" = 20.0
+	"SS Rose 2 Multiplier" = 20.0
+	"SS Blue 3 Multiplier" = 40.0
+	"SS Rose 3 Multiplier" = 40.0
+	"The Primal God Multiplier" = 100.0
+
+["Kaioken Multipliers"]
+	"Kaioken Multiplier" = 1.1
+	"Kaioken x2 Multiplier" = 1.15
+	"Kaioken x3 Multiplier" = 1.2
+	"Kaioken x4 Multiplier" = 1.25
+	"Kaioken x5 Multiplier" = 1.3
+	"Kaioken x10 Multiplier" = 1.375
+	"Kaioken x20 Multiplier" = 1.425
+	"Kaioken x50 Multiplier" = 1.5
+	"Kaioken x100 Multiplier" = 2.0
+
+[Common]
+	"TP Cost per Stat" = 16.0
+	"Max Stats" = 10000.0
+	"Natural Ki Regen" = 10.0
+	"Legendary Multiplier Bonus" = 0.2
+	"In percentage, the amount" = 2.0
+	#How often it tries to give legendary to the player
+	"In minutes" = 20.0
+
+["Ki Drain"]
+	"Super Saiyan Ki Drain" = 5.0
+	"SS Grade 2 Ki Drain" = 7.0
+	"SS Grade 3 Ki Drain" = 8.0
+	"Full Power SS Ki Drain" = 1.0
+	"SS2 Ki Drain" = 10.0
+	"SS3 Ki Drain" = 20.0
+	"SS God Ki Drain" = 50.0
+	"SS Blue Ki Drain" = 55.0
+	"Buffed Ki Drain" = 5.0
+	"SS Blue Evolved Ki Drain" = 57.0
+	"Golden Oozaru Ki Drain" = 25.0
+	"Super Saiyan 4 Ki Drain" = 55.0
+	"Super Saiyan 4 - Limit Breaker" = 57.0
+	"SS Rose Ki Drain" = 55.0
+	"SS Rose Grade 2 Ki Drain" = 57.0
+	"Ultimate Ki Drain" = 5.0
+	"Beast Ki Drain" = 30.0
+	"SS Blue 2 Ki Drain" = 60.0
+	"SS Rose 2 Ki Drain" = 60.0
+	"SS Blue 3 KD" = 75.0
+	"SS Rose 3 Ki Drain" = 75.0
+	"The Primal God Ki Drain" = 250.0
+
+["Kaioken Health Drain"]
+	"Kaioken Health Drain" = 1.0
+	"Kaioken x2 Health Drain" = 2.0
+	"Kaioken x3 Health Drain" = 3.0
+	"Kaioken x4 Health Drain" = 4.0
+	"Kaioken x5 Health Drain" = 5.0
+	"Kaioken x10 Health Drain" = 10.0
+	"Kaioken x20 Health Drain" = 20.0
+	"Kaioken x50 Health Drain" = 50.0
+	"Kaioken x100 Health Drain" = 100.0
+
+["Transformation Prices"]
+	"Super Saiyan TP Cost" = 5000.0
+	"SS Grade 2 TP Cost" = 6750.0
+	"SS Grade 3 TP Cost" = 7500.0
+	"FPSS TP Cost" = 10000.0
+	"SS2 TP Cost" = 25000.0
+	"SS3 TP Cost" = 50000.0
+	"SSGod Price" = 300000.0
+	"SSBlue Price" = 500000.0
+	"SSBlue Evolved Price" = 675000.0
+	"SS4 Price" = 500000.0
+	"SS4 - LB Price" = 675000.0
+	"Ultimate Form's Price" = 50000.0
+	"Beast Price" = 600000.0
+	"SS Blue 2 Price" = 1000000.0
+	"SS Blue 3 Price" = 2500000.0
+	"The Primal God Price" = 9999000.0
+
+["Kaioken TP Costs"]
+	"Kaioken TP Cost" = 500.0
+	"Kaioken x2 TP Cost" = 1000.0
+	"Kaioken x3 TP Cost" = 1500.0
+	"Kaioken x4 TP Cost" = 2000.0
+	"Kaioken x5 TP Cost" = 2500.0
+	"Kaioken x10 TP Cost" = 3000.0
+	"Kaioken x20 TP Cost" = 4000.0
+	"Kaioken x50 TP Cost" = 5000.0
+	"Kaioken x100 TP Cost" = 10000.0
+
+["Skill TP Costs"]
+	"Cost of Fly" = 50.0
+
+["Ultra Instinct Stats"]
+	"Ultra Instinct Omen Price" = 750000.0
+	"Ultra Instinct Omen Ki Drain" = 75.0
+	"Ultra Instinct Omen Multiplier" = 80.0
+	"In Percentage, the change to Dodge in Ultra Instinct Omen" = 25.0
+	"In Percentage, the chance to counter in Ultra Instinct Omen" = 10.0
+	"In Percentage, how much of your power used to counter in UI Omen" = 60.0
+	"Ultra Instinct Omen Heat Drain" = 5.0
+	"How much your Heat increases whilst using Ultra Instinct Omen" = 25.0
+

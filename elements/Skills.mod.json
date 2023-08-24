@@ -1,0 +1,335 @@
+{
+  "_fv": 39,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 300,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "label",
+        "data": {
+          "name": "label_super_form_varsuperformlevel",
+          "text": {
+            "fixedValue": "Super Form: <VAR:SuperFormLevel>",
+            "name": "SuperFormLevel"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 84,
+          "y": 46
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_tp_cost_varcostofsuperform",
+          "text": {
+            "fixedValue": "TP Cost: <VAR:costOfSuperForm>",
+            "name": "TPCostSF"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 70,
+          "y": 58
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_kaioken_varkaiokenlvl",
+          "text": {
+            "fixedValue": "Kaioken: <VAR:KaiokenLvl>",
+            "name": "KaiokenLevel"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "ShowKaioken"
+          },
+          "x": 84,
+          "y": 76
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_tp_cost_varcostofkaioken",
+          "text": {
+            "fixedValue": "TP Cost: <VAR:costOfKaioken>",
+            "name": "TPCostKaio"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "ShowKaioken"
+          },
+          "x": 70,
+          "y": 88
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_god_form_vargodformlevel",
+          "text": {
+            "fixedValue": "God Form: <VAR:GodFormLevel>",
+            "name": "GodFormLevel"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "ShowGodForm"
+          },
+          "x": 84,
+          "y": 104
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_tp_cost_varcosrofgodform",
+          "text": {
+            "fixedValue": "TP Cost: <VAR:CosrOfGodForm>",
+            "name": "TPCostGF"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "ShowGodForm"
+          },
+          "x": 70,
+          "y": 116
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_ultimate",
+          "text": {
+            "fixedValue": "UltimateLevel",
+            "name": "UltimateLevel"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "AlreadyBoughtUltimate"
+          },
+          "x": 84,
+          "y": 134
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_button",
+          "image": "buttonnew.png",
+          "hoveredImage": "buttonhovernew.png",
+          "onClick": {
+            "name": "LevelUpUltimate"
+          },
+          "displayCondition": {
+            "name": "ShowUltimateUpgrades"
+          },
+          "x": 66,
+          "y": 131
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_button1",
+          "image": "buttonnew.png",
+          "hoveredImage": "buttonhovernew.png",
+          "onClick": {
+            "name": "BuySuperForm"
+          },
+          "x": 66,
+          "y": 42
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_button2",
+          "image": "buttonnew.png",
+          "hoveredImage": "buttonhovernew.png",
+          "onClick": {
+            "name": "BuyKaioken"
+          },
+          "displayCondition": {
+            "name": "ShowKaioken"
+          },
+          "x": 66,
+          "y": 72
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_button3",
+          "image": "buttonnew.png",
+          "hoveredImage": "buttonhovernew.png",
+          "onClick": {
+            "name": "BuyGodForm"
+          },
+          "displayCondition": {
+            "name": "ShowGodForm"
+          },
+          "x": 66,
+          "y": 100
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_get_the_price",
+          "text": {
+            "fixedValue": "TPCostUltimate",
+            "name": "GetThePrice"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "ShowUltimateUpgrades"
+          },
+          "x": 70,
+          "y": 147
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_button4",
+          "image": "buttonnew.png",
+          "hoveredImage": "buttonhovernew.png",
+          "onClick": {
+            "name": "LevelUpFly"
+          },
+          "displayCondition": {
+            "name": "AlreadyBoughtFly"
+          },
+          "x": 66,
+          "y": 160
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_flylevel",
+          "text": {
+            "fixedValue": "FlyLevel",
+            "name": "FlyLevel"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "AlreadyBoughtFly"
+          },
+          "x": 83,
+          "y": 164
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_flyprice",
+          "text": {
+            "fixedValue": "FlyPrice",
+            "name": "FlyPrice"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "AlreadyBoughtFly"
+          },
+          "x": 70,
+          "y": 176
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_stats",
+          "image": "stats.png",
+          "hoveredImage": "statshover.png",
+          "onClick": {
+            "name": "ToStats"
+          },
+          "x": 69,
+          "y": 204
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_skillsbutton",
+          "image": "skillsbutton.png",
+          "hoveredImage": "skillshover.png",
+          "onClick": {
+            "name": "ToSkills"
+          },
+          "x": 86,
+          "y": 204
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_transformationtraining",
+          "image": "transformationtraining.png",
+          "hoveredImage": "transformationtraininghover.png",
+          "onClick": {
+            "name": "ToTransformationTraining"
+          },
+          "x": 103,
+          "y": 204
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_techniquetraining",
+          "image": "techniquetraining.png",
+          "hoveredImage": "techniquetraininghover.png",
+          "onClick": {
+            "name": "OpenTechniqueTraining"
+          },
+          "x": 120,
+          "y": 204
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

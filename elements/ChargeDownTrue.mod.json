@@ -1,0 +1,15 @@
+{
+  "_fv": 39,
+  "_type": "keybind",
+  "definition": {
+    "triggerKey": "LSHIFT",
+    "keyBindingName": "Second Function",
+    "keyBindingCategoryKey": "sdbc",
+    "onKeyPressed": {
+      "name": "DoChargingDown"
+    },
+    "onKeyReleased": {
+      "name": "UndoChargeDown"
+    }
+  }
+}

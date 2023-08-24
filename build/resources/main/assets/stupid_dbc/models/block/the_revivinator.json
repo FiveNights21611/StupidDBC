@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "stupid_dbc:blocks/revivinator_top",
+    "up": "stupid_dbc:blocks/revivinator_top",
+    "north": "stupid_dbc:blocks/revivinator_front",
+    "east": "stupid_dbc:blocks/revivinator_side",
+    "south": "stupid_dbc:blocks/revivinator_side",
+    "west": "stupid_dbc:blocks/revivinator_side",
+    "particle": "stupid_dbc:blocks/revivinator_top"
+  },
+  "render_type": "solid"
+}

@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "IRS",
+    "IAR",
+    " II"
+  ],
+  "key": {
+    "I": {
+      "item": "minecraft:iron_trapdoor"
+    },
+    "R": {
+      "item": "minecraft:iron_ingot"
+    },
+    "S": {
+      "item": "minecraft:stick"
+    },
+    "A": {
+      "item": "stupid_dbc:raw_katchin"
+    }
+  },
+  "result": {
+    "item": "stupid_dbc:universal_satellite",
+    "count": 1
+  }
+}

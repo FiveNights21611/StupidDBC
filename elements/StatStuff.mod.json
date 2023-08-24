@@ -1,0 +1,192 @@
+{
+  "_fv": 39,
+  "_type": "overlay",
+  "definition": {
+    "priority": "HIGHEST",
+    "components": [
+      {
+        "type": "label",
+        "data": {
+          "name": "label_hp_varhealthvarmaxhealthp",
+          "text": {
+            "fixedValue": "Health",
+            "name": "HP"
+          },
+          "color": {
+            "value": -65536,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "StatStuffShow"
+          },
+          "x": 0,
+          "y": 0
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_ki_varkipoolvarmaxkipool",
+          "text": {
+            "fixedValue": "Ki",
+            "name": "Ki"
+          },
+          "color": {
+            "value": -16724788,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "StatStuffShow"
+          },
+          "x": 0,
+          "y": 12
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_vartransformation",
+          "text": {
+            "fixedValue": "Transformation",
+            "name": "Transformation"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "StatStuffShow"
+          },
+          "x": 0,
+          "y": 47
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_vartechnique",
+          "text": {
+            "fixedValue": "Technique",
+            "name": "Technique"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "StatStuffShow"
+          },
+          "x": 0,
+          "y": 59
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_varintegerpowerpercentage",
+          "text": {
+            "fixedValue": "PowerPercentage",
+            "name": "PowerPercentage"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "StatStuffShow"
+          },
+          "x": 0,
+          "y": 23
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_alignment_stats",
+          "text": {
+            "fixedValue": "",
+            "name": "AlignmentStats"
+          },
+          "color": {
+            "value": -6684673,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "ShowGoodAlignment"
+          },
+          "x": 0,
+          "y": 35
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_alignment_stats1",
+          "text": {
+            "fixedValue": "",
+            "name": "AlignmentStats"
+          },
+          "color": {
+            "value": -5537343,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "ShowNeutralAlignment"
+          },
+          "x": 0,
+          "y": 35
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_alignment_stats2",
+          "text": {
+            "fixedValue": "",
+            "name": "AlignmentStats"
+          },
+          "color": {
+            "value": -3407872,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "ShowEvilAlignment"
+          },
+          "x": 0,
+          "y": 35
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_get_ui_heat",
+          "text": {
+            "fixedValue": "",
+            "name": "GetUIHeat"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "ShowUltraInstinctHeat"
+          },
+          "x": 0,
+          "y": 71
+        }
+      }
+    ],
+    "baseTexture": "",
+    "overlayTarget": "Ingame",
+    "displayCondition": {
+      "name": "StatStuffShow"
+    },
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

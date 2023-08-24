@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "stupid_dbc:blocks/katchin_ore",
+    "up": "stupid_dbc:blocks/katchin_ore",
+    "north": "stupid_dbc:blocks/katchin_ore",
+    "east": "stupid_dbc:blocks/katchin_ore",
+    "south": "stupid_dbc:blocks/katchin_ore",
+    "west": "stupid_dbc:blocks/katchin_ore",
+    "particle": "stupid_dbc:blocks/katchin_ore"
+  },
+  "render_type": "solid"
+}

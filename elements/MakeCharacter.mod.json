@@ -1,0 +1,79 @@
+{
+  "_fv": 39,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 236,
+    "height": 100,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "button",
+        "data": {
+          "name": "button_change_race",
+          "text": "Change Race",
+          "onClick": {
+            "name": "ChangeRace"
+          },
+          "width": 82,
+          "height": 20,
+          "x": 172,
+          "y": 102
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_varinbetweenrace",
+          "text": {
+            "fixedValue": "<VAR:InBetweenRace>",
+            "name": "InBetweenRace"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 256,
+          "y": 107
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_create_character",
+          "text": "Create Character",
+          "onClick": {
+            "name": "DoCreateCharacter"
+          },
+          "width": 108,
+          "height": 20,
+          "x": 198,
+          "y": 145
+        }
+      },
+      {
+        "type": "entitymodel",
+        "data": {
+          "entityModel": {
+            "name": "PlayerEntityShowInMenu"
+          },
+          "scale": 50,
+          "rotationX": 0,
+          "followMouseMovement": true,
+          "x": 121,
+          "y": 145
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

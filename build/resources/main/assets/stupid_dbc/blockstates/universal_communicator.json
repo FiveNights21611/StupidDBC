@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "stupid_dbc:block/universal_communicator"
+    },
+    "facing=east": {
+      "model": "stupid_dbc:block/universal_communicator",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "stupid_dbc:block/universal_communicator",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "stupid_dbc:block/universal_communicator",
+      "y": 270
+    }
+  }
+}

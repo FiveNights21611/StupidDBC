@@ -1,0 +1,1968 @@
+{
+  "_fv": 39,
+  "_type": "config",
+  "definition": {
+    "pools": [
+      {
+        "category": "Racial TP Gain",
+        "entries": [
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 5.0,
+            "textDefault": "",
+            "comment": "Sets the TP Gain Multiplier for Saiyans",
+            "vardisplay": "Saiyan TP Gain",
+            "varname": "saiyantpgain",
+            "enablecomment": false,
+            "onlyComment": false,
+            "entityType": "EntityAgeable"
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 7.0,
+            "textDefault": "",
+            "comment": "Sets the TP Gain Multiplier for Half-Saiyans",
+            "vardisplay": "Half-Saiyan TP Gain",
+            "varname": "halfsaiyantpgain",
+            "enablecomment": false,
+            "onlyComment": false,
+            "entityType": "EntityAgeable"
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 1.0,
+            "textDefault": "",
+            "comment": "Sets the TP Gain Multiplier for Humans",
+            "vardisplay": "Human TP Gain",
+            "varname": "humantpgain",
+            "enablecomment": false,
+            "onlyComment": false,
+            "entityType": "EntityAgeable"
+          }
+        ]
+      },
+      {
+        "category": "Transformation Multipliers",
+        "entries": [
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 1.5,
+            "textDefault": "",
+            "comment": "",
+            "vardisplay": "SS Multiplier",
+            "varname": "ssmultiplier",
+            "enablecomment": false,
+            "onlyComment": false,
+            "entityType": "EntityAgeable"
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 1.675,
+            "textDefault": "",
+            "comment": "",
+            "vardisplay": "SS Grade 2 Multiplier",
+            "varname": "ssgrade2multiplier",
+            "enablecomment": false,
+            "onlyComment": false,
+            "entityType": "EntityAgeable"
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 1.75,
+            "textDefault": "",
+            "comment": "",
+            "vardisplay": "SS Grade 3 Multiplier",
+            "varname": "ssgrade3multiplier",
+            "enablecomment": false,
+            "onlyComment": false,
+            "entityType": "EntityAgeable"
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 1.6,
+            "textDefault": "",
+            "comment": "",
+            "vardisplay": "Full Power SS Multiplier",
+            "varname": "fpssmultiplier",
+            "enablecomment": false,
+            "onlyComment": false,
+            "entityType": "EntityAgeable"
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 2.0,
+            "textDefault": "",
+            "comment": "",
+            "vardisplay": "SS2 Mutliplier",
+            "varname": "ss2multiplier",
+            "enablecomment": false,
+            "onlyComment": false,
+            "entityType": "EntityAgeable"
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 4.0,
+            "textDefault": "",
+            "comment": "",
+            "vardisplay": "SS3 Mutliplier",
+            "varname": "ss3multiplier",
+            "enablecomment": false,
+            "onlyComment": false,
+            "entityType": "EntityAgeable"
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 10.0,
+            "textDefault": "",
+            "comment": "",
+            "vardisplay": "SSGod Multiplier",
+            "varname": "ssgodmultiplier",
+            "enablecomment": false,
+            "onlyComment": false,
+            "entityType": "EntityAgeable"
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 15.0,
+            "textDefault": "",
+            "comment": "",
+            "vardisplay": "SSBlue Multiplier",
+            "varname": "ssbluemultiplier",
+            "enablecomment": false,
+            "onlyComment": false,
+            "entityType": "EntityAgeable"
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 1.5,
+            "textDefault": "",
+            "comment": "",
+            "vardisplay": "Buffed Multiplier",
+            "varname": "buffedmultiplier",
+            "enablecomment": false,
+            "onlyComment": false,
+            "entityType": "EntityAgeable"
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 1.1,
+            "textDefault": "",
+            "comment": "",
+            "vardisplay": "Oozaru Multiplier",
+            "varname": "oozarumultiplier",
+            "enablecomment": false,
+            "onlyComment": false,
+            "entityType": "EntityAgeable"
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 16.75,
+            "textDefault": "",
+            "comment": "",
+            "vardisplay": "SS Blue Evolved Multiplier",
+            "varname": "ssblueshmultiplier",
+            "enablecomment": false,
+            "onlyComment": false,
+            "entityType": "EntityAgeable"
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 5.0,
+            "textDefault": "",
+            "comment": "",
+            "vardisplay": "Golden Oozaru Multiplier",
+            "varname": "goldenoozarumultiplier",
+            "enablecomment": false,
+            "onlyComment": false,
+            "entityType": "EntityAgeable"
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 15.0,
+            "textDefault": "",
+            "comment": "",
+            "vardisplay": "Super Saiyan 4 Multiplier",
+            "varname": "ss4multiplier",
+            "enablecomment": false,
+            "onlyComment": false,
+            "entityType": "EntityAgeable"
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 16.75,
+            "textDefault": "",
+            "comment": "",
+            "vardisplay": "Super Saiyan 4 - Limit Breaker Multiplier",
+            "varname": "ss4lbmultiplier",
+            "enablecomment": false,
+            "onlyComment": false,
+            "entityType": "EntityAgeable"
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 16.0,
+            "textDefault": "",
+            "comment": "",
+            "vardisplay": "SS Rose Multiplier",
+            "varname": "ssrosemultiplier",
+            "enablecomment": false,
+            "onlyComment": false,
+            "entityType": "EntityAgeable"
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 17.75,
+            "textDefault": "",
+            "comment": "",
+            "vardisplay": "SS Rose Grade 2 Multiplier",
+            "varname": "ssroseg2multiplier",
+            "enablecomment": false,
+            "onlyComment": false,
+            "entityType": "EntityAgeable"
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 4.0,
+            "textDefault": "",
+            "comment": "",
+            "vardisplay": "Ultimate Multiplier",
+            "varname": "ultimatemultiplier",
+            "enablecomment": false,
+            "onlyComment": false,
+            "entityType": "CUSTOM:KingKai"
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 60.0,
+            "textDefault": "",
+            "comment": "",
+            "vardisplay": "Beast Multiplier",
+            "varname": "beastmultiplier",
+            "enablecomment": false,
+            "onlyComment": false,
+            "entityType": "CUSTOM:KingKai"
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 20.0,
+            "textDefault": "",
+            "comment": "",
+            "vardisplay": "SS Blue 2",
+            "varname": "ssblue2multiplier",
+            "enablecomment": false,
+            "onlyComment": false,
+            "entityType": "CUSTOM:KingKai"
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 20.0,
+            "textDefault": "",
+            "comment": "",
+            "vardisplay": "SS Rose 2 Multiplier",
+            "varname": "ssrose2multiplier",
+            "enablecomment": false,
+            "onlyComment": false,
+            "entityType": "CUSTOM:KingKai"
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 40.0,
+            "textDefault": "",
+            "comment": "",
+            "vardisplay": "SS Blue 3 Multiplier",
+            "varname": "ssblue3multiplier",
+            "enablecomment": false,
+            "onlyComment": false,
+            "entityType": "CUSTOM:KingKai"
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 40.0,
+            "textDefault": "",
+            "comment": "",
+            "vardisplay": "SS Rose 3 Multiplier",
+            "varname": "ssrose3multiplier",
+            "enablecomment": false,
+            "onlyComment": false,
+            "entityType": "CUSTOM:KingKai"
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 100.0,
+            "textDefault": "",
+            "comment": "",
+            "vardisplay": "The Primal God Multiplier",
+            "varname": "tpgmultiplier",
+            "enablecomment": false,
+            "onlyComment": false,
+            "entityType": "CUSTOM:KingKai"
+          }
+        ]
+      },
+      {
+        "category": "Kaioken Multipliers",
+        "entries": [
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 1.1,
+            "textDefault": "",
+            "comment": "",
+            "vardisplay": "Kaioken Multiplier",
+            "varname": "kaiokenmultiplier",
+            "enablecomment": false,
+            "onlyComment": false,
+            "entityType": "EntityAgeable"
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 1.15,
+            "textDefault": "",
+            "comment": "",
+            "vardisplay": "Kaioken x2 Multiplier",
+            "varname": "kaioken2multiplier",
+            "enablecomment": false,
+            "onlyComment": false,
+            "entityType": "EntityAgeable"
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 1.2,
+            "textDefault": "",
+            "comment": "",
+            "vardisplay": "Kaioken x3 Multiplier",
+            "varname": "kaioken3multiplier",
+            "enablecomment": false,
+            "onlyComment": false,
+            "entityType": "EntityAgeable"
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 1.25,
+            "textDefault": "",
+            "comment": "",
+            "vardisplay": "Kaioken x4 Multiplier",
+            "varname": "kaioken4multiplier",
+            "enablecomment": false,
+            "onlyComment": false,
+            "entityType": "EntityAgeable"
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 1.3,
+            "textDefault": "",
+            "comment": "",
+            "vardisplay": "Kaioken x5 Multiplier",
+            "varname": "kaioken5multiplier",
+            "enablecomment": false,
+            "onlyComment": false,
+            "entityType": "EntityAgeable"
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 1.375,
+            "textDefault": "",
+            "comment": "",
+            "vardisplay": "Kaioken x10 Multiplier",
+            "varname": "kaioken10multiplier",
+            "enablecomment": false,
+            "onlyComment": false,
+            "entityType": "EntityAgeable"
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 1.425,
+            "textDefault": "",
+            "comment": "",
+            "vardisplay": "Kaioken x20 Multiplier",
+            "varname": "kaioken20multiplier",
+            "enablecomment": false,
+            "onlyComment": false,
+            "entityType": "EntityAgeable"
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 1.5,
+            "textDefault": "",
+            "comment": "",
+            "vardisplay": "Kaioken x50 Multiplier",
+            "varname": "kaioken50multiplier",
+            "enablecomment": false,
+            "onlyComment": false,
+            "entityType": "EntityAgeable"
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 2.0,
+            "textDefault": "",
+            "comment": "",
+            "vardisplay": "Kaioken x100 Multiplier",
+            "varname": "kaioken100multiplier",
+            "enablecomment": false,
+            "onlyComment": false,
+            "entityType": "EntityAgeable"
+          }
+        ]
+      },
+      {
+        "category": "Common",
+        "entries": [
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 16.0,
+            "textDefault": "",
+            "comment": "",
+            "vardisplay": "TP Cost per Stat",
+            "varname": "tpcost",
+            "enablecomment": false,
+            "onlyComment": false,
+            "entityType": "EntityAgeable"
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 10000.0,
+            "textDefault": "",
+            "comment": "",
+            "vardisplay": "Max Stats",
+            "varname": "maxstats",
+            "enablecomment": false,
+            "onlyComment": false,
+            "entityType": "EntityAgeable"
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 10.0,
+            "textDefault": "",
+            "comment": "",
+            "vardisplay": "Natural Ki Regen",
+            "varname": "kiregen",
+            "enablecomment": false,
+            "onlyComment": false,
+            "entityType": "EntityAgeable"
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 0.2,
+            "textDefault": "",
+            "comment": "The addition to your multiplier you get from the Legendry effect. Multiplier starts at 1 and adds this before a transformation.",
+            "vardisplay": "Legendary Multiplier Bonus",
+            "varname": "legendarymultiplierbonus",
+            "enablecomment": false,
+            "onlyComment": false,
+            "entityType": "EntityAgeable"
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 2.0,
+            "textDefault": "",
+            "comment": "",
+            "vardisplay": "In percentage, the amount",
+            "varname": "chanceforlegendary",
+            "enablecomment": false,
+            "onlyComment": false,
+            "entityType": "EntityAgeable"
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 20.0,
+            "textDefault": "",
+            "comment": "How often it tries to give legendary to the player",
+            "vardisplay": "In minutes",
+            "varname": "frequencyoflegendary",
+            "enablecomment": true,
+            "onlyComment": false,
+            "entityType": "EntityAgeable"
+          }
+        ]
+      },
+      {
+        "category": "Ki Drain",
+        "entries": [
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 5.0,
+            "textDefault": "",
+            "comment": "",
+            "vardisplay": "Super Saiyan Ki Drain",
+            "varname": "sskidrain",
+            "enablecomment": false,
+            "onlyComment": false,
+            "entityType": "EntityAgeable"
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 7.0,
+            "textDefault": "",
+            "comment": "",
+            "vardisplay": "SS Grade 2 Ki Drain",
+            "varname": "ssg2kidrain",
+            "enablecomment": false,
+            "onlyComment": false,
+            "entityType": "EntityAgeable"
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 8.0,
+            "textDefault": "",
+            "comment": "",
+            "vardisplay": "SS Grade 3 Ki Drain",
+            "varname": "ssg3kidrain",
+            "enablecomment": false,
+            "onlyComment": false,
+            "entityType": "EntityAgeable"
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 1.0,
+            "textDefault": "",
+            "comment": "",
+            "vardisplay": "Full Power SS Ki Drain",
+            "varname": "fpsskidrain",
+            "enablecomment": false,
+            "onlyComment": false,
+            "entityType": "EntityAgeable"
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 10.0,
+            "textDefault": "",
+            "comment": "",
+            "vardisplay": "SS2 Ki Drain",
+            "varname": "ss2kidrain",
+            "enablecomment": false,
+            "onlyComment": false,
+            "entityType": "EntityAgeable"
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 20.0,
+            "textDefault": "",
+            "comment": "",
+            "vardisplay": "SS3 Ki Drain",
+            "varname": "ss3kidrain",
+            "enablecomment": false,
+            "onlyComment": false,
+            "entityType": "EntityAgeable"
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 50.0,
+            "textDefault": "",
+            "comment": "",
+            "vardisplay": "SS God Ki Drain",
+            "varname": "ssgodkidrain",
+            "enablecomment": false,
+            "onlyComment": false,
+            "entityType": "EntityAgeable"
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 55.0,
+            "textDefault": "",
+            "comment": "",
+            "vardisplay": "SS Blue Ki Drain",
+            "varname": "ssbluekidrain",
+            "enablecomment": false,
+            "onlyComment": false,
+            "entityType": "EntityAgeable"
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 5.0,
+            "textDefault": "",
+            "comment": "",
+            "vardisplay": "Buffed Ki Drain",
+            "varname": "buffedkidrain",
+            "enablecomment": false,
+            "onlyComment": false,
+            "entityType": "EntityAgeable"
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 57.0,
+            "textDefault": "",
+            "comment": "",
+            "vardisplay": "SS Blue Evolved Ki Drain",
+            "varname": "ssblueshkidrain",
+            "enablecomment": false,
+            "onlyComment": false,
+            "entityType": "EntityAgeable"
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 25.0,
+            "textDefault": "",
+            "comment": "",
+            "vardisplay": "Golden Oozaru Ki Drain",
+            "varname": "goldenoozarukidrain",
+            "enablecomment": false,
+            "onlyComment": false,
+            "entityType": "EntityAgeable"
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 55.0,
+            "textDefault": "",
+            "comment": "",
+            "vardisplay": "Super Saiyan 4 Ki Drain",
+            "varname": "ss4kidrain",
+            "enablecomment": false,
+            "onlyComment": false,
+            "entityType": "EntityAgeable"
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 57.0,
+            "textDefault": "",
+            "comment": "",
+            "vardisplay": "Super Saiyan 4 - Limit Breaker",
+            "varname": "ss4lbkidrain",
+            "enablecomment": false,
+            "onlyComment": false,
+            "entityType": "EntityAgeable"
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 55.0,
+            "textDefault": "",
+            "comment": "",
+            "vardisplay": "SS Rose Ki Drain",
+            "varname": "ssrosekd",
+            "enablecomment": false,
+            "onlyComment": false,
+            "entityType": "EntityAgeable"
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 57.0,
+            "textDefault": "",
+            "comment": "",
+            "vardisplay": "SS Rose Grade 2 Ki Drain",
+            "varname": "ssroseg2kd",
+            "enablecomment": false,
+            "onlyComment": false,
+            "entityType": "EntityAgeable"
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 5.0,
+            "textDefault": "",
+            "comment": "",
+            "vardisplay": "Ultimate Ki Drain",
+            "varname": "ultimatekd",
+            "enablecomment": false,
+            "onlyComment": false,
+            "entityType": "CUSTOM:KingKai"
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 30.0,
+            "textDefault": "",
+            "comment": "",
+            "vardisplay": "Beast Ki Drain",
+            "varname": "beastkd",
+            "enablecomment": false,
+            "onlyComment": false,
+            "entityType": "CUSTOM:KingKai"
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 60.0,
+            "textDefault": "",
+            "comment": "",
+            "vardisplay": "SS Blue 2 Ki Drain",
+            "varname": "ssblue2kd",
+            "enablecomment": false,
+            "onlyComment": false,
+            "entityType": "CUSTOM:KingKai"
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 60.0,
+            "textDefault": "",
+            "comment": "",
+            "vardisplay": "SS Rose 2 Ki Drain",
+            "varname": "ssrose2kd",
+            "enablecomment": false,
+            "onlyComment": false,
+            "entityType": "CUSTOM:KingKai"
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 75.0,
+            "textDefault": "",
+            "comment": "",
+            "vardisplay": "SS Blue 3 KD",
+            "varname": "ssblue3kd",
+            "enablecomment": false,
+            "onlyComment": false,
+            "entityType": "CUSTOM:KingKai"
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 75.0,
+            "textDefault": "",
+            "comment": "",
+            "vardisplay": "SS Rose 3 Ki Drain",
+            "varname": "ssrose3kd",
+            "enablecomment": false,
+            "onlyComment": false,
+            "entityType": "CUSTOM:KingKai"
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 250.0,
+            "textDefault": "",
+            "comment": "",
+            "vardisplay": "The Primal God Ki Drain",
+            "varname": "tpgkd",
+            "enablecomment": false,
+            "onlyComment": false,
+            "entityType": "CUSTOM:KingKai"
+          }
+        ]
+      },
+      {
+        "category": "Kaioken Health Drain",
+        "entries": [
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 1.0,
+            "textDefault": "",
+            "comment": "",
+            "vardisplay": "Kaioken Health Drain",
+            "varname": "kaiokenhd",
+            "enablecomment": false,
+            "onlyComment": false,
+            "entityType": "EntityAgeable"
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 2.0,
+            "textDefault": "",
+            "comment": "",
+            "vardisplay": "Kaioken x2 Health Drain",
+            "varname": "kaioken2hd",
+            "enablecomment": false,
+            "onlyComment": false,
+            "entityType": "EntityAgeable"
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 3.0,
+            "textDefault": "",
+            "comment": "",
+            "vardisplay": "Kaioken x3 Health Drain",
+            "varname": "kaioken3hd",
+            "enablecomment": false,
+            "onlyComment": false,
+            "entityType": "EntityAgeable"
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 4.0,
+            "textDefault": "",
+            "comment": "",
+            "vardisplay": "Kaioken x4 Health Drain",
+            "varname": "kaioken4hd",
+            "enablecomment": false,
+            "onlyComment": false,
+            "entityType": "EntityAgeable"
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 5.0,
+            "textDefault": "",
+            "comment": "",
+            "vardisplay": "Kaioken x5 Health Drain",
+            "varname": "kaioken5hd",
+            "enablecomment": false,
+            "onlyComment": false,
+            "entityType": "EntityAgeable"
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 10.0,
+            "textDefault": "",
+            "comment": "",
+            "vardisplay": "Kaioken x10 Health Drain",
+            "varname": "kaioken10hd",
+            "enablecomment": false,
+            "onlyComment": false,
+            "entityType": "EntityAgeable"
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 20.0,
+            "textDefault": "",
+            "comment": "",
+            "vardisplay": "Kaioken x20 Health Drain",
+            "varname": "kaioken20hd",
+            "enablecomment": false,
+            "onlyComment": false,
+            "entityType": "EntityAgeable"
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 50.0,
+            "textDefault": "",
+            "comment": "",
+            "vardisplay": "Kaioken x50 Health Drain",
+            "varname": "kaioken50hd",
+            "enablecomment": false,
+            "onlyComment": false,
+            "entityType": "EntityAgeable"
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 100.0,
+            "textDefault": "",
+            "comment": "",
+            "vardisplay": "Kaioken x100 Health Drain",
+            "varname": "kaioken100hd",
+            "enablecomment": false,
+            "onlyComment": false,
+            "entityType": "EntityAgeable"
+          }
+        ]
+      },
+      {
+        "category": "Transformation Prices",
+        "entries": [
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 5000.0,
+            "textDefault": "",
+            "comment": "",
+            "vardisplay": "Super Saiyan TP Cost",
+            "varname": "ssg1price",
+            "enablecomment": false,
+            "onlyComment": false,
+            "entityType": "EntityAgeable"
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 6750.0,
+            "textDefault": "",
+            "comment": "",
+            "vardisplay": "SS Grade 2 TP Cost",
+            "varname": "ssg2price",
+            "enablecomment": false,
+            "onlyComment": false,
+            "entityType": "EntityAgeable"
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 7500.0,
+            "textDefault": "",
+            "comment": "",
+            "vardisplay": "SS Grade 3 TP Cost",
+            "varname": "ssg3price",
+            "enablecomment": false,
+            "onlyComment": false,
+            "entityType": "EntityAgeable"
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 10000.0,
+            "textDefault": "",
+            "comment": "",
+            "vardisplay": "FPSS TP Cost",
+            "varname": "fpssprice",
+            "enablecomment": false,
+            "onlyComment": false,
+            "entityType": "EntityAgeable"
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 25000.0,
+            "textDefault": "",
+            "comment": "",
+            "vardisplay": "SS2 TP Cost",
+            "varname": "ss2price",
+            "enablecomment": false,
+            "onlyComment": false,
+            "entityType": "EntityAgeable"
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 50000.0,
+            "textDefault": "",
+            "comment": "",
+            "vardisplay": "SS3 TP Cost",
+            "varname": "ss3price",
+            "enablecomment": false,
+            "onlyComment": false,
+            "entityType": "EntityAgeable"
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 300000.0,
+            "textDefault": "",
+            "comment": "",
+            "vardisplay": "SSGod Price",
+            "varname": "ssgodprice",
+            "enablecomment": false,
+            "onlyComment": false,
+            "entityType": "EntityAgeable"
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 500000.0,
+            "textDefault": "",
+            "comment": "",
+            "vardisplay": "SSBlue Price",
+            "varname": "ssblueprice",
+            "enablecomment": false,
+            "onlyComment": false,
+            "entityType": "EntityAgeable"
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 675000.0,
+            "textDefault": "",
+            "comment": "",
+            "vardisplay": "SSBlue Evolved Price",
+            "varname": "ssbeprice",
+            "enablecomment": false,
+            "onlyComment": false,
+            "entityType": "EntityAgeable"
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 500000.0,
+            "textDefault": "",
+            "comment": "",
+            "vardisplay": "SS4 Price",
+            "varname": "ss4price",
+            "enablecomment": false,
+            "onlyComment": false,
+            "entityType": "EntityAgeable"
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 675000.0,
+            "textDefault": "",
+            "comment": "",
+            "vardisplay": "SS4 - LB Price",
+            "varname": "ss4lbprice",
+            "enablecomment": false,
+            "onlyComment": false,
+            "entityType": "EntityAgeable"
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 50000.0,
+            "textDefault": "",
+            "comment": "",
+            "vardisplay": "Ultimate Form's Price",
+            "varname": "ultimateprice",
+            "enablecomment": false,
+            "onlyComment": false,
+            "entityType": "CUSTOM:KingKai"
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 600000.0,
+            "textDefault": "",
+            "comment": "",
+            "vardisplay": "Beast Price",
+            "varname": "beastprice",
+            "enablecomment": false,
+            "onlyComment": false,
+            "entityType": "CUSTOM:KingKai"
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 1000000.0,
+            "textDefault": "",
+            "comment": "",
+            "vardisplay": "SS Blue 2 Price",
+            "varname": "ssblue2price",
+            "enablecomment": false,
+            "onlyComment": false,
+            "entityType": "CUSTOM:KingKai"
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 2500000.0,
+            "textDefault": "",
+            "comment": "",
+            "vardisplay": "SS Blue 3 Price",
+            "varname": "ssblue3price",
+            "enablecomment": false,
+            "onlyComment": false,
+            "entityType": "CUSTOM:KingKai"
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 9999000.0,
+            "textDefault": "",
+            "comment": "",
+            "vardisplay": "The Primal God Price",
+            "varname": "tpgprice",
+            "enablecomment": false,
+            "onlyComment": false,
+            "entityType": "CUSTOM:KingKai"
+          }
+        ]
+      },
+      {
+        "category": "Kaioken TP Costs",
+        "entries": [
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 500.0,
+            "textDefault": "",
+            "comment": "",
+            "vardisplay": "Kaioken TP Cost",
+            "varname": "kaiokenprice",
+            "enablecomment": false,
+            "onlyComment": false,
+            "entityType": "EntityAgeable"
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 1000.0,
+            "textDefault": "",
+            "comment": "",
+            "vardisplay": "Kaioken x2 TP Cost",
+            "varname": "kaioken2price",
+            "enablecomment": false,
+            "onlyComment": false,
+            "entityType": "EntityAgeable"
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 1500.0,
+            "textDefault": "",
+            "comment": "",
+            "vardisplay": "Kaioken x3 TP Cost",
+            "varname": "kaioken3price",
+            "enablecomment": false,
+            "onlyComment": false,
+            "entityType": "EntityAgeable"
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 2000.0,
+            "textDefault": "",
+            "comment": "",
+            "vardisplay": "Kaioken x4 TP Cost",
+            "varname": "kaioken4price",
+            "enablecomment": false,
+            "onlyComment": false,
+            "entityType": "EntityAgeable"
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 2500.0,
+            "textDefault": "",
+            "comment": "",
+            "vardisplay": "Kaioken x5 TP Cost",
+            "varname": "kaioken5price",
+            "enablecomment": false,
+            "onlyComment": false,
+            "entityType": "EntityAgeable"
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 3000.0,
+            "textDefault": "",
+            "comment": "",
+            "vardisplay": "Kaioken x10 TP Cost",
+            "varname": "kaioken10price",
+            "enablecomment": false,
+            "onlyComment": false,
+            "entityType": "EntityAgeable"
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 4000.0,
+            "textDefault": "",
+            "comment": "",
+            "vardisplay": "Kaioken x20 TP Cost",
+            "varname": "kaioken20price",
+            "enablecomment": false,
+            "onlyComment": false,
+            "entityType": "EntityAgeable"
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 5000.0,
+            "textDefault": "",
+            "comment": "",
+            "vardisplay": "Kaioken x50 TP Cost",
+            "varname": "kaioken50price",
+            "enablecomment": false,
+            "onlyComment": false,
+            "entityType": "EntityAgeable"
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 10000.0,
+            "textDefault": "",
+            "comment": "",
+            "vardisplay": "Kaioken x100 TP Cost",
+            "varname": "kaioken100price",
+            "enablecomment": false,
+            "onlyComment": false,
+            "entityType": "EntityAgeable"
+          }
+        ]
+      },
+      {
+        "category": "Skill TP Costs",
+        "entries": [
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 50.0,
+            "textDefault": "",
+            "comment": "",
+            "vardisplay": "Cost of Fly",
+            "varname": "flycost",
+            "enablecomment": false,
+            "onlyComment": false,
+            "entityType": "CUSTOM:KingKai"
+          }
+        ]
+      },
+      {
+        "category": "Ultra Instinct Stats",
+        "entries": [
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 750000.0,
+            "textDefault": "",
+            "comment": "",
+            "vardisplay": "Ultra Instinct Omen Price",
+            "varname": "uiomenprice",
+            "enablecomment": false,
+            "onlyComment": false,
+            "entityType": "CUSTOM:KingKai"
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 75.0,
+            "textDefault": "",
+            "comment": "",
+            "vardisplay": "Ultra Instinct Omen Ki Drain",
+            "varname": "uiomenkd",
+            "enablecomment": false,
+            "onlyComment": false,
+            "entityType": "CUSTOM:KingKai"
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 80.0,
+            "textDefault": "",
+            "comment": "",
+            "vardisplay": "Ultra Instinct Omen Multiplier",
+            "varname": "uiomenmultiplier",
+            "enablecomment": false,
+            "onlyComment": false,
+            "entityType": "CUSTOM:KingKai"
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 25.0,
+            "textDefault": "",
+            "comment": "",
+            "vardisplay": "In Percentage, the change to Dodge in Ultra Instinct Omen",
+            "varname": "uiomendodge",
+            "enablecomment": false,
+            "onlyComment": false,
+            "entityType": "CUSTOM:KingKai"
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 10.0,
+            "textDefault": "",
+            "comment": "",
+            "vardisplay": "In Percentage, the chance to counter in Ultra Instinct Omen",
+            "varname": "uiomencounter",
+            "enablecomment": false,
+            "onlyComment": false,
+            "entityType": "CUSTOM:KingKai"
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 60.0,
+            "textDefault": "",
+            "comment": "",
+            "vardisplay": "In Percentage, how much of your power used to counter in UI Omen",
+            "varname": "uiomencounterpercentage",
+            "enablecomment": false,
+            "onlyComment": false,
+            "entityType": "CUSTOM:KingKai"
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 5.0,
+            "textDefault": "",
+            "comment": "",
+            "vardisplay": "Ultra Instinct Omen Heat Drain",
+            "varname": "uiomenheatdrain",
+            "enablecomment": false,
+            "onlyComment": false,
+            "entityType": "CUSTOM:KingKai"
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 25.0,
+            "textDefault": "",
+            "comment": "",
+            "vardisplay": "How much your Heat increases whilst using Ultra Instinct Omen",
+            "varname": "uiomenchargeheat",
+            "enablecomment": false,
+            "onlyComment": false,
+            "entityType": "CUSTOM:KingKai"
+          }
+        ]
+      }
+    ],
+    "file": "sdbcCommon",
+    "configType": 0
+  }
+}

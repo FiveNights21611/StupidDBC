@@ -1,0 +1,32 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "IEN",
+    "AAA",
+    "RDR"
+  ],
+  "key": {
+    "I": {
+      "item": "stupid_dbc:mini_screen"
+    },
+    "E": {
+      "item": "stupid_dbc:keyboard"
+    },
+    "N": {
+      "item": "stupid_dbc:universal_satellite"
+    },
+    "A": {
+      "item": "stupid_dbc:raw_katchin"
+    },
+    "R": {
+      "item": "minecraft:iron_block"
+    },
+    "D": {
+      "item": "minecraft:redstone_block"
+    }
+  },
+  "result": {
+    "item": "stupid_dbc:universal_communicator",
+    "count": 1
+  }
+}

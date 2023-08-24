@@ -1,0 +1,141 @@
+{
+  "_fv": 39,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 176,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "label",
+        "data": {
+          "name": "label_what_is_your_saiyan_name",
+          "text": {
+            "fixedValue": "What is your Saiyan Name?"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "ShowSaiyanName"
+          },
+          "x": 128,
+          "y": 40
+        }
+      },
+      {
+        "type": "textfield",
+        "data": {
+          "placeholder": "Name",
+          "name": "SaiyanName",
+          "width": 120,
+          "height": 20,
+          "x": 128,
+          "y": 50
+        }
+      },
+      {
+        "type": "checkbox",
+        "data": {
+          "name": "hasEarthName",
+          "text": "Do you have an earth name?",
+          "x": 128,
+          "y": 74
+        }
+      },
+      {
+        "type": "textfield",
+        "data": {
+          "placeholder": "Name",
+          "name": "EarthName",
+          "width": 120,
+          "height": 20,
+          "x": 128,
+          "y": 118
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_what_is_your_earth_name",
+          "text": {
+            "fixedValue": "What is your Earth Name?"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "ShowEarthName"
+          },
+          "x": 128,
+          "y": 107
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_finish_making_character",
+          "text": "Finish Making Character",
+          "onClick": {
+            "name": "FinishMakingCharacter"
+          },
+          "width": 145,
+          "height": 20,
+          "x": 140,
+          "y": 178
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_buttonnew",
+          "image": "buttonnew.png",
+          "hoveredImage": "buttonhovernew.png",
+          "onClick": {
+            "name": "DoTailGet"
+          },
+          "displayCondition": {
+            "name": "ShowEnableTail"
+          },
+          "x": 129,
+          "y": 142
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_get_tail",
+          "text": {
+            "fixedValue": "Tail",
+            "name": "GetTail"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "ShowTailEnabled"
+          },
+          "x": 146,
+          "y": 146
+        }
+      }
+    ],
+    "onTick": {
+      "name": "HasEarthName"
+    },
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

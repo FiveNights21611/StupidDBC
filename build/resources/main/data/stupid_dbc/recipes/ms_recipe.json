@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "ARA",
+    "AEA",
+    "ASA"
+  ],
+  "key": {
+    "A": {
+      "item": "stupid_dbc:raw_katchin"
+    },
+    "R": {
+      "item": "minecraft:redstone"
+    },
+    "E": {
+      "item": "minecraft:redstone_lamp"
+    },
+    "S": {
+      "tag": "forge:stained_glass_panes"
+    }
+  },
+  "result": {
+    "item": "stupid_dbc:mini_screen",
+    "count": 1
+  }
+}

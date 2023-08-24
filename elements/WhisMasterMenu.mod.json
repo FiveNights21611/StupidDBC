@@ -1,0 +1,95 @@
+{
+  "_fv": 39,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 176,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "entitymodel",
+        "data": {
+          "entityModel": {
+            "name": "ShowWhis"
+          },
+          "scale": 30,
+          "rotationX": 0,
+          "followMouseMovement": true,
+          "x": 266,
+          "y": 179
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_button",
+          "image": "buttonnew.png",
+          "hoveredImage": "buttonhovernew.png",
+          "onClick": {
+            "name": "BuyUltraInstinct"
+          },
+          "x": 128,
+          "y": 59
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_whis",
+          "text": {
+            "fixedValue": "Whis"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 198,
+          "y": 40
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_get_ui_level",
+          "text": {
+            "fixedValue": "",
+            "name": "GetUILevel"
+          },
+          "color": {
+            "value": -3342337,
+            "falpha": 0.0
+          },
+          "x": 145,
+          "y": 62
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_get_ui_cost",
+          "text": {
+            "fixedValue": "",
+            "name": "GetUICost"
+          },
+          "color": {
+            "value": -3342337,
+            "falpha": 0.0
+          },
+          "x": 132,
+          "y": 74
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:wither_rose"
+    },
+    "title": {
+      "translate": "advancements.kill_wither.title"
+    },
+    "description": {
+      "translate": "advancements.kill_wither.descr"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "criteria": {
+    "kill_wither": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "minecraft:nether/summon_wither"
+}

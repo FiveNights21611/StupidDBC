@@ -1,0 +1,133 @@
+---- Minecraft Crash Report ----
+// Why did you do that?
+
+Time: 2023-08-13 10:47:27
+Description: Ticking player
+
+java.lang.ClassCastException: class net.minecraftforge.event.TickEvent$PlayerTickEvent cannot be cast to class net.minecraftforge.client.event.RenderLivingEvent (net.minecraftforge.event.TickEvent$PlayerTickEvent and net.minecraftforge.client.event.RenderLivingEvent are in module forge@43.2.0 of loader 'TRANSFORMER' @6f70a21b)
+	at net.mcreator.stupiddragonblockc.procedures.AddTailModelProcedure.execute(AddTailModelProcedure.java:38) ~[%23193!/:?] {re:classloading}
+	at net.mcreator.stupiddragonblockc.procedures.AddTailModelProcedure.onPlayerTick(AddTailModelProcedure.java:27) ~[%23193!/:?] {re:classloading}
+	at net.mcreator.stupiddragonblockc.procedures.__AddTailModelProcedure_onPlayerTick_PlayerTickEvent.invoke(.dynamic) ~[%23193!/:?] {re:classloading,pl:eventbus:B}
+	at net.minecraftforge.eventbus.ASMEventHandler.invoke(ASMEventHandler.java:73) ~[eventbus-6.0.3.jar%23113!/:?] {}
+	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:315) ~[eventbus-6.0.3.jar%23113!/:?] {}
+	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:296) ~[eventbus-6.0.3.jar%23113!/:?] {}
+	at net.minecraftforge.event.ForgeEventFactory.onPlayerPostTick(ForgeEventFactory.java:810) ~[forge-1.19.2-43.2.0_mapped_official_1.19.2.jar%23187%23194!/:?] {re:classloading}
+	at net.minecraft.world.entity.player.Player.tick(Player.java:288) ~[forge-1.19.2-43.2.0_mapped_official_1.19.2.jar%23188!/:?] {re:mixin,pl:accesstransformer:B,re:computing_frames,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B,pl:mixin:APP:pehkui.mixins.json:reach.PlayerEntityMixin,pl:mixin:APP:pehkui.mixins.json:EntityVehicleHeightOffsetMixin,pl:mixin:APP:pehkui.mixins.json:PlayerEntityMixin,pl:mixin:APP:pehkui.mixins.json:compat115plus.PlayerEntityMixin,pl:mixin:APP:pehkui.mixins.json:compat117plus.PlayerEntityMixin,pl:mixin:APP:pehkui.mixins.json:compat1193minus.PlayerEntityMixin,pl:mixin:APP:playerAnimator-common.mixins.json:PlayerEntityMixin,pl:mixin:A}
+	at net.minecraft.server.level.ServerPlayer.doTick(ServerPlayer.java:447) ~[forge-1.19.2-43.2.0_mapped_official_1.19.2.jar%23188!/:?] {re:mixin,pl:accesstransformer:B,re:computing_frames,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B,pl:mixin:APP:pehkui.mixins.json:ServerPlayerEntityMixin,pl:mixin:A}
+	at net.minecraft.server.network.ServerGamePacketListenerImpl.tick(ServerGamePacketListenerImpl.java:264) ~[forge-1.19.2-43.2.0_mapped_official_1.19.2.jar%23188!/:?] {re:mixin,re:classloading,pl:mixin:APP:pehkui.mixins.json:ServerPlayNetworkHandlerMixin,pl:mixin:APP:pehkui.mixins.json:reach.compat119plus.ServerPlayNetworkHandlerMixin,pl:mixin:A}
+	at net.minecraft.network.Connection.tick(Connection.java:248) ~[forge-1.19.2-43.2.0_mapped_official_1.19.2.jar%23188!/:?] {re:classloading,re:mixin}
+	at net.minecraft.server.network.ServerConnectionListener.tick(ServerConnectionListener.java:143) ~[forge-1.19.2-43.2.0_mapped_official_1.19.2.jar%23188!/:?] {re:classloading}
+	at net.minecraft.server.MinecraftServer.tickChildren(MinecraftServer.java:880) ~[forge-1.19.2-43.2.0_mapped_official_1.19.2.jar%23188!/:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.server.MinecraftServer.tickServer(MinecraftServer.java:806) ~[forge-1.19.2-43.2.0_mapped_official_1.19.2.jar%23188!/:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.client.server.IntegratedServer.tickServer(IntegratedServer.java:84) ~[forge-1.19.2-43.2.0_mapped_official_1.19.2.jar%23188!/:?] {re:classloading,pl:runtimedistcleaner:A}
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:654) ~[forge-1.19.2-43.2.0_mapped_official_1.19.2.jar%23188!/:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.server.MinecraftServer.lambda$spin$2(MinecraftServer.java:244) ~[forge-1.19.2-43.2.0_mapped_official_1.19.2.jar%23188!/:?] {re:classloading,pl:accesstransformer:B}
+	at java.lang.Thread.run(Thread.java:833) [?:?] {}
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Thread: Server thread
+Stacktrace:
+	at net.mcreator.stupiddragonblockc.procedures.AddTailModelProcedure.execute(AddTailModelProcedure.java:38) ~[%23193!/:?] {re:classloading}
+	at net.mcreator.stupiddragonblockc.procedures.AddTailModelProcedure.onPlayerTick(AddTailModelProcedure.java:27) ~[%23193!/:?] {re:classloading}
+	at net.mcreator.stupiddragonblockc.procedures.__AddTailModelProcedure_onPlayerTick_PlayerTickEvent.invoke(.dynamic) ~[%23193!/:?] {re:classloading,pl:eventbus:B}
+	at net.minecraftforge.eventbus.ASMEventHandler.invoke(ASMEventHandler.java:73) ~[eventbus-6.0.3.jar%23113!/:?] {}
+	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:315) ~[eventbus-6.0.3.jar%23113!/:?] {}
+	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:296) ~[eventbus-6.0.3.jar%23113!/:?] {}
+	at net.minecraftforge.event.ForgeEventFactory.onPlayerPostTick(ForgeEventFactory.java:810) ~[forge-1.19.2-43.2.0_mapped_official_1.19.2.jar%23187%23194!/:?] {re:classloading}
+	at net.minecraft.world.entity.player.Player.tick(Player.java:288) ~[forge-1.19.2-43.2.0_mapped_official_1.19.2.jar%23188!/:?] {re:mixin,pl:accesstransformer:B,re:computing_frames,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B,pl:mixin:APP:pehkui.mixins.json:reach.PlayerEntityMixin,pl:mixin:APP:pehkui.mixins.json:EntityVehicleHeightOffsetMixin,pl:mixin:APP:pehkui.mixins.json:PlayerEntityMixin,pl:mixin:APP:pehkui.mixins.json:compat115plus.PlayerEntityMixin,pl:mixin:APP:pehkui.mixins.json:compat117plus.PlayerEntityMixin,pl:mixin:APP:pehkui.mixins.json:compat1193minus.PlayerEntityMixin,pl:mixin:APP:playerAnimator-common.mixins.json:PlayerEntityMixin,pl:mixin:A}
+-- Player being ticked --
+Details:
+	Entity Type: minecraft:player (net.minecraft.server.level.ServerPlayer)
+	Entity ID: 196
+	Entity Name: Dev
+	Entity's Exact location: -3.50, 84.00, 6.50
+	Entity's Block location: World: (-4,84,6), Section: (at 12,4,6 in -1,5,0; chunk contains blocks -16,-64,0 to -1,319,15), Region: (-1,0; contains chunks -32,0 to -1,31, blocks -512,-64,0 to -1,319,511)
+	Entity's Momentum: 0.00, -0.08, 0.00
+	Entity's Passengers: []
+	Entity's Vehicle: null
+Stacktrace:
+	at net.minecraft.server.level.ServerPlayer.doTick(ServerPlayer.java:447) ~[forge-1.19.2-43.2.0_mapped_official_1.19.2.jar%23188!/:?] {re:mixin,pl:accesstransformer:B,re:computing_frames,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B,pl:mixin:APP:pehkui.mixins.json:ServerPlayerEntityMixin,pl:mixin:A}
+	at net.minecraft.server.network.ServerGamePacketListenerImpl.tick(ServerGamePacketListenerImpl.java:264) ~[forge-1.19.2-43.2.0_mapped_official_1.19.2.jar%23188!/:?] {re:mixin,re:classloading,pl:mixin:APP:pehkui.mixins.json:ServerPlayNetworkHandlerMixin,pl:mixin:APP:pehkui.mixins.json:reach.compat119plus.ServerPlayNetworkHandlerMixin,pl:mixin:A}
+	at net.minecraft.network.Connection.tick(Connection.java:248) ~[forge-1.19.2-43.2.0_mapped_official_1.19.2.jar%23188!/:?] {re:classloading,re:mixin}
+	at net.minecraft.server.network.ServerConnectionListener.tick(ServerConnectionListener.java:143) ~[forge-1.19.2-43.2.0_mapped_official_1.19.2.jar%23188!/:?] {re:classloading}
+	at net.minecraft.server.MinecraftServer.tickChildren(MinecraftServer.java:880) ~[forge-1.19.2-43.2.0_mapped_official_1.19.2.jar%23188!/:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.server.MinecraftServer.tickServer(MinecraftServer.java:806) ~[forge-1.19.2-43.2.0_mapped_official_1.19.2.jar%23188!/:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.client.server.IntegratedServer.tickServer(IntegratedServer.java:84) ~[forge-1.19.2-43.2.0_mapped_official_1.19.2.jar%23188!/:?] {re:classloading,pl:runtimedistcleaner:A}
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:654) ~[forge-1.19.2-43.2.0_mapped_official_1.19.2.jar%23188!/:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.server.MinecraftServer.lambda$spin$2(MinecraftServer.java:244) ~[forge-1.19.2-43.2.0_mapped_official_1.19.2.jar%23188!/:?] {re:classloading,pl:accesstransformer:B}
+	at java.lang.Thread.run(Thread.java:833) [?:?] {}
+
+
+-- System Details --
+Details:
+	Minecraft Version: 1.19.2
+	Minecraft Version ID: 1.19.2
+	Operating System: Windows 10 (amd64) version 10.0
+	Java Version: 17.0.5, Eclipse Adoptium
+	Java VM Version: OpenJDK 64-Bit Server VM (mixed mode, sharing), Eclipse Adoptium
+	Memory: 298448656 bytes (284 MiB) / 1790967808 bytes (1708 MiB) up to 4278190080 bytes (4080 MiB)
+	CPUs: 12
+	Processor Vendor: AuthenticAMD
+	Processor Name: AMD Ryzen 5 1600 Six-Core Processor            
+	Identifier: AuthenticAMD Family 23 Model 1 Stepping 1
+	Microarchitecture: Zen
+	Frequency (GHz): 3.19
+	Number of physical packages: 1
+	Number of physical CPUs: 6
+	Number of logical CPUs: 12
+	Graphics card #0 name: NVIDIA GeForce GTX 1650
+	Graphics card #0 vendor: NVIDIA (0x10de)
+	Graphics card #0 VRAM (MB): 4095.00
+	Graphics card #0 deviceId: 0x1f82
+	Graphics card #0 versionInfo: DriverVersion=31.0.15.3141
+	Memory slot #0 capacity (MB): 8192.00
+	Memory slot #0 clockSpeed (GHz): 2.40
+	Memory slot #0 type: DDR4
+	Memory slot #1 capacity (MB): 8192.00
+	Memory slot #1 clockSpeed (GHz): 2.40
+	Memory slot #1 type: DDR4
+	Virtual memory max (MB): 28603.12
+	Virtual memory used (MB): 19046.88
+	Swap memory total (MB): 12288.00
+	Swap memory used (MB): 115.84
+	JVM Flags: 1 total; -XX:HeapDumpPath=MojangTricksIntelDriversForPerformance_javaw.exe_minecraft.exe.heapdump
+	Server Running: true
+	Player Count: 1 / 8; [ServerPlayer['Dev'/196, l='ServerLevel[TailTesting]', x=-3.50, y=84.00, z=6.50]]
+	Data Packs: vanilla, mod:pehkui (incompatible), mod:stupid_dbc, mod:forge, mod:curios, mod:kleiders_custom_renderer, mod:playeranimator (incompatible)
+	World Generation: Experimental
+	Type: Integrated Server (map_client.txt)
+	Is Modded: Definitely; Client brand changed to 'forge'; Server brand changed to 'forge'
+	Launched Version: MOD_DEV
+	ModLauncher: 10.0.9+10.0.9+main.dcd20f30
+	ModLauncher launch target: forgeclientuserdev
+	ModLauncher naming: mcp
+	ModLauncher services: 
+		mixin-0.8.5.jar mixin PLUGINSERVICE 
+		eventbus-6.0.3.jar eventbus PLUGINSERVICE 
+		fmlloader-1.19.2-43.2.0.jar slf4jfixer PLUGINSERVICE 
+		fmlloader-1.19.2-43.2.0.jar object_holder_definalize PLUGINSERVICE 
+		fmlloader-1.19.2-43.2.0.jar runtime_enum_extender PLUGINSERVICE 
+		fmlloader-1.19.2-43.2.0.jar capability_token_subclass PLUGINSERVICE 
+		accesstransformers-8.0.4.jar accesstransformer PLUGINSERVICE 
+		fmlloader-1.19.2-43.2.0.jar runtimedistcleaner PLUGINSERVICE 
+		modlauncher-10.0.9.jar mixin TRANSFORMATIONSERVICE 
+		modlauncher-10.0.9.jar fml TRANSFORMATIONSERVICE 
+	FML Language Providers: 
+		minecraft@1.0
+		lowcodefml@null
+		javafml@null
+	Mod List: 
+		forge-1.19.2-43.2.0_mapped_official_1.19.2.jar    |Minecraft                     |minecraft                     |1.19.2              |DONE      |Manifest: a1:d4:5e:04:4f:d3:d6:e0:7b:37:97:cf:77:b0:de:ad:4a:47:ce:8c:96:49:5f:0a:cf:8c:ae:b2:6d:4b:8a:3f
+		Pehkui-3.7.4-1.19.2-forge_mapped_official_1.19.2.j|Pehkui                        |pehkui                        |3.7.4+1.19.2-forge  |DONE      |Manifest: NOSIGNATURE
+		main                                              |Stupid DBC                    |stupid_dbc                    |1.4.5               |DONE      |Manifest: NOSIGNATURE
+		                                                  |Forge                         |forge                         |43.2.0              |DONE      |Manifest: NOSIGNATURE
+		curios-forge-1.19.2-5.1.1.0_mapped_official_1.19.2|Curios API                    |curios                        |1.19.2-5.1.1.0      |DONE      |Manifest: NOSIGNATURE
+		kleidersplayerrenderer-682065-4478427_mapped_offic|Kleiders Custom Renderer      |kleiders_custom_renderer      |5.4.0               |DONE      |Manifest: NOSIGNATURE
+		player-animation-lib-forge-1.0.2_mapped_official_1|Player Animator               |playeranimator                |1.0.2               |DONE      |Manifest: NOSIGNATURE
+	Crash Report UUID: a513ca97-3f2c-4b9c-a294-d8cda2f42ccf
+	FML: 43.2
+	Forge: net.minecraftforge:43.2.0

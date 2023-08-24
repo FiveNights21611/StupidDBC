@@ -1,0 +1,12 @@
+{
+  "_fv": 39,
+  "_type": "keybind",
+  "definition": {
+    "triggerKey": "H",
+    "keyBindingName": "Deactivate Transformation",
+    "keyBindingCategoryKey": "sdbc",
+    "onKeyPressed": {
+      "name": "Untransform"
+    }
+  }
+}

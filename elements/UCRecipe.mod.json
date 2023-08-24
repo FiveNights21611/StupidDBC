@@ -1,0 +1,46 @@
+{
+  "_fv": 39,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "group": "",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:MiniScreen"
+      },
+      {
+        "value": "CUSTOM:Keyboard"
+      },
+      {
+        "value": "CUSTOM:UniversalSatellite"
+      },
+      {
+        "value": "CUSTOM:RawKatchin"
+      },
+      {
+        "value": "CUSTOM:RawKatchin"
+      },
+      {
+        "value": "CUSTOM:RawKatchin"
+      },
+      {
+        "value": "Blocks.IRON_BLOCK"
+      },
+      {
+        "value": "Blocks.REDSTONE_BLOCK"
+      },
+      {
+        "value": "Blocks.IRON_BLOCK"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:UniversalCommunicator"
+    },
+    "name": "uc_recipe",
+    "namespace": "mod"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "_fv": 39,
+  "_type": "tab",
+  "definition": {
+    "name": "Stupid DBC",
+    "icon": {
+      "value": "CUSTOM:Icon"
+    },
+    "showSearch": false
+  }
+}

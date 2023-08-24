@@ -1,0 +1,12 @@
+{
+  "_fv": 39,
+  "_type": "keybind",
+  "definition": {
+    "triggerKey": "V",
+    "keyBindingName": "Character Sheet",
+    "keyBindingCategoryKey": "sdbc",
+    "onKeyReleased": {
+      "name": "OpenCharacterSheet"
+    }
+  }
+}

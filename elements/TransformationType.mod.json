@@ -1,0 +1,12 @@
+{
+  "_fv": 39,
+  "_type": "keybind",
+  "definition": {
+    "triggerKey": "X",
+    "keyBindingName": "Transformation Type",
+    "keyBindingCategoryKey": "sdbc",
+    "onKeyPressed": {
+      "name": "OpenTTChange"
+    }
+  }
+}

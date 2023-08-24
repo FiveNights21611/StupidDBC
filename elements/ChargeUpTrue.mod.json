@@ -1,0 +1,15 @@
+{
+  "_fv": 39,
+  "_type": "keybind",
+  "definition": {
+    "triggerKey": "C",
+    "keyBindingName": "Charge Up",
+    "keyBindingCategoryKey": "sdbc",
+    "onKeyPressed": {
+      "name": "DoChargeUp"
+    },
+    "onKeyReleased": {
+      "name": "UndoChargeUp"
+    }
+  }
+}
