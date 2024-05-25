@@ -11,6 +11,8 @@ import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.world.level.Level;
 import net.minecraft.world.entity.player.Player;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.client.renderer.GameRenderer;
 import net.minecraft.client.Minecraft;
 
 import net.mcreator.stupiddragonblockc.procedures.TransformationProcedure;
@@ -25,6 +27,9 @@ import net.mcreator.stupiddragonblockc.procedures.KiProcedure;
 import net.mcreator.stupiddragonblockc.procedures.HPProcedure;
 import net.mcreator.stupiddragonblockc.procedures.GetUIHeatProcedure;
 import net.mcreator.stupiddragonblockc.procedures.AlignmentStatsProcedure;
+
+import com.mojang.blaze3d.systems.RenderSystem;
+import com.mojang.blaze3d.platform.GlStateManager;
 
 @Mod.EventBusSubscriber({Dist.CLIENT})
 public class StatStuffOverlay {
@@ -45,43 +50,58 @@ public class StatStuffOverlay {
 			y = entity.getY();
 			z = entity.getZ();
 		}
+		RenderSystem.disableDepthTest();
+		RenderSystem.depthMask(false);
+		RenderSystem.enableBlend();
+		RenderSystem.setShader(GameRenderer::getPositionTexShader);
+		RenderSystem.blendFuncSeparate(GlStateManager.SourceFactor.SRC_ALPHA, GlStateManager.DestFactor.ONE_MINUS_SRC_ALPHA, GlStateManager.SourceFactor.ONE, GlStateManager.DestFactor.ZERO);
+		RenderSystem.setShaderColor(1, 1, 1, 1);
 		if (StatStuffShowProcedure.execute(entity)) {
+			if (StatStuffShowProcedure.execute(entity)) {
+				RenderSystem.setShaderTexture(0, new ResourceLocation("stupid_dbc:textures/screens/blankstatstuff.png"));
+				Minecraft.getInstance().gui.blit(event.getPoseStack(), posX + -214, posY + -120, 0, 0, 168, 60, 168, 60);
+			}
 			if (StatStuffShowProcedure.execute(entity))
 				Minecraft.getInstance().font.draw(event.getPoseStack(),
 
-						HPProcedure.execute(entity), posX + -213, posY + -120, -65536);
+						HPProcedure.execute(entity), posX + -150, posY + -104, -65536);
 			if (StatStuffShowProcedure.execute(entity))
 				Minecraft.getInstance().font.draw(event.getPoseStack(),
 
-						KiProcedure.execute(entity), posX + -213, posY + -108, -16724788);
+						KiProcedure.execute(entity), posX + -150, posY + -84, -16724788);
 			if (StatStuffShowProcedure.execute(entity))
 				Minecraft.getInstance().font.draw(event.getPoseStack(),
 
-						TransformationProcedure.execute(entity), posX + -213, posY + -73, -1);
+						TransformationProcedure.execute(entity), posX + -159, posY + -53, -1);
 			if (StatStuffShowProcedure.execute(entity))
 				Minecraft.getInstance().font.draw(event.getPoseStack(),
 
-						TechniqueProcedure.execute(entity), posX + -213, posY + -61, -1);
+						TechniqueProcedure.execute(entity), posX + -159, posY + -41, -1);
 			if (StatStuffShowProcedure.execute(entity))
 				Minecraft.getInstance().font.draw(event.getPoseStack(),
 
-						PowerPercentageProcedure.execute(entity), posX + -213, posY + -97, -1);
+						PowerPercentageProcedure.execute(entity), posX + -196, posY + -96, -1);
 			if (ShowGoodAlignmentProcedure.execute(entity))
 				Minecraft.getInstance().font.draw(event.getPoseStack(),
 
-						AlignmentStatsProcedure.execute(entity), posX + -213, posY + -85, -6684673);
+						AlignmentStatsProcedure.execute(entity), posX + -159, posY + -66, -6684673);
 			if (ShowNeutralAlignmentProcedure.execute(entity))
 				Minecraft.getInstance().font.draw(event.getPoseStack(),
 
-						AlignmentStatsProcedure.execute(entity), posX + -213, posY + -85, -5537343);
+						AlignmentStatsProcedure.execute(entity), posX + -159, posY + -66, -5537343);
 			if (ShowEvilAlignmentProcedure.execute(entity))
 				Minecraft.getInstance().font.draw(event.getPoseStack(),
 
-						AlignmentStatsProcedure.execute(entity), posX + -213, posY + -85, -3407872);
+						AlignmentStatsProcedure.execute(entity), posX + -159, posY + -66, -3407872);
 			if (ShowUltraInstinctHeatProcedure.execute(entity))
 				Minecraft.getInstance().font.draw(event.getPoseStack(),
 
-						GetUIHeatProcedure.execute(entity), posX + -213, posY + -49, -1);
+						GetUIHeatProcedure.execute(entity), posX + -23, posY + 8, -1);
 		}
+		RenderSystem.depthMask(true);
+		RenderSystem.defaultBlendFunc();
+		RenderSystem.enableDepthTest();
+		RenderSystem.disableBlend();
+		RenderSystem.setShaderColor(1, 1, 1, 1);
 	}
 }

@@ -10,9 +10,7 @@ credits="Created using mod maker MCreator - https://mcreator.net/about"
 displayURL="https://mcreator.net"
 logoFile="logo.png"
 authors="FiveN, MCreator"
-description='''
-Make your own story in the Dragon Ball universe with Stats, Transformations, and Techniques!
-'''
+description="Make your own story in the Dragon Ball universe with Stats, Transformations, and Techniques!"
 
 [[dependencies.stupid_dbc]]
     modId="minecraft"
@@ -43,12 +41,6 @@ Make your own story in the Dragon Ball universe with Stats, Transformations, and
     side="BOTH"
 [[dependencies.stupid_dbc]]
     modId="pehkui"
-    mandatory=false
-    versionRange="[0,)"
-    ordering="NONE"
-    side="BOTH"
-[[dependencies.stupid_dbc]]
-    modId="curios_api"
     mandatory=false
     versionRange="[0,)"
     ordering="NONE"

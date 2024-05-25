@@ -10,10 +10,11 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/stupiddragonblockc/network/StatMenuButtonMessage.java",
-          "src/main/java/net/mcreator/stupiddragonblockc/world/inventory/StatMenuMenu.java",
-          "src/main/java/net/mcreator/stupiddragonblockc/client/gui/StatMenuScreen.java"
+          "src/main/java/net/mcreator/stupiddragonblockc/client/gui/StatMenuScreen.java",
+          "src/main/java/net/mcreator/stupiddragonblockc/world/inventory/StatMenuMenu.java"
         ]
-      }
+      },
+      "path": "~/Menu"
     },
     {
       "name": "Givetp",
@@ -36,7 +37,8 @@
             "type": "entity"
           }
         ]
-      }
+      },
+      "path": "~/Generic"
     },
     {
       "name": "Taketp",
@@ -59,7 +61,8 @@
             "type": "entity"
           }
         ]
-      }
+      },
+      "path": "~/Generic"
     },
     {
       "name": "Sdbc",
@@ -72,7 +75,8 @@
         "files": [
           "src/main/java/net/mcreator/stupiddragonblockc/command/SdbcCommand.java"
         ]
-      }
+      },
+      "path": "~/Generic"
     },
     {
       "name": "IncreaseStrength",
@@ -91,7 +95,8 @@
             "type": "entity"
           }
         ]
-      }
+      },
+      "path": "~/Generic"
     },
     {
       "name": "DoChangeStrength",
@@ -110,7 +115,8 @@
             "type": "entity"
           }
         ]
-      }
+      },
+      "path": "~/Generic"
     },
     {
       "name": "DoChangeDef",
@@ -129,7 +135,8 @@
             "type": "entity"
           }
         ]
-      }
+      },
+      "path": "~/Generic"
     },
     {
       "name": "DoChangeCon",
@@ -148,7 +155,8 @@
             "type": "entity"
           }
         ]
-      }
+      },
+      "path": "~/Generic"
     },
     {
       "name": "DoChangeWil",
@@ -167,7 +175,8 @@
             "type": "entity"
           }
         ]
-      }
+      },
+      "path": "~/Generic"
     },
     {
       "name": "InitializeWorld",
@@ -186,7 +195,8 @@
             "type": "entity"
           }
         ]
-      }
+      },
+      "path": "~/Generic"
     },
     {
       "name": "NaturalTPGain",
@@ -205,7 +215,8 @@
             "type": "entity"
           }
         ]
-      }
+      },
+      "path": "~/Generic"
     },
     {
       "name": "CharacterSheet",
@@ -218,7 +229,8 @@
         "files": [
           "src/main/java/net/mcreator/stupiddragonblockc/network/CharacterSheetMessage.java"
         ]
-      }
+      },
+      "path": "~/Menu"
     },
     {
       "name": "OpenCharacterSheet",
@@ -253,7 +265,8 @@
             "type": "world"
           }
         ]
-      }
+      },
+      "path": "~/Menu"
     },
     {
       "name": "ChangeRace",
@@ -272,7 +285,8 @@
             "type": "entity"
           }
         ]
-      }
+      },
+      "path": "~/Menu"
     },
     {
       "name": "DoCreateCharacter",
@@ -307,7 +321,8 @@
             "type": "world"
           }
         ]
-      }
+      },
+      "path": "~/Menu"
     },
     {
       "name": "MakeCharacter",
@@ -318,11 +333,12 @@
       "registry_name": "make_character",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/stupiddragonblockc/world/inventory/MakeCharacterMenu.java",
+          "src/main/java/net/mcreator/stupiddragonblockc/client/gui/MakeCharacterScreen.java",
           "src/main/java/net/mcreator/stupiddragonblockc/network/MakeCharacterButtonMessage.java",
-          "src/main/java/net/mcreator/stupiddragonblockc/client/gui/MakeCharacterScreen.java"
+          "src/main/java/net/mcreator/stupiddragonblockc/world/inventory/MakeCharacterMenu.java"
         ]
-      }
+      },
+      "path": "~/Menu"
     },
     {
       "name": "TransformationHandler",
@@ -341,7 +357,8 @@
             "type": "entity"
           }
         ]
-      }
+      },
+      "path": "~/Transformations"
     },
     {
       "name": "DoTransformation",
@@ -360,7 +377,8 @@
             "type": "entity"
           }
         ]
-      }
+      },
+      "path": "~/Transformations"
     },
     {
       "name": "Transform",
@@ -373,7 +391,8 @@
         "files": [
           "src/main/java/net/mcreator/stupiddragonblockc/network/TransformMessage.java"
         ]
-      }
+      },
+      "path": "~/Transformations"
     },
     {
       "name": "Untransform",
@@ -392,7 +411,8 @@
             "type": "entity"
           }
         ]
-      }
+      },
+      "path": "~/Transformations"
     },
     {
       "name": "DeTransform",
@@ -405,7 +425,8 @@
         "files": [
           "src/main/java/net/mcreator/stupiddragonblockc/network/DeTransformMessage.java"
         ]
-      }
+      },
+      "path": "~/Transformations"
     },
     {
       "name": "Skills",
@@ -420,7 +441,8 @@
           "src/main/java/net/mcreator/stupiddragonblockc/network/SkillsButtonMessage.java",
           "src/main/java/net/mcreator/stupiddragonblockc/client/gui/SkillsScreen.java"
         ]
-      }
+      },
+      "path": "~/Menu"
     },
     {
       "name": "ToSkills",
@@ -455,7 +477,8 @@
             "type": "world"
           }
         ]
-      }
+      },
+      "path": "~/Menu"
     },
     {
       "name": "ToStats",
@@ -490,7 +513,8 @@
             "type": "world"
           }
         ]
-      }
+      },
+      "path": "~/Menu"
     },
     {
       "name": "BuySuperForm",
@@ -509,7 +533,8 @@
             "type": "entity"
           }
         ]
-      }
+      },
+      "path": "~/Transformations"
     },
     {
       "name": "LetGoOfTransform",
@@ -528,7 +553,8 @@
             "type": "entity"
           }
         ]
-      }
+      },
+      "path": "~/Transformations"
     },
     {
       "name": "ChangeTT",
@@ -547,7 +573,8 @@
             "type": "entity"
           }
         ]
-      }
+      },
+      "path": "~/Transformations"
     },
     {
       "name": "ChangeTransformationType",
@@ -558,11 +585,12 @@
       "registry_name": "change_transformation_type",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/stupiddragonblockc/client/gui/ChangeTransformationTypeScreen.java",
           "src/main/java/net/mcreator/stupiddragonblockc/world/inventory/ChangeTransformationTypeMenu.java",
+          "src/main/java/net/mcreator/stupiddragonblockc/client/gui/ChangeTransformationTypeScreen.java",
           "src/main/java/net/mcreator/stupiddragonblockc/network/ChangeTransformationTypeButtonMessage.java"
         ]
-      }
+      },
+      "path": "~/Transformations"
     },
     {
       "name": "OpenTTChange",
@@ -597,7 +625,8 @@
             "type": "world"
           }
         ]
-      }
+      },
+      "path": "~/Transformations"
     },
     {
       "name": "TransformationType",
@@ -610,7 +639,8 @@
         "files": [
           "src/main/java/net/mcreator/stupiddragonblockc/network/TransformationTypeMessage.java"
         ]
-      }
+      },
+      "path": "~/Transformations"
     },
     {
       "name": "ShowKaioken",
@@ -630,7 +660,8 @@
             "type": "entity"
           }
         ]
-      }
+      },
+      "path": "~/Techniques"
     },
     {
       "name": "BuyKaioken",
@@ -649,7 +680,8 @@
             "type": "entity"
           }
         ]
-      }
+      },
+      "path": "~/Techniques"
     },
     {
       "name": "ObtainKaioken",
@@ -668,7 +700,8 @@
             "type": "entity"
           }
         ]
-      }
+      },
+      "path": "~/Techniques"
     },
     {
       "name": "DoNotShowKaiokenInVendor",
@@ -688,7 +721,8 @@
             "type": "entity"
           }
         ]
-      }
+      },
+      "path": "~/Techniques"
     },
     {
       "name": "KingKaiMenu",
@@ -700,10 +734,11 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/stupiddragonblockc/network/KingKaiMenuButtonMessage.java",
-          "src/main/java/net/mcreator/stupiddragonblockc/world/inventory/KingKaiMenuMenu.java",
-          "src/main/java/net/mcreator/stupiddragonblockc/client/gui/KingKaiMenuScreen.java"
+          "src/main/java/net/mcreator/stupiddragonblockc/client/gui/KingKaiMenuScreen.java",
+          "src/main/java/net/mcreator/stupiddragonblockc/world/inventory/KingKaiMenuMenu.java"
         ]
-      }
+      },
+      "path": "~/Menu"
     },
     {
       "name": "OtherworldType1",
@@ -716,7 +751,8 @@
         "files": [
           "src/main/java/net/mcreator/stupiddragonblockc/world/biome/OtherworldType1Biome.java"
         ]
-      }
+      },
+      "path": "~/Generic"
     },
     {
       "name": "Otherworld",
@@ -728,11 +764,12 @@
       "metadata": {
         "ep": false,
         "files": [
+          "src/main/java/net/mcreator/stupiddragonblockc/world/dimension/OtherworldDimension.java",
           "src/main/resources/data/stupid_dbc/dimension_type/otherworld.json",
-          "src/main/resources/data/stupid_dbc/dimension/otherworld.json",
-          "src/main/java/net/mcreator/stupiddragonblockc/world/dimension/OtherworldDimension.java"
+          "src/main/resources/data/stupid_dbc/dimension/otherworld.json"
         ]
-      }
+      },
+      "path": "~/Generic"
     },
     {
       "name": "GoToOtherworld",
@@ -751,7 +788,8 @@
             "type": "entity"
           }
         ]
-      }
+      },
+      "path": "~/Generic"
     },
     {
       "name": "OozaruConditions",
@@ -786,7 +824,8 @@
             "type": "world"
           }
         ]
-      }
+      },
+      "path": "~/Transformations"
     },
     {
       "name": "RaceSize",
@@ -805,7 +844,8 @@
             "type": "entity"
           }
         ]
-      }
+      },
+      "path": "~/Generic"
     },
     {
       "name": "TransformationSize",
@@ -824,7 +864,8 @@
             "type": "entity"
           }
         ]
-      }
+      },
+      "path": "~/Transformations"
     },
     {
       "name": "TheRevivinator",
@@ -835,13 +876,14 @@
       "registry_name": "the_revivinator",
       "metadata": {
         "files": [
-          "src/main/resources/assets/stupid_dbc/models/block/the_revivinator.json",
-          "src/main/java/net/mcreator/stupiddragonblockc/block/TheRevivinatorBlock.java",
           "src/main/resources/assets/stupid_dbc/models/item/the_revivinator.json",
           "src/main/resources/assets/stupid_dbc/blockstates/the_revivinator.json",
+          "src/main/java/net/mcreator/stupiddragonblockc/block/TheRevivinatorBlock.java",
+          "src/main/resources/assets/stupid_dbc/models/block/the_revivinator.json",
           "src/main/java/net/mcreator/stupiddragonblockc/block/entity/TheRevivinatorBlockEntity.java"
         ]
-      }
+      },
+      "path": "~/Generic"
     },
     {
       "name": "TRRevive",
@@ -864,7 +906,8 @@
             "type": "world"
           }
         ]
-      }
+      },
+      "path": "~/Menu"
     },
     {
       "name": "TRDo",
@@ -876,10 +919,11 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/stupiddragonblockc/client/gui/TRDoScreen.java",
-          "src/main/java/net/mcreator/stupiddragonblockc/network/TRDoButtonMessage.java",
-          "src/main/java/net/mcreator/stupiddragonblockc/world/inventory/TRDoMenu.java"
+          "src/main/java/net/mcreator/stupiddragonblockc/world/inventory/TRDoMenu.java",
+          "src/main/java/net/mcreator/stupiddragonblockc/network/TRDoButtonMessage.java"
         ]
-      }
+      },
+      "path": "~/Menu"
     },
     {
       "name": "GoDie",
@@ -892,7 +936,8 @@
         "files": [
           "src/main/resources/data/stupid_dbc/advancements/go_die.json"
         ]
-      }
+      },
+      "path": "~/Menu"
     },
     {
       "name": "ReviveStructure",
@@ -915,7 +960,8 @@
             "type": "world"
           }
         ]
-      }
+      },
+      "path": "~/Generic"
     },
     {
       "name": "GoRevive",
@@ -929,7 +975,8 @@
           "src/main/java/net/mcreator/stupiddragonblockc/world/features/GoReviveFeature.java",
           "src/main/resources/data/stupid_dbc/forge/biome_modifier/go_revive_biome_modifier.json"
         ]
-      }
+      },
+      "path": "~/Generic"
     },
     {
       "name": "TPPerPunch",
@@ -948,7 +995,8 @@
             "type": "entity"
           }
         ]
-      }
+      },
+      "path": "~/Generic"
     },
     {
       "name": "DoChangeMind",
@@ -967,7 +1015,8 @@
             "type": "entity"
           }
         ]
-      }
+      },
+      "path": "~/Generic"
     },
     {
       "name": "TestVarDO",
@@ -986,7 +1035,8 @@
             "type": "entity"
           }
         ]
-      }
+      },
+      "path": "~/Generic"
     },
     {
       "name": "DoChangeRacialTp",
@@ -1005,7 +1055,8 @@
             "type": "entity"
           }
         ]
-      }
+      },
+      "path": "~/Generic"
     },
     {
       "name": "GainGodKi",
@@ -1040,7 +1091,8 @@
             "type": "world"
           }
         ]
-      }
+      },
+      "path": "~/Generic"
     },
     {
       "name": "GainDemonicKi",
@@ -1075,7 +1127,8 @@
             "type": "world"
           }
         ]
-      }
+      },
+      "path": "~/Generic"
     },
     {
       "name": "TrainTransformation",
@@ -1094,7 +1147,8 @@
             "type": "entity"
           }
         ]
-      }
+      },
+      "path": "~/Transformations"
     },
     {
       "name": "AlignmentChange",
@@ -1133,7 +1187,8 @@
             "type": "world"
           }
         ]
-      }
+      },
+      "path": "~/Generic"
     },
     {
       "name": "AlignmentChange2",
@@ -1156,7 +1211,8 @@
             "type": "world"
           }
         ]
-      }
+      },
+      "path": "~/Generic"
     },
     {
       "name": "KillWither",
@@ -1169,7 +1225,8 @@
         "files": [
           "src/main/resources/data/stupid_dbc/advancements/kill_wither.json"
         ]
-      }
+      },
+      "path": "~/Menu"
     },
     {
       "name": "GetKillWither",
@@ -1204,7 +1261,8 @@
             "type": "world"
           }
         ]
-      }
+      },
+      "path": "~/Menu"
     },
     {
       "name": "OtherworldType2",
@@ -1215,11 +1273,12 @@
       "registry_name": "otherworld_type_2",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/stupiddragonblockc/world/biome/OtherworldType2Biome.java",
           "src/main/java/net/mcreator/stupiddragonblockc/world/features/treedecorators/OtherworldType2LeaveDecorator.java",
+          "src/main/java/net/mcreator/stupiddragonblockc/world/biome/OtherworldType2Biome.java",
           "src/main/java/net/mcreator/stupiddragonblockc/world/features/treedecorators/OtherworldType2TrunkDecorator.java"
         ]
-      }
+      },
+      "path": "~/Generic"
     },
     {
       "name": "TrainingMenu",
@@ -1230,11 +1289,12 @@
       "registry_name": "training_menu",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/stupiddragonblockc/client/gui/TrainingMenuScreen.java",
           "src/main/java/net/mcreator/stupiddragonblockc/network/TrainingMenuButtonMessage.java",
+          "src/main/java/net/mcreator/stupiddragonblockc/client/gui/TrainingMenuScreen.java",
           "src/main/java/net/mcreator/stupiddragonblockc/world/inventory/TrainingMenuMenu.java"
         ]
-      }
+      },
+      "path": "~/Menu"
     },
     {
       "name": "SSG1TrainingShow",
@@ -1254,7 +1314,8 @@
             "type": "entity"
           }
         ]
-      }
+      },
+      "path": "~/Transformations"
     },
     {
       "name": "SSG2TrainingShow",
@@ -1274,7 +1335,8 @@
             "type": "entity"
           }
         ]
-      }
+      },
+      "path": "~/Transformations"
     },
     {
       "name": "SSG3",
@@ -1294,7 +1356,8 @@
             "type": "entity"
           }
         ]
-      }
+      },
+      "path": "~/Transformations"
     },
     {
       "name": "FPSSTrainingShow",
@@ -1314,7 +1377,8 @@
             "type": "entity"
           }
         ]
-      }
+      },
+      "path": "~/Transformations"
     },
     {
       "name": "SS2TrainingShow",
@@ -1334,7 +1398,8 @@
             "type": "entity"
           }
         ]
-      }
+      },
+      "path": "~/Transformations"
     },
     {
       "name": "SS3TrainingShow",
@@ -1354,7 +1419,8 @@
             "type": "entity"
           }
         ]
-      }
+      },
+      "path": "~/Transformations"
     },
     {
       "name": "SSGodShow",
@@ -1374,7 +1440,8 @@
             "type": "entity"
           }
         ]
-      }
+      },
+      "path": "~/Transformations"
     },
     {
       "name": "SSBlueTrainingShow",
@@ -1394,7 +1461,8 @@
             "type": "entity"
           }
         ]
-      }
+      },
+      "path": "~/Transformations"
     },
     {
       "name": "ShowGodKi",
@@ -1414,7 +1482,8 @@
             "type": "entity"
           }
         ]
-      }
+      },
+      "path": "~/Generic"
     },
     {
       "name": "ShowDemonicKi",
@@ -1434,7 +1503,8 @@
             "type": "entity"
           }
         ]
-      }
+      },
+      "path": "~/Generic"
     },
     {
       "name": "TheConfig",
@@ -1447,7 +1517,8 @@
         "files": [
           "src/main/java/net/mcreator/stupiddragonblockc/configuration/TheConfigConfiguration.java"
         ]
-      }
+      },
+      "path": "~/Menu"
     },
     {
       "name": "ReadTheConfig",
@@ -1461,7 +1532,8 @@
           "src/main/java/net/mcreator/stupiddragonblockc/procedures/ReadTheConfigProcedure.java"
         ],
         "dependencies": []
-      }
+      },
+      "path": "~/Generic"
     },
     {
       "name": "AddTP",
@@ -1484,7 +1556,8 @@
             "type": "entity"
           }
         ]
-      }
+      },
+      "path": "~/Generic"
     },
     {
       "name": "SetTraining",
@@ -1507,33 +1580,8 @@
             "type": "entity"
           }
         ]
-      }
-    },
-    {
-      "name": "SetSSG2",
-      "type": "command",
-      "sortid": 88,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "set_ssg_2",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/stupiddragonblockc/command/SetSSG2Command.java"
-        ]
-      }
-    },
-    {
-      "name": "Sdbctrainingadd",
-      "type": "command",
-      "sortid": 89,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "sdbctrainingadd",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/stupiddragonblockc/command/SdbctrainingaddCommand.java"
-        ]
-      }
+      },
+      "path": "~/Generic"
     },
     {
       "name": "TransformationKiDrain",
@@ -1552,7 +1600,8 @@
             "type": "entity"
           }
         ]
-      }
+      },
+      "path": "~/Transformations"
     },
     {
       "name": "StatStuff",
@@ -1565,7 +1614,8 @@
         "files": [
           "src/main/java/net/mcreator/stupiddragonblockc/client/screens/StatStuffOverlay.java"
         ]
-      }
+      },
+      "path": "~/Menu"
     },
     {
       "name": "StatStuffShow",
@@ -1585,7 +1635,8 @@
             "type": "entity"
           }
         ]
-      }
+      },
+      "path": "~/Menu"
     },
     {
       "name": "ChangeAmountToBuy",
@@ -1604,7 +1655,8 @@
             "type": "entity"
           }
         ]
-      }
+      },
+      "path": "~/Menu"
     },
     {
       "name": "KaiokenHealthDrain",
@@ -1623,7 +1675,8 @@
             "type": "entity"
           }
         ]
-      }
+      },
+      "path": "~/Techniques"
     },
     {
       "name": "BuffedTrainingShow",
@@ -1643,7 +1696,8 @@
             "type": "entity"
           }
         ]
-      }
+      },
+      "path": "~/Transformations"
     },
     {
       "name": "HealthEatingRegen",
@@ -1666,7 +1720,8 @@
             "type": "itemstack"
           }
         ]
-      }
+      },
+      "path": "~/Generic"
     },
     {
       "name": "DoIncreaseStrength",
@@ -1686,7 +1741,8 @@
             "type": "entity"
           }
         ]
-      }
+      },
+      "path": "~/Menu"
     },
     {
       "name": "DoIncreaseDefense",
@@ -1706,7 +1762,8 @@
             "type": "entity"
           }
         ]
-      }
+      },
+      "path": "~/Menu"
     },
     {
       "name": "DoIncreaseCon",
@@ -1726,7 +1783,8 @@
             "type": "entity"
           }
         ]
-      }
+      },
+      "path": "~/Menu"
     },
     {
       "name": "DoIncreaseWil",
@@ -1746,7 +1804,8 @@
             "type": "entity"
           }
         ]
-      }
+      },
+      "path": "~/Menu"
     },
     {
       "name": "DoIncreaseMind",
@@ -1766,7 +1825,8 @@
             "type": "entity"
           }
         ]
-      }
+      },
+      "path": "~/Menu"
     },
     {
       "name": "DoIncreaseSpirit",
@@ -1786,7 +1846,8 @@
             "type": "entity"
           }
         ]
-      }
+      },
+      "path": "~/Menu"
     },
     {
       "name": "IncreaseDefense",
@@ -1805,7 +1866,8 @@
             "type": "entity"
           }
         ]
-      }
+      },
+      "path": "~/Menu"
     },
     {
       "name": "IncreaseCon",
@@ -1824,7 +1886,8 @@
             "type": "entity"
           }
         ]
-      }
+      },
+      "path": "~/Menu"
     },
     {
       "name": "IncreaseWil",
@@ -1843,7 +1906,8 @@
             "type": "entity"
           }
         ]
-      }
+      },
+      "path": "~/Menu"
     },
     {
       "name": "IncreaseMind",
@@ -1862,7 +1926,8 @@
             "type": "entity"
           }
         ]
-      }
+      },
+      "path": "~/Menu"
     },
     {
       "name": "IncreaseSpirit",
@@ -1881,7 +1946,8 @@
             "type": "entity"
           }
         ]
-      }
+      },
+      "path": "~/Menu"
     },
     {
       "name": "InitializePrices",
@@ -1900,7 +1966,8 @@
             "type": "entity"
           }
         ]
-      }
+      },
+      "path": "~/Generic"
     },
     {
       "name": "FixStats",
@@ -1919,13 +1986,14 @@
             "type": "entity"
           }
         ]
-      }
+      },
+      "path": "~/Generic"
     },
     {
       "name": "AttackStuff",
       "type": "procedure",
       "sortid": 111,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "attack_stuff",
       "metadata": {
@@ -2498,12 +2566,12 @@
       "registry_name": "katchin_ore",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/stupiddragonblockc/world/features/ores/KatchinOreFeature.java",
-          "src/main/resources/assets/stupid_dbc/models/item/katchin_ore.json",
-          "src/main/resources/assets/stupid_dbc/blockstates/katchin_ore.json",
           "src/main/resources/data/stupid_dbc/forge/biome_modifier/katchin_ore_biome_modifier.json",
+          "src/main/resources/assets/stupid_dbc/blockstates/katchin_ore.json",
+          "src/main/java/net/mcreator/stupiddragonblockc/block/KatchinOreBlock.java",
           "src/main/resources/assets/stupid_dbc/models/block/katchin_ore.json",
-          "src/main/java/net/mcreator/stupiddragonblockc/block/KatchinOreBlock.java"
+          "src/main/resources/assets/stupid_dbc/models/item/katchin_ore.json",
+          "src/main/java/net/mcreator/stupiddragonblockc/world/features/ores/KatchinOreFeature.java"
         ]
       }
     },
@@ -2516,8 +2584,8 @@
       "registry_name": "raw_katchin",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/stupiddragonblockc/item/RawKatchinItem.java",
-          "src/main/resources/assets/stupid_dbc/models/item/raw_katchin.json"
+          "src/main/resources/assets/stupid_dbc/models/item/raw_katchin.json",
+          "src/main/java/net/mcreator/stupiddragonblockc/item/RawKatchinItem.java"
         ]
       }
     },
@@ -2576,20 +2644,6 @@
       }
     },
     {
-      "name": "TurtleShellWeight",
-      "type": "item",
-      "sortid": 145,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "turtle_shell_weight",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/stupid_dbc/models/item/turtle_shell_weight.json",
-          "src/main/java/net/mcreator/stupiddragonblockc/item/TurtleShellWeightItem.java"
-        ]
-      }
-    },
-    {
       "name": "StupidDBC",
       "type": "tab",
       "sortid": 146,
@@ -2609,27 +2663,8 @@
       "registry_name": "icon",
       "metadata": {
         "files": [
-          "src/main/resources/assets/stupid_dbc/models/item/icon.json",
-          "src/main/java/net/mcreator/stupiddragonblockc/item/IconItem.java"
-        ]
-      }
-    },
-    {
-      "name": "SetWeight",
-      "type": "procedure",
-      "sortid": 149,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "set_weight",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/stupiddragonblockc/procedures/SetWeightProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
+          "src/main/java/net/mcreator/stupiddragonblockc/item/IconItem.java",
+          "src/main/resources/assets/stupid_dbc/models/item/icon.json"
         ]
       }
     },
@@ -2641,9 +2676,6 @@
       "locked_code": false,
       "registry_name": "weight_show_on_weight",
       "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/stupiddragonblockc/procedures/WeightShowOnWeightProcedure.java"
-        ],
         "dependencies": [
           {
             "name": "itemstack",
@@ -2653,20 +2685,6 @@
             "name": "tooltip",
             "type": "tooltip"
           }
-        ]
-      }
-    },
-    {
-      "name": "TShirtWeight",
-      "type": "item",
-      "sortid": 152,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "t_shirt_weight",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/stupiddragonblockc/item/TShirtWeightItem.java",
-          "src/main/resources/assets/stupid_dbc/models/item/t_shirt_weight.json"
         ]
       }
     },
@@ -2835,11 +2853,11 @@
       "registry_name": "gravity_simulator",
       "metadata": {
         "files": [
-          "src/main/resources/assets/stupid_dbc/blockstates/gravity_simulator.json",
+          "src/main/java/net/mcreator/stupiddragonblockc/block/entity/GravitySimulatorBlockEntity.java",
+          "src/main/java/net/mcreator/stupiddragonblockc/block/GravitySimulatorBlock.java",
           "src/main/resources/assets/stupid_dbc/models/block/gravity_simulator.json",
           "src/main/resources/assets/stupid_dbc/models/item/gravity_simulator.json",
-          "src/main/java/net/mcreator/stupiddragonblockc/block/GravitySimulatorBlock.java",
-          "src/main/java/net/mcreator/stupiddragonblockc/block/entity/GravitySimulatorBlockEntity.java"
+          "src/main/resources/assets/stupid_dbc/blockstates/gravity_simulator.json"
         ]
       }
     },
@@ -3018,52 +3036,6 @@
       }
     },
     {
-      "name": "CuriosStuff",
-      "type": "procedure",
-      "sortid": 171,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "curios_stuff",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/stupiddragonblockc/procedures/CuriosStuffProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "itemstack",
-            "type": "itemstack"
-          }
-        ]
-      }
-    },
-    {
-      "name": "MoreCuriosStuff",
-      "type": "procedure",
-      "sortid": 172,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "more_curios_stuff",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/stupiddragonblockc/procedures/MoreCuriosStuffProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "itemstack",
-            "type": "itemstack"
-          }
-        ]
-      }
-    },
-    {
       "name": "PicolloCommunicator",
       "type": "gui",
       "sortid": 174,
@@ -3073,8 +3045,8 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/stupiddragonblockc/world/inventory/PicolloCommunicatorMenu.java",
-          "src/main/java/net/mcreator/stupiddragonblockc/network/PicolloCommunicatorButtonMessage.java",
-          "src/main/java/net/mcreator/stupiddragonblockc/client/gui/PicolloCommunicatorScreen.java"
+          "src/main/java/net/mcreator/stupiddragonblockc/client/gui/PicolloCommunicatorScreen.java",
+          "src/main/java/net/mcreator/stupiddragonblockc/network/PicolloCommunicatorButtonMessage.java"
         ]
       }
     },
@@ -3171,9 +3143,9 @@
       "registry_name": "communicator_hub",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/stupiddragonblockc/network/CommunicatorHubButtonMessage.java",
+          "src/main/java/net/mcreator/stupiddragonblockc/world/inventory/CommunicatorHubMenu.java",
           "src/main/java/net/mcreator/stupiddragonblockc/client/gui/CommunicatorHubScreen.java",
-          "src/main/java/net/mcreator/stupiddragonblockc/world/inventory/CommunicatorHubMenu.java"
+          "src/main/java/net/mcreator/stupiddragonblockc/network/CommunicatorHubButtonMessage.java"
         ]
       }
     },
@@ -3186,10 +3158,10 @@
       "registry_name": "universal_communicator",
       "metadata": {
         "files": [
-          "src/main/resources/assets/stupid_dbc/models/item/universal_communicator.json",
           "src/main/resources/assets/stupid_dbc/blockstates/universal_communicator.json",
-          "src/main/resources/assets/stupid_dbc/models/block/universal_communicator.json",
+          "src/main/resources/assets/stupid_dbc/models/item/universal_communicator.json",
           "src/main/java/net/mcreator/stupiddragonblockc/block/entity/UniversalCommunicatorBlockEntity.java",
+          "src/main/resources/assets/stupid_dbc/models/block/universal_communicator.json",
           "src/main/java/net/mcreator/stupiddragonblockc/block/UniversalCommunicatorBlock.java"
         ]
       }
@@ -3203,8 +3175,8 @@
       "registry_name": "keyboard",
       "metadata": {
         "files": [
-          "src/main/resources/assets/stupid_dbc/models/item/keyboard.json",
-          "src/main/java/net/mcreator/stupiddragonblockc/item/KeyboardItem.java"
+          "src/main/java/net/mcreator/stupiddragonblockc/item/KeyboardItem.java",
+          "src/main/resources/assets/stupid_dbc/models/item/keyboard.json"
         ]
       }
     },
@@ -3515,9 +3487,9 @@
       "registry_name": "change_tt_page_2",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/stupiddragonblockc/network/ChangeTTPage2ButtonMessage.java",
           "src/main/java/net/mcreator/stupiddragonblockc/world/inventory/ChangeTTPage2Menu.java",
-          "src/main/java/net/mcreator/stupiddragonblockc/client/gui/ChangeTTPage2Screen.java"
+          "src/main/java/net/mcreator/stupiddragonblockc/client/gui/ChangeTTPage2Screen.java",
+          "src/main/java/net/mcreator/stupiddragonblockc/network/ChangeTTPage2ButtonMessage.java"
         ]
       }
     },
@@ -5566,8 +5538,8 @@
       "registry_name": "transformation_training_page_2",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/stupiddragonblockc/network/TransformationTrainingPage2ButtonMessage.java",
           "src/main/java/net/mcreator/stupiddragonblockc/world/inventory/TransformationTrainingPage2Menu.java",
+          "src/main/java/net/mcreator/stupiddragonblockc/network/TransformationTrainingPage2ButtonMessage.java",
           "src/main/java/net/mcreator/stupiddragonblockc/client/gui/TransformationTrainingPage2Screen.java"
         ]
       }
@@ -6071,8 +6043,8 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/stupiddragonblockc/world/inventory/CharacterInfoScreenMenu.java",
-          "src/main/java/net/mcreator/stupiddragonblockc/network/CharacterInfoScreenButtonMessage.java",
-          "src/main/java/net/mcreator/stupiddragonblockc/client/gui/CharacterInfoScreenScreen.java"
+          "src/main/java/net/mcreator/stupiddragonblockc/client/gui/CharacterInfoScreenScreen.java",
+          "src/main/java/net/mcreator/stupiddragonblockc/network/CharacterInfoScreenButtonMessage.java"
         ]
       }
     },
@@ -6375,8 +6347,8 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/stupiddragonblockc/client/gui/TechniqueTrainingMenuScreen.java",
-          "src/main/java/net/mcreator/stupiddragonblockc/network/TechniqueTrainingMenuButtonMessage.java",
-          "src/main/java/net/mcreator/stupiddragonblockc/world/inventory/TechniqueTrainingMenuMenu.java"
+          "src/main/java/net/mcreator/stupiddragonblockc/world/inventory/TechniqueTrainingMenuMenu.java",
+          "src/main/java/net/mcreator/stupiddragonblockc/network/TechniqueTrainingMenuButtonMessage.java"
         ]
       }
     },
@@ -7518,7 +7490,7 @@
       "type": "procedure",
       "sortid": 391,
       "compiles": true,
-      "locked_code": true,
+      "locked_code": false,
       "registry_name": "damage_vegeta",
       "metadata": {
         "files": [
@@ -7533,6 +7505,275 @@
             "name": "sourceentity",
             "type": "entity"
           }
+        ]
+      }
+    },
+    {
+      "name": "AddTechniqueXP",
+      "type": "procedure",
+      "sortid": 392,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "add_technique_xp",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/stupiddragonblockc/procedures/AddTechniqueXPProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Generic"
+    },
+    {
+      "name": "SetTechniqueXP",
+      "type": "procedure",
+      "sortid": 393,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "set_technique_xp",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/stupiddragonblockc/procedures/SetTechniqueXPProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          }
+        ]
+      },
+      "path": "~/Generic"
+    },
+    {
+      "name": "TheRevivinatorBlockItem",
+      "type": "blockitemextend",
+      "sortid": 395,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "the_revivinator_block_item",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/stupiddragonblockc/local_templates/TheRevivinatorBlockItemBI.java"
+        ]
+      }
+    },
+    {
+      "name": "KatchinOreBlockItem",
+      "type": "blockitemextend",
+      "sortid": 394,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "katchin_ore_block_item",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/stupiddragonblockc/local_templates/KatchinOreBlockItemBI.java"
+        ]
+      }
+    },
+    {
+      "name": "GravitySimulatorBlockItem",
+      "type": "blockitemextend",
+      "sortid": 396,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gravity_simulator_block_item",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/stupiddragonblockc/local_templates/GravitySimulatorBlockItemBI.java"
+        ]
+      }
+    },
+    {
+      "name": "UniversalCommunicatorBlockItem",
+      "type": "blockitemextend",
+      "sortid": 397,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "universal_communicator_block_item",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/stupiddragonblockc/local_templates/UniversalCommunicatorBlockItemBI.java"
+        ]
+      }
+    },
+    {
+      "name": "CommandHealHealth",
+      "type": "procedure",
+      "sortid": 398,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "command_heal_health",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/stupiddragonblockc/procedures/CommandHealHealthProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Generic"
+    },
+    {
+      "name": "CommandHealKi",
+      "type": "procedure",
+      "sortid": 399,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "command_heal_ki",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/stupiddragonblockc/procedures/CommandHealKiProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Generic"
+    },
+    {
+      "name": "CommandHealAll",
+      "type": "procedure",
+      "sortid": 400,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "command_heal_all",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/stupiddragonblockc/procedures/CommandHealAllProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Generic"
+    },
+    {
+      "name": "SetAlignmentCommand",
+      "type": "procedure",
+      "sortid": 401,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "set_alignment_command",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/stupiddragonblockc/procedures/SetAlignmentCommandProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Generic"
+    },
+    {
+      "name": "AddAlignmentCommand",
+      "type": "procedure",
+      "sortid": 402,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "add_alignment_command",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/stupiddragonblockc/procedures/AddAlignmentCommandProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Generic"
+    },
+    {
+      "name": "TakeAlignmentCommand",
+      "type": "procedure",
+      "sortid": 403,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "take_alignment_command",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/stupiddragonblockc/procedures/TakeAlignmentCommandProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Generic"
+    },
+    {
+      "name": "DragonBlock",
+      "type": "block",
+      "sortid": 404,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dragon_block",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/stupiddragonblockc/block/DragonBlockBlock.java",
+          "src/main/resources/assets/stupid_dbc/models/block/dragon_block.json",
+          "src/main/resources/assets/stupid_dbc/models/item/dragon_block.json",
+          "src/main/resources/assets/stupid_dbc/blockstates/dragon_block.json"
+        ]
+      }
+    },
+    {
+      "name": "DragonBlockBlockItem",
+      "type": "blockitemextend",
+      "sortid": 405,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dragon_block_block_item",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/stupiddragonblockc/local_templates/DragonBlockBlockItemBI.java"
         ]
       }
     }
@@ -9051,6 +9292,7 @@
       "gui.stupid_dbc.transformation_training_page_2.label_ssblue2training": "SSBlue2Training",
       "item.stupid_dbc.mini_screen": "Mini Screen",
       "block.stupid_dragon_block_c.the_revivinator": "The Revivinator",
+      "block.stupid_dbc.dragon_block": "Earth Dragon Block",
       "item.stupid_dragon_block_c.turtle_shell_weight": "Turtle Shell Weight",
       "gui.stupid_dbc.tr_do.label_the_revivinator": "The Revivinator",
       "gui.stupid_dbc.stat_menu.label_wil_varwillpower": "WIL: \u003cVAR:Willpower\u003e",
@@ -9163,10 +9405,8 @@
       "advancements.go_die.descr": "Die",
       "gui.stupid_dbc.communicator_hub.button_king_kai": "King Kai",
       "gui.stupid_dbc.change_transformation_type.label_ss_grade_2_varisusingssgrade2": "SS Grade 2: \u003cVAR:IsUsingSSGrade2\u003e",
-      "item.stupid_dbc.otherworld": "Otherworld Portal Igniter",
       "gui.stupid_dbc.change_transformation_type.button_page_two": "Page Two",
       "effect.stupid_dragon_block_c.charging_up": "ChargingUp",
-      "item.stupid_dbc.turtle_shell_weight": "Turtle Shell Weight",
       "gui.stupid_dbc.stat_menu.button_empty": "+",
       "item.stupid_dbc.vegeta_ss_1_spawn_egg": "Vegeta Saiyan Saga 1 Spawn Egg",
       "block.stupid_dragon_block_c.katchin_ore": "Katchin Ore",
@@ -9184,7 +9424,6 @@
       "key.stupid_dbc.character_sheet": "Character Sheet",
       "gui.stupid_dbc.change_transformation_type.button_empty": "+",
       "key.stupid_dragon_block_c.de_transform": "Deactivate Transformation",
-      "item.stupid_dbc.king_kai_spawn_egg": "King Kai Spawn Egg",
       "gui.stupid_dbc.character_info_screen.label_what_is_your_saiyan_name": "What is your Saiyan Name?",
       "key.stupid_dbc.flight": "Flight",
       "gui.stupid_dbc.stat_menu.button_empty4": "+",
@@ -9195,12 +9434,12 @@
       "gui.stupid_dbc.communicator_hub.button_picollo": "Picollo",
       "gui.stupid_dbc.stat_menu.button_empty3": "+",
       "gui.stupid_dbc.stat_menu.button_empty6": "+",
-      "item.stupid_dbc.whis_master_spawn_egg": "Whis Spawn Egg",
       "gui.stupid_dbc.transformation_training_page_2.label_ssblue3training": "SSBlue3Training",
       "advancements.kill_wither.title": "The End of the Beginning",
       "key.stupid_dbc.charge_up_true": "Charge Up",
       "item.stupid_dragon_block_c.universal_satellite": "Universal Satellite",
       "death.attack.nohealth": "%1$s could not withstand the might of someone...",
+      "death.attack.nohealth.player": "%1$s could not withstand the might of %2$s...",
       "gui.stupid_dbc.training_menu.label_ss2_varss2trained": "SS2: \u003cVAR:SS2Trained\u003e",
       "gui.stupid_dbc.goku_communicator.label_vargokuspeaking": "\u003cVAR:GokuSpeaking\u003e",
       "item.stupid_dbc.universal_satellite": "Universal Satellite",
@@ -9215,7 +9454,6 @@
       "gui.stupid_dbc.training_menu.button_transformation_training_page_2": "Transformation Training Page 2",
       "gui.stupid_dbc.change_transformation_type.button_empty4": "+",
       "gui.stupid_dbc.training_menu.label_god_ki_absorbed_varintegergo": "God Ki Absorbed: \u003cVAR:integer:GodKiAbsorbed\u003e",
-      "item.stupid_dbc.t_shirt_weight": "T Shirt Weight",
       "effect.stupid_dbc.charging_up": "ChargingUp",
       "gui.stupid_dbc.change_transformation_type.button_empty3": "+",
       "gui.stupid_dbc.change_transformation_type.button_empty2": "+",
@@ -9239,7 +9477,24 @@
   },
   "foldersRoot": {
     "name": "~",
-    "children": []
+    "children": [
+      {
+        "name": "Menu",
+        "children": []
+      },
+      {
+        "name": "Transformations",
+        "children": []
+      },
+      {
+        "name": "Techniques",
+        "children": []
+      },
+      {
+        "name": "Generic",
+        "children": []
+      }
+    ]
   },
   "workspaceSettings": {
     "modid": "stupid_dbc",
@@ -9264,7 +9519,6 @@
     "mcreatorDependencies": [
       "kleidersplayerrenderer",
       "pehkui",
-      "curios_api",
       "playeranimator"
     ],
     "currentGenerator": "forge-1.19.2",
@@ -9272,5 +9526,5 @@
     "modElementsPackage": "net.mcreator.stupiddragonblockc",
     "lockBaseModFiles": false
   },
-  "mcreatorVersion": 202300110610
+  "mcreatorVersion": 202300224119
 }

@@ -60,6 +60,7 @@ public class VegetaSS1Entity extends Monster {
 
 	public VegetaSS1Entity(EntityType<VegetaSS1Entity> type, Level world) {
 		super(type, world);
+		maxUpStep = 0.6f;
 		xpReward = 100;
 		setNoAi(false);
 		setCustomName(Component.literal("Vegeta, Prince Of All Saiyans"));

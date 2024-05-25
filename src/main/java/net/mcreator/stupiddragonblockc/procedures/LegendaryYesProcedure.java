@@ -22,7 +22,7 @@ public class LegendaryYesProcedure {
 					return null;
 				}
 			}
-		}.getEntity()) instanceof LivingEntity _entity)
-			_entity.addEffect(new MobEffectInstance(StupidDbcModMobEffects.LEGENDARY.get(), 20, 0, (true), (false)));
+		}.getEntity()) instanceof LivingEntity _entity && !_entity.level.isClientSide())
+			_entity.addEffect(new MobEffectInstance(StupidDbcModMobEffects.LEGENDARY.get(), 20, 0, true, false));
 	}
 }

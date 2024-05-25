@@ -1,0 +1,9 @@
+{
+  "parent": "stupid_dbc:custom/dragon_ball",
+  "textures": {
+    "all": "stupid_dbc:blocks/dragon_ball",
+    "particle": "stupid_dbc:blocks/dragon_ball",
+    "2": "stupid_dbc:blocks/dragon_ball"
+  },
+  "render_type": "translucent"
+}

@@ -1,0 +1,6 @@
+JVM:         C:\Program Files\Pylo\MCreator\jdk\bin\java.exe
+JVM Args:    
+Run Args:    "--client", "C:\Users\FiveNights2161\Desktop\Whatever Development Hell I decide to be in\FullBackup202300110610\build\fg_cache\mcp\1.19.2-20220805.130853\joined\6a7548297294898bcbebcf6c17bab4edf69ace9b\stripClient\output.jar", "--server", "C:\Users\FiveNights2161\Desktop\Whatever Development Hell I decide to be in\FullBackup202300110610\build\fg_cache\mcp\1.19.2-20220805.130853\joined\6a7548297294898bcbebcf6c17bab4edf69ace9b\stripServer\output.jar", "--ann", "1.19.2", "--output", "C:\Users\FiveNights2161\Desktop\Whatever Development Hell I decide to be in\FullBackup202300110610\build\fg_cache\mcp\1.19.2-20220805.130853\joined\6a7548297294898bcbebcf6c17bab4edf69ace9b\merge\output.jar", "--inject", "false"
+Classpath:   C:\Users\FiveNights2161\.mcreator\gradle\caches\forge_gradle\maven_downloader\net\minecraftforge\mergetool\1.1.5\mergetool-1.1.5-fatjar.jar
+Working Dir: C:\Users\FiveNights2161\Desktop\Whatever Development Hell I decide to be in\FullBackup202300110610\build\fg_cache\mcp\1.19.2-20220805.130853\joined\6a7548297294898bcbebcf6c17bab4edf69ace9b\merge
+Main Class:  net.minecraftforge.mergetool.ConsoleMerger

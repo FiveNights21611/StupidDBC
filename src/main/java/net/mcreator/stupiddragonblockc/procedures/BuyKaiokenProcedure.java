@@ -263,7 +263,7 @@ public class BuyKaiokenProcedure {
 			}
 		} else if ((entity.getCapability(StupidDbcModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new StupidDbcModVariables.PlayerVariables())).KaiokenLvl == 9) {
 			if (entity instanceof Player _player && !_player.level.isClientSide())
-				_player.displayClientMessage(Component.literal("Kaioken Maxed"), (false));
+				_player.displayClientMessage(Component.literal("Kaioken Maxed"), false);
 		}
 	}
 }

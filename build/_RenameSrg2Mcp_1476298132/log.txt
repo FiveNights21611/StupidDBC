@@ -1,0 +1,15 @@
+Java Launcher: C:\Program Files\Pylo\MCreator\jdk\bin\java.exe
+Arguments: '--task, SRG_TO_MCP, --input, C:\Users\FiveNights2161\.mcreator\gradle\caches\modules-2\files-2.1\curse.maven\kleidersplayerrenderer-682065\5083496\cd1cec9293dc26402ca7fa8f0bfcf43ac83962af\kleidersplayerrenderer-682065-5083496.jar, --output, C:\Users\FiveNights2161\.mcreator\gradle\caches\forge_gradle\deobf_dependencies\curse\maven\kleidersplayerrenderer-682065\5083496_mapped_official_1.19.2\kleidersplayerrenderer-682065-5083496_mapped_official_1.19.2.jar, --mcp, C:\Users\FiveNights2161\.mcreator\gradle\caches\forge_gradle\mcp_repo\net\minecraft\mapping\1.19.2\mapping-1.19.2-mapping.zip, --strip-signatures'
+Classpath:
+ - C:\Users\FiveNights2161\.mcreator\gradle\caches\forge_gradle\maven_downloader\net\minecraftforge\installertools\1.3.2\installertools-1.3.2-fatjar.jar
+Working directory: C:\Users\FiveNights2161\Desktop\Whatever Development Hell I decide to be in\FullBackup202300110610\build\_RenameSrg2Mcp_1476298132
+Main class: net.minecraftforge.installertools.ConsoleTool
+====================================
+Task: SRG_TO_MCP
+Input:  C:\Users\FiveNights2161\.mcreator\gradle\caches\modules-2\files-2.1\curse.maven\kleidersplayerrenderer-682065\5083496\cd1cec9293dc26402ca7fa8f0bfcf43ac83962af\kleidersplayerrenderer-682065-5083496.jar
+Output: C:\Users\FiveNights2161\.mcreator\gradle\caches\forge_gradle\deobf_dependencies\curse\maven\kleidersplayerrenderer-682065\5083496_mapped_official_1.19.2\kleidersplayerrenderer-682065-5083496_mapped_official_1.19.2.jar
+MCP:    C:\Users\FiveNights2161\.mcreator\gradle\caches\forge_gradle\mcp_repo\net\minecraft\mapping\1.19.2\mapping-1.19.2-mapping.zip
+Loading MCP Data
+Processing ZIP file
+Stripped Manifest of sha digests
+Process complete

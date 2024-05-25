@@ -65,6 +65,7 @@ public class KingKaiEntity extends PathfinderMob {
 
 	public KingKaiEntity(EntityType<KingKaiEntity> type, Level world) {
 		super(type, world);
+		maxUpStep = 0.6f;
 		xpReward = 0;
 		setNoAi(false);
 		setPersistenceRequired();
@@ -128,6 +129,11 @@ public class KingKaiEntity extends PathfinderMob {
 	@Override
 	public boolean removeWhenFarAway(double distanceToClosestPlayer) {
 		return false;
+	}
+
+	@Override
+	public double getMyRidingOffset() {
+		return -0.35D;
 	}
 
 	@Override

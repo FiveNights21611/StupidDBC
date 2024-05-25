@@ -33,12 +33,12 @@ public class ChargingUpTRUEProcedure {
 		if ((entity.getCapability(StupidDbcModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new StupidDbcModVariables.PlayerVariables())).holdingKeybind == true
 				&& (entity.getCapability(StupidDbcModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new StupidDbcModVariables.PlayerVariables())).holdingKeybind2 == false) {
 			if ((entity instanceof LivingEntity _livEnt && _livEnt.hasEffect(StupidDbcModMobEffects.CHARGING_UP.get()) ? _livEnt.getEffect(StupidDbcModMobEffects.CHARGING_UP.get()).getAmplifier() : 0) <= 0) {
-				if (entity instanceof LivingEntity _entity)
+				if (entity instanceof LivingEntity _entity && !_entity.level.isClientSide())
 					_entity.addEffect(new MobEffectInstance(StupidDbcModMobEffects.CHARGING_UP.get(), 20, 0));
 			}
 		} else if ((entity.getCapability(StupidDbcModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new StupidDbcModVariables.PlayerVariables())).holdingKeybind == true
 				&& (entity.getCapability(StupidDbcModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new StupidDbcModVariables.PlayerVariables())).holdingKeybind2 == true) {
-			if (entity instanceof LivingEntity _entity)
+			if (entity instanceof LivingEntity _entity && !_entity.level.isClientSide())
 				_entity.addEffect(new MobEffectInstance(StupidDbcModMobEffects.CHARGING_DOWN.get(), 20, 0));
 		} else if ((entity.getCapability(StupidDbcModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new StupidDbcModVariables.PlayerVariables())).holdingKeybind == false) {
 			if (entity instanceof LivingEntity _entity)

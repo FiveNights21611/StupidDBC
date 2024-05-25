@@ -14,6 +14,7 @@ import net.mcreator.stupiddragonblockc.block.UniversalCommunicatorBlock;
 import net.mcreator.stupiddragonblockc.block.TheRevivinatorBlock;
 import net.mcreator.stupiddragonblockc.block.KatchinOreBlock;
 import net.mcreator.stupiddragonblockc.block.GravitySimulatorBlock;
+import net.mcreator.stupiddragonblockc.block.DragonBlockBlock;
 import net.mcreator.stupiddragonblockc.StupidDbcMod;
 
 public class StupidDbcModBlocks {
@@ -22,4 +23,5 @@ public class StupidDbcModBlocks {
 	public static final RegistryObject<Block> KATCHIN_ORE = REGISTRY.register("katchin_ore", () -> new KatchinOreBlock());
 	public static final RegistryObject<Block> GRAVITY_SIMULATOR = REGISTRY.register("gravity_simulator", () -> new GravitySimulatorBlock());
 	public static final RegistryObject<Block> UNIVERSAL_COMMUNICATOR = REGISTRY.register("universal_communicator", () -> new UniversalCommunicatorBlock());
+	public static final RegistryObject<Block> DRAGON_BLOCK = REGISTRY.register("dragon_block", () -> new DragonBlockBlock());
 }

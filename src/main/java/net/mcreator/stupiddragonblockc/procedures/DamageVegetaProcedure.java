@@ -31,9 +31,11 @@ public class DamageVegetaProcedure {
 	private static void execute(@Nullable Event event, Entity entity, Entity sourceentity) {
 		if (entity == null || sourceentity == null)
 			return;
-		if (entity instanceof LivingEntity && ((LivingEntity) entity).getAttribute(StupidDbcModAttributes.ENTITY_DBC_HEALTH.get()) != null == true) {
-			((LivingEntity) entity).getAttribute(ForgeRegistries.ATTRIBUTES.getValue(new ResourceLocation("stupid_dbc:entity_dbc_health"))).setBaseValue((((LivingEntity) entity).getAttribute(StupidDbcModAttributes.ENTITY_DBC_HEALTH.get()).getValue()
-					- (sourceentity.getCapability(StupidDbcModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new StupidDbcModVariables.PlayerVariables())).trueStrength));
+		if ((entity instanceof LivingEntity && ((LivingEntity) entity).getAttribute(StupidDbcModAttributes.ENTITYDBCHEALTH.get()) != null) == true) {
+			((LivingEntity) entity).getAttribute(ForgeRegistries.ATTRIBUTES.getValue(new ResourceLocation("stupid_dbc:entity_dbc_health")))
+					.setBaseValue((((LivingEntity) entity).getAttribute(StupidDbcModAttributes.ENTITYDBCHEALTH.get()).getValue()
+							- (sourceentity.getCapability(StupidDbcModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new StupidDbcModVariables.PlayerVariables())).trueStrength
+									/ ((entity instanceof LivingEntity _livEnt ? _livEnt.getArmorValue() : 0) / 60)));
 			if (((LivingEntity) entity).getAttribute(ForgeRegistries.ATTRIBUTES.getValue(new ResourceLocation("stupid_dbc:entity_dbc_health"))).getBaseValue() <= 0) {
 				if (entity instanceof LivingEntity _entity)
 					_entity.setHealth(0);

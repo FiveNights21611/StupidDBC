@@ -1,28 +1,37 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    "IEN",
-    "AAA",
-    "RDR"
+    "012",
+    "345",
+    "678"
   ],
   "key": {
-    "I": {
+    "0": {
       "item": "stupid_dbc:mini_screen"
     },
-    "E": {
+    "1": {
       "item": "stupid_dbc:keyboard"
     },
-    "N": {
+    "2": {
       "item": "stupid_dbc:universal_satellite"
     },
-    "A": {
+    "3": {
       "item": "stupid_dbc:raw_katchin"
     },
-    "R": {
+    "4": {
+      "item": "stupid_dbc:raw_katchin"
+    },
+    "5": {
+      "item": "stupid_dbc:raw_katchin"
+    },
+    "6": {
       "item": "minecraft:iron_block"
     },
-    "D": {
+    "7": {
       "item": "minecraft:redstone_block"
+    },
+    "8": {
+      "item": "minecraft:iron_block"
     }
   },
   "result": {

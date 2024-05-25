@@ -44,10 +44,10 @@ public class PlayerAuraProcedure {
 			world.addParticle((SimpleParticleType) (StupidDbcModParticleTypes.PLAYER_BASE_AURA.get()), (x - 0.1), y, z, 0, 0.1, 0);
 			world.addParticle((SimpleParticleType) (StupidDbcModParticleTypes.PLAYER_BASE_AURA.get()), x, y, (z - 0.1), 0, 0.1, 0);
 			world.addParticle((SimpleParticleType) (StupidDbcModParticleTypes.PLAYER_BASE_AURA.get()), x, y, (z + 0.1), 0, 0.1, 0);
-			StupidDbcMod.LOGGER.info("Did Aura");
+			StupidDbcMod.LOGGER.debug("Did Aura");
 		} else {
-			StupidDbcMod.LOGGER.info("Couldn't Do Aura");
+			StupidDbcMod.LOGGER.debug("Couldn't Do Aura");
 		}
-		StupidDbcMod.LOGGER.info("Tried Aura");
+		StupidDbcMod.LOGGER.debug("Tried Aura");
 	}
 }

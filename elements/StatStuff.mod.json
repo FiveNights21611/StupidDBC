@@ -1,5 +1,5 @@
 {
-  "_fv": 39,
+  "_fv": 43,
   "_type": "overlay",
   "definition": {
     "priority": "HIGHEST",
@@ -19,8 +19,8 @@
           "displayCondition": {
             "name": "StatStuffShow"
           },
-          "x": 0,
-          "y": 0
+          "x": 63,
+          "y": 16
         }
       },
       {
@@ -38,8 +38,8 @@
           "displayCondition": {
             "name": "StatStuffShow"
           },
-          "x": 0,
-          "y": 12
+          "x": 63,
+          "y": 36
         }
       },
       {
@@ -57,8 +57,8 @@
           "displayCondition": {
             "name": "StatStuffShow"
           },
-          "x": 0,
-          "y": 47
+          "x": 54,
+          "y": 67
         }
       },
       {
@@ -76,8 +76,8 @@
           "displayCondition": {
             "name": "StatStuffShow"
           },
-          "x": 0,
-          "y": 59
+          "x": 54,
+          "y": 79
         }
       },
       {
@@ -95,8 +95,8 @@
           "displayCondition": {
             "name": "StatStuffShow"
           },
-          "x": 0,
-          "y": 23
+          "x": 17,
+          "y": 24
         }
       },
       {
@@ -114,8 +114,8 @@
           "displayCondition": {
             "name": "ShowGoodAlignment"
           },
-          "x": 0,
-          "y": 35
+          "x": 54,
+          "y": 54
         }
       },
       {
@@ -133,8 +133,8 @@
           "displayCondition": {
             "name": "ShowNeutralAlignment"
           },
-          "x": 0,
-          "y": 35
+          "x": 54,
+          "y": 54
         }
       },
       {
@@ -152,8 +152,8 @@
           "displayCondition": {
             "name": "ShowEvilAlignment"
           },
-          "x": 0,
-          "y": 35
+          "x": 54,
+          "y": 54
         }
       },
       {
@@ -171,8 +171,20 @@
           "displayCondition": {
             "name": "ShowUltraInstinctHeat"
           },
-          "x": 0,
-          "y": 71
+          "x": 190,
+          "y": 128
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "blankstatstuff.png",
+          "use1Xscale": true,
+          "displayCondition": {
+            "name": "StatStuffShow"
+          },
+          "x": -1,
+          "y": 0
         }
       }
     ],

@@ -80,7 +80,7 @@ public class AddAlignmentProcedure {
 			}
 		}.getEntity()).getCapability(StupidDbcModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new StupidDbcModVariables.PlayerVariables())).Alignment + DoubleArgumentType.getDouble(arguments, "alignment") > 100) {
 			if (entity instanceof Player _player && !_player.level.isClientSide())
-				_player.displayClientMessage(Component.literal("Too large an Alignment"), (false));
+				_player.displayClientMessage(Component.literal("Too large an Alignment"), false);
 		} else if (((new Object() {
 			public Entity getEntity() {
 				try {
@@ -92,7 +92,7 @@ public class AddAlignmentProcedure {
 			}
 		}.getEntity()).getCapability(StupidDbcModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new StupidDbcModVariables.PlayerVariables())).Alignment + DoubleArgumentType.getDouble(arguments, "alignment") < -100) {
 			if (entity instanceof Player _player && !_player.level.isClientSide())
-				_player.displayClientMessage(Component.literal("Too little an Alignment"), (false));
+				_player.displayClientMessage(Component.literal("Too little an Alignment"), false);
 		}
 	}
 }

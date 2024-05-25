@@ -1,9 +1,0 @@
-{
-  "_fv": 39,
-  "_type": "command",
-  "definition": {
-    "commandName": "sdbctrainingset",
-    "permissionLevel": "4",
-    "argsxml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"args_start\" deletable=\"false\" x=\"40\" y=\"40\"><next><block type=\"string\"><field name=\"type\">word</field><field name=\"name\">transformation</field><statement name=\"args\"><block type=\"string\"><field name=\"type\">word</field><field name=\"name\">set</field><statement name=\"args\"><block type=\"number_default\"><field name=\"name\">xp</field><statement name=\"args\"><block type=\"entity\"><field name=\"name\">player</field><field name=\"type\">player</field><statement name=\"args\"><block type=\"call_procedure\"><field name=\"procedure\">SetTraining</field></block></statement></block></statement></block></statement></block></statement></block></next></block></xml>"
-  }
-}

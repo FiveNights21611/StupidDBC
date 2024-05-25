@@ -55,16 +55,16 @@ public class BuyUltraInstinctProcedure {
 						|| (entity.getCapability(StupidDbcModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new StupidDbcModVariables.PlayerVariables())).tp > (entity.getCapability(StupidDbcModVariables.PLAYER_VARIABLES_CAPABILITY, null)
 								.orElse(new StupidDbcModVariables.PlayerVariables())).costOfSuperForm)) {
 			if (entity instanceof Player _player && !_player.level.isClientSide())
-				_player.displayClientMessage(Component.literal("You need to train Super Saiyan Blue!"), (false));
+				_player.displayClientMessage(Component.literal("You need to train Super Saiyan Blue!"), false);
 		} else if ((entity.getCapability(StupidDbcModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new StupidDbcModVariables.PlayerVariables())).UltraInstintLevel == 0
 				&& (entity.getCapability(StupidDbcModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new StupidDbcModVariables.PlayerVariables())).SSBlueTrained > 49999
 				&& (entity.getCapability(StupidDbcModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new StupidDbcModVariables.PlayerVariables())).tp < (entity.getCapability(StupidDbcModVariables.PLAYER_VARIABLES_CAPABILITY, null)
 						.orElse(new StupidDbcModVariables.PlayerVariables())).costOfSuperForm) {
 			if (entity instanceof Player _player && !_player.level.isClientSide())
-				_player.displayClientMessage(Component.literal("You need to more TP!"), (false));
+				_player.displayClientMessage(Component.literal("You need to more TP!"), false);
 		} else if ((entity.getCapability(StupidDbcModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new StupidDbcModVariables.PlayerVariables())).costOfUltraInstinct == 1) {
 			if (entity instanceof Player _player && !_player.level.isClientSide())
-				_player.displayClientMessage(Component.literal("Super Form Maxed!"), (false));
+				_player.displayClientMessage(Component.literal("Super Form Maxed!"), false);
 		}
 	}
 }

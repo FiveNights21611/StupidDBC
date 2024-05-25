@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
-	<classpathentry kind="output" path="bin/default"/>
 	<classpathentry output="bin/main" kind="src" path="src/main/java">
 		<attributes>
 			<attribute name="gradle_scope" value="main"/>
@@ -31,18 +30,24 @@
 			<attribute name="org.eclipse.jdt.launching.CLASSPATH_ATTR_LIBRARY_PATH_ENTRY" value="E:\MCreatorWorkspaces\stupid_dragon_block_c\.mcreator\FullBackup202200348217\.mcreator\FullBackup202200348217\.mcreator\FullBackup202200348217\.mcreator\FullBackup202300110610\.mcreator\FullBackup202300110610\build\natives"/>
 		</attributes>
 	</classpathentry>
+	<classpathentry kind="output" path="bin/default"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-17/"/>
-	<classpathentry sourcepath="C:/Users/FiveNights2161/.mcreator/gradle/caches/forge_gradle/deobf_dependencies/top/theillusivec4/curios/curios-forge/1.19.2-5.1.1.0_mapped_official_1.19.2/curios-forge-1.19.2-5.1.1.0_mapped_official_1.19.2-sources.jar" kind="lib" path="C:/Users/FiveNights2161/.mcreator/gradle/caches/forge_gradle/deobf_dependencies/top/theillusivec4/curios/curios-forge/1.19.2-5.1.1.0_mapped_official_1.19.2/curios-forge-1.19.2-5.1.1.0_mapped_official_1.19.2-api.jar">
-		<attributes>
-			<attribute name="gradle_used_by_scope" value=""/>
-		</attributes>
-	</classpathentry>
-	<classpathentry kind="lib" path="C:/Users/FiveNights2161/.mcreator/gradle/caches/forge_gradle/deobf_dependencies/curse/maven/kleidersplayerrenderer-682065/4478427_mapped_official_1.19.2/kleidersplayerrenderer-682065-4478427_mapped_official_1.19.2.jar">
+	<classpathentry kind="lib" path="C:/Users/FiveNights2161/.mcreator/gradle/caches/forge_gradle/deobf_dependencies/curse/maven/kleidersplayerrenderer-682065/5083496_mapped_official_1.19.2/kleidersplayerrenderer-682065-5083496_mapped_official_1.19.2.jar">
 		<attributes>
 			<attribute name="gradle_used_by_scope" value="main,test"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="E:/MCreatorWorkspaces/stupid_dragon_block_c/.mcreator/FullBackup202200348217/.mcreator/FullBackup202200348217/.mcreator/FullBackup202200348217/.mcreator/FullBackup202300110610/.mcreator/FullBackup202300110610/build/fg_cache/net/minecraftforge/forge/1.19.2-43.2.0_mapped_official_1.19.2/forge-1.19.2-43.2.0_mapped_official_1.19.2.jar">
+	<classpathentry sourcepath="C:/Users/FiveNights2161/.mcreator/gradle/caches/forge_gradle/deobf_dependencies/com/github/Virtuoel/Pehkui/3.7.4-1.19.2-forge_mapped_official_1.19.2/Pehkui-3.7.4-1.19.2-forge_mapped_official_1.19.2-sources.jar" kind="lib" path="C:/Users/FiveNights2161/.mcreator/gradle/caches/forge_gradle/deobf_dependencies/com/github/Virtuoel/Pehkui/3.7.4-1.19.2-forge_mapped_official_1.19.2/Pehkui-3.7.4-1.19.2-forge_mapped_official_1.19.2.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/FiveNights2161/.mcreator/gradle/caches/forge_gradle/deobf_dependencies/dev/kosmx/player-anim/player-animation-lib-forge/1.0.2_mapped_official_1.19.2/player-animation-lib-forge-1.0.2_mapped_official_1.19.2-sources.jar" kind="lib" path="C:/Users/FiveNights2161/.mcreator/gradle/caches/forge_gradle/deobf_dependencies/dev/kosmx/player-anim/player-animation-lib-forge/1.0.2_mapped_official_1.19.2/player-animation-lib-forge-1.0.2_mapped_official_1.19.2.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/FiveNights2161/Desktop/Whatever Development Hell I decide to be in/FullBackup202300110610/build/fg_cache/net/minecraftforge/forge/1.19.2-43.2.0_mapped_official_1.19.2/forge-1.19.2-43.2.0_mapped_official_1.19.2-sources.jar" kind="lib" path="C:/Users/FiveNights2161/Desktop/Whatever Development Hell I decide to be in/FullBackup202300110610/build/fg_cache/net/minecraftforge/forge/1.19.2-43.2.0_mapped_official_1.19.2/forge-1.19.2-43.2.0_mapped_official_1.19.2-recomp.jar">
 		<attributes>
 			<attribute name="gradle_used_by_scope" value="main,test"/>
 		</attributes>
@@ -598,11 +603,6 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry sourcepath="C:/Users/FiveNights2161/.mcreator/gradle/caches/modules-2/files-2.1/org.glassfish/javax.json/1.0.4/ef782abad0d3f1d30644c4023a6bbc6fe371e23a/javax.json-1.0.4-sources.jar" kind="lib" path="C:/Users/FiveNights2161/.mcreator/gradle/caches/modules-2/files-2.1/org.glassfish/javax.json/1.0.4/3178f73569fd7a1e5ffc464e680f7a8cc784b85a/javax.json-1.0.4.jar">
-		<attributes>
-			<attribute name="gradle_used_by_scope" value="main,test"/>
-		</attributes>
-	</classpathentry>
-	<classpathentry sourcepath="C:/Users/FiveNights2161/.mcreator/gradle/caches/forge_gradle/deobf_dependencies/top/theillusivec4/curios/curios-forge/1.19.2-5.1.1.0_mapped_official_1.19.2/curios-forge-1.19.2-5.1.1.0_mapped_official_1.19.2-sources.jar" kind="lib" path="C:/Users/FiveNights2161/.mcreator/gradle/caches/forge_gradle/deobf_dependencies/top/theillusivec4/curios/curios-forge/1.19.2-5.1.1.0_mapped_official_1.19.2/curios-forge-1.19.2-5.1.1.0_mapped_official_1.19.2.jar">
 		<attributes>
 			<attribute name="gradle_used_by_scope" value="main,test"/>
 		</attributes>

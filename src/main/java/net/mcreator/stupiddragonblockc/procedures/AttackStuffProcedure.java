@@ -39,7 +39,7 @@ public class AttackStuffProcedure {
 				|| ((entity.getCapability(StupidDbcModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new StupidDbcModVariables.PlayerVariables())).race).equals("\"Half-Saiyan\"")
 				|| ((entity.getCapability(StupidDbcModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new StupidDbcModVariables.PlayerVariables())).race).equals("\"Human\""))
 				&& (entity.getCapability(StupidDbcModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new StupidDbcModVariables.PlayerVariables())).Health > 0
-				&& !(entity instanceof LivingEntity && ((LivingEntity) entity).getAttribute(StupidDbcModAttributes.ENTITYDBCSPAWNEDIN.get()) != null == true)
+				&& !((entity instanceof LivingEntity && ((LivingEntity) entity).getAttribute(StupidDbcModAttributes.ENTITYDBCSPAWNEDIN.get()) != null) == true)
 				&& !(((sourceentity.getCapability(StupidDbcModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new StupidDbcModVariables.PlayerVariables())).race).equals("\"Saiyan\"")
 						|| ((sourceentity.getCapability(StupidDbcModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new StupidDbcModVariables.PlayerVariables())).race).equals("\"Half-Saiyan\"")
 						|| ((sourceentity.getCapability(StupidDbcModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new StupidDbcModVariables.PlayerVariables())).race).equals("\"Human\""))) {

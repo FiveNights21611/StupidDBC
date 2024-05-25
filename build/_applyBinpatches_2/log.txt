@@ -1,18 +1,18 @@
-Java Launcher: C:\Users\FiveNights2161\Desktop\Whatever Development Hell I decide to be in\MCreator20231\jdk\bin\java.exe
-Arguments: '--clean, C:\Users\FiveNights2161\.mcreator\gradle\caches\forge_gradle\mcp_repo\net\minecraft\joined\1.19.2-20220805.130853\joined-1.19.2-20220805.130853-srg.jar, --output, E:\MCreatorWorkspaces\stupid_dragon_block_c\.mcreator\FullBackup202200348217\.mcreator\FullBackup202200348217\.mcreator\FullBackup202200348217\.mcreator\FullBackup202300110610\.mcreator\FullBackup202300110610\build\fg_cache\net\minecraftforge\forge\1.19.2-43.2.0\forge-1.19.2-43.2.0-binpatched.jar, --apply, E:\MCreatorWorkspaces\stupid_dragon_block_c\.mcreator\FullBackup202200348217\.mcreator\FullBackup202200348217\.mcreator\FullBackup202200348217\.mcreator\FullBackup202300110610\.mcreator\FullBackup202300110610\build\fg_cache\net\minecraftforge\forge\1.19.2-43.2.0\forge-1.19.2-43.2.0-binpatches.lzma'
+Java Launcher: C:\Program Files\Pylo\MCreator\jdk\bin\java.exe
+Arguments: '--clean, C:\Users\FiveNights2161\.mcreator\gradle\caches\forge_gradle\mcp_repo\net\minecraft\joined\1.19.2-20220805.130853\joined-1.19.2-20220805.130853-srg.jar, --output, C:\Users\FiveNights2161\Desktop\Whatever Development Hell I decide to be in\FullBackup202300110610\build\fg_cache\net\minecraftforge\forge\1.19.2-43.2.0\forge-1.19.2-43.2.0-binpatched.jar, --apply, C:\Users\FiveNights2161\Desktop\Whatever Development Hell I decide to be in\FullBackup202300110610\build\fg_cache\net\minecraftforge\forge\1.19.2-43.2.0\forge-1.19.2-43.2.0-binpatches.lzma'
 Classpath:
  - C:\Users\FiveNights2161\.mcreator\gradle\caches\forge_gradle\maven_downloader\net\minecraftforge\binarypatcher\1.1.1\binarypatcher-1.1.1-fatjar.jar
-Working directory: E:\MCreatorWorkspaces\stupid_dragon_block_c\.mcreator\FullBackup202200348217\.mcreator\FullBackup202200348217\.mcreator\FullBackup202200348217\.mcreator\FullBackup202300110610\.mcreator\FullBackup202300110610\build\_applyBinpatches_2
+Working directory: C:\Users\FiveNights2161\Desktop\Whatever Development Hell I decide to be in\FullBackup202300110610\build\_applyBinpatches_2
 Main class: net.minecraftforge.binarypatcher.ConsoleTool
 ====================================
 Applying: 
   Clean:     C:\Users\FiveNights2161\.mcreator\gradle\caches\forge_gradle\mcp_repo\net\minecraft\joined\1.19.2-20220805.130853\joined-1.19.2-20220805.130853-srg.jar
-  Output:    E:\MCreatorWorkspaces\stupid_dragon_block_c\.mcreator\FullBackup202200348217\.mcreator\FullBackup202200348217\.mcreator\FullBackup202200348217\.mcreator\FullBackup202300110610\.mcreator\FullBackup202300110610\build\fg_cache\net\minecraftforge\forge\1.19.2-43.2.0\forge-1.19.2-43.2.0-binpatched.jar
+  Output:    C:\Users\FiveNights2161\Desktop\Whatever Development Hell I decide to be in\FullBackup202300110610\build\fg_cache\net\minecraftforge\forge\1.19.2-43.2.0\forge-1.19.2-43.2.0-binpatched.jar
   KeepData:  false
   Unpatched: false
   Pack200:   false
   Legacy:    false
-Loading patches file: E:\MCreatorWorkspaces\stupid_dragon_block_c\.mcreator\FullBackup202200348217\.mcreator\FullBackup202200348217\.mcreator\FullBackup202200348217\.mcreator\FullBackup202300110610\.mcreator\FullBackup202300110610\build\fg_cache\net\minecraftforge\forge\1.19.2-43.2.0\forge-1.19.2-43.2.0-binpatches.lzma
+Loading patches file: C:\Users\FiveNights2161\Desktop\Whatever Development Hell I decide to be in\FullBackup202300110610\build\fg_cache\net\minecraftforge\forge\1.19.2-43.2.0\forge-1.19.2-43.2.0-binpatches.lzma
   Reading patch com.mojang.blaze3d.pipeline.RenderTarget.binpatch
     Checksum: 19e6c00e Exists: true
   Reading patch com.mojang.blaze3d.platform.GlStateManager$BlendState.binpatch

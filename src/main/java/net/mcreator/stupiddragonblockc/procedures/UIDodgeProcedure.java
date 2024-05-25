@@ -37,12 +37,12 @@ public class UIDodgeProcedure {
 			if (Mth.nextInt(RandomSource.create(), 1, 100) <= 25) {
 				i = 0;
 				if (entity instanceof Player _player) {
-					_player.getAbilities().invulnerable = (true);
+					_player.getAbilities().invulnerable = true;
 					_player.onUpdateAbilities();
 				}
 				if (i > 3) {
 					if (entity instanceof Player _player) {
-						_player.getAbilities().invulnerable = (false);
+						_player.getAbilities().invulnerable = false;
 						_player.onUpdateAbilities();
 					}
 				}

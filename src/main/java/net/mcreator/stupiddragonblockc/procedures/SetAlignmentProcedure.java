@@ -44,10 +44,10 @@ public class SetAlignmentProcedure {
 			}
 		} else if (DoubleArgumentType.getDouble(arguments, "alignment") > 100) {
 			if (entity instanceof Player _player && !_player.level.isClientSide())
-				_player.displayClientMessage(Component.literal("Too large an Alignment"), (false));
+				_player.displayClientMessage(Component.literal("Too large an Alignment"), false);
 		} else if (DoubleArgumentType.getDouble(arguments, "alignment") < -100) {
 			if (entity instanceof Player _player && !_player.level.isClientSide())
-				_player.displayClientMessage(Component.literal("Too little an Alignment"), (false));
+				_player.displayClientMessage(Component.literal("Too little an Alignment"), false);
 		}
 	}
 }

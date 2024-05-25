@@ -43,9 +43,8 @@ public class ReviveStructureProcedure {
 			LevelAccessor _worldorig = world;
 			world = _origLevel.getServer().getLevel(ResourceKey.create(Registry.DIMENSION_REGISTRY, new ResourceLocation("stupid_dbc:otherworld")));
 			if (world != null) {
-				if (StupidDbcModVariables.WorldVariables.get(world).structureGenerated == false && (entity instanceof ServerPlayer _plr && _plr.level instanceof ServerLevel
-						? _plr.getAdvancements().getOrStartProgress(_plr.server.getAdvancements().getAdvancement(new ResourceLocation("stupid_dbc:go_die"))).isDone()
-						: false) == true) {
+				if (StupidDbcModVariables.WorldVariables.get(world).structureGenerated == false && (entity instanceof ServerPlayer _plr0 && _plr0.level instanceof ServerLevel
+						&& _plr0.getAdvancements().getOrStartProgress(_plr0.server.getAdvancements().getAdvancement(new ResourceLocation("stupid_dbc:go_die"))).isDone()) == true) {
 					StupidDbcModVariables.WorldVariables.get(world).structureGenerated = true;
 					StupidDbcModVariables.WorldVariables.get(world).syncData(world);
 					if (world instanceof ServerLevel _serverworld) {

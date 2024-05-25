@@ -15,7 +15,17 @@ import net.minecraft.commands.arguments.EntityArgument;
 import net.minecraft.commands.Commands;
 
 import net.mcreator.stupiddragonblockc.procedures.TaketpProcedure;
+import net.mcreator.stupiddragonblockc.procedures.TakeAlignmentCommandProcedure;
+import net.mcreator.stupiddragonblockc.procedures.SetTrainingProcedure;
+import net.mcreator.stupiddragonblockc.procedures.SetTechniqueXPProcedure;
+import net.mcreator.stupiddragonblockc.procedures.SetAlignmentCommandProcedure;
 import net.mcreator.stupiddragonblockc.procedures.GivetpProcedure;
+import net.mcreator.stupiddragonblockc.procedures.CommandHealKiProcedure;
+import net.mcreator.stupiddragonblockc.procedures.CommandHealHealthProcedure;
+import net.mcreator.stupiddragonblockc.procedures.CommandHealAllProcedure;
+import net.mcreator.stupiddragonblockc.procedures.AddTechniqueXPProcedure;
+import net.mcreator.stupiddragonblockc.procedures.AddTPProcedure;
+import net.mcreator.stupiddragonblockc.procedures.AddAlignmentCommandProcedure;
 
 import com.mojang.brigadier.arguments.StringArgumentType;
 import com.mojang.brigadier.arguments.DoubleArgumentType;
@@ -24,8 +34,104 @@ import com.mojang.brigadier.arguments.DoubleArgumentType;
 public class SdbcCommand {
 	@SubscribeEvent
 	public static void registerCommand(RegisterCommandsEvent event) {
-		event.getDispatcher().register(Commands.literal("sdbctp").requires(s -> s.hasPermission(4))
-				.then(Commands.argument("give", StringArgumentType.word()).then(Commands.argument("amount", DoubleArgumentType.doubleArg(1)).then(Commands.argument("Player", EntityArgument.player()).executes(arguments -> {
+		event.getDispatcher().register(Commands.literal("sdbc").requires(s -> s.hasPermission(4)).then(Commands.literal("heal").then(Commands.literal("hp").then(Commands.argument("player", EntityArgument.players()).executes(arguments -> {
+			ServerLevel world = arguments.getSource().getLevel();
+			double x = arguments.getSource().getPosition().x();
+			double y = arguments.getSource().getPosition().y();
+			double z = arguments.getSource().getPosition().z();
+			Entity entity = arguments.getSource().getEntity();
+			if (entity == null)
+				entity = FakePlayerFactory.getMinecraft(world);
+			Direction direction = entity.getDirection();
+
+			CommandHealHealthProcedure.execute(arguments, entity);
+			return 0;
+		}))).then(Commands.literal("ki").then(Commands.argument("player", EntityArgument.players()).executes(arguments -> {
+			ServerLevel world = arguments.getSource().getLevel();
+			double x = arguments.getSource().getPosition().x();
+			double y = arguments.getSource().getPosition().y();
+			double z = arguments.getSource().getPosition().z();
+			Entity entity = arguments.getSource().getEntity();
+			if (entity == null)
+				entity = FakePlayerFactory.getMinecraft(world);
+			Direction direction = entity.getDirection();
+
+			CommandHealKiProcedure.execute(arguments, entity);
+			return 0;
+		}))).then(Commands.literal("all").then(Commands.argument("player", EntityArgument.players()).executes(arguments -> {
+			ServerLevel world = arguments.getSource().getLevel();
+			double x = arguments.getSource().getPosition().x();
+			double y = arguments.getSource().getPosition().y();
+			double z = arguments.getSource().getPosition().z();
+			Entity entity = arguments.getSource().getEntity();
+			if (entity == null)
+				entity = FakePlayerFactory.getMinecraft(world);
+			Direction direction = entity.getDirection();
+
+			CommandHealAllProcedure.execute(arguments, entity);
+			return 0;
+		})))).then(Commands.literal("tp").then(Commands.literal("give").then(Commands.argument("amount", DoubleArgumentType.doubleArg(1)).then(Commands.argument("Player", EntityArgument.player()).executes(arguments -> {
+			ServerLevel world = arguments.getSource().getLevel();
+			double x = arguments.getSource().getPosition().x();
+			double y = arguments.getSource().getPosition().y();
+			double z = arguments.getSource().getPosition().z();
+			Entity entity = arguments.getSource().getEntity();
+			if (entity == null)
+				entity = FakePlayerFactory.getMinecraft(world);
+			Direction direction = entity.getDirection();
+
+			GivetpProcedure.execute(arguments, entity);
+			return 0;
+		})))).then(Commands.literal("take").then(Commands.argument("amount", DoubleArgumentType.doubleArg(1)).then(Commands.argument("Player", EntityArgument.player()).executes(arguments -> {
+			ServerLevel world = arguments.getSource().getLevel();
+			double x = arguments.getSource().getPosition().x();
+			double y = arguments.getSource().getPosition().y();
+			double z = arguments.getSource().getPosition().z();
+			Entity entity = arguments.getSource().getEntity();
+			if (entity == null)
+				entity = FakePlayerFactory.getMinecraft(world);
+			Direction direction = entity.getDirection();
+
+			TaketpProcedure.execute(arguments, entity);
+			return 0;
+		}))))).then(Commands.literal("alignment").then(Commands.literal("set").then(Commands.argument("alignment", DoubleArgumentType.doubleArg(-100, 100)).then(Commands.argument("player", EntityArgument.players()).executes(arguments -> {
+			ServerLevel world = arguments.getSource().getLevel();
+			double x = arguments.getSource().getPosition().x();
+			double y = arguments.getSource().getPosition().y();
+			double z = arguments.getSource().getPosition().z();
+			Entity entity = arguments.getSource().getEntity();
+			if (entity == null)
+				entity = FakePlayerFactory.getMinecraft(world);
+			Direction direction = entity.getDirection();
+
+			SetAlignmentCommandProcedure.execute(arguments, entity);
+			return 0;
+		})))).then(Commands.literal("add").then(Commands.argument("alignment", DoubleArgumentType.doubleArg(0, 200)).then(Commands.argument("player", EntityArgument.players()).executes(arguments -> {
+			ServerLevel world = arguments.getSource().getLevel();
+			double x = arguments.getSource().getPosition().x();
+			double y = arguments.getSource().getPosition().y();
+			double z = arguments.getSource().getPosition().z();
+			Entity entity = arguments.getSource().getEntity();
+			if (entity == null)
+				entity = FakePlayerFactory.getMinecraft(world);
+			Direction direction = entity.getDirection();
+
+			AddAlignmentCommandProcedure.execute(arguments, entity);
+			return 0;
+		})))).then(Commands.literal("take").then(Commands.argument("alignment", DoubleArgumentType.doubleArg(0, 200)).then(Commands.argument("player", EntityArgument.players()).executes(arguments -> {
+			ServerLevel world = arguments.getSource().getLevel();
+			double x = arguments.getSource().getPosition().x();
+			double y = arguments.getSource().getPosition().y();
+			double z = arguments.getSource().getPosition().z();
+			Entity entity = arguments.getSource().getEntity();
+			if (entity == null)
+				entity = FakePlayerFactory.getMinecraft(world);
+			Direction direction = entity.getDirection();
+
+			TakeAlignmentCommandProcedure.execute(arguments, entity);
+			return 0;
+		}))))).then(Commands.literal("training").then(Commands.literal("add").then(Commands.literal("transformation")
+				.then(Commands.argument("transformation", StringArgumentType.word()).then(Commands.argument("xp", DoubleArgumentType.doubleArg(1, 100000)).then(Commands.argument("player", EntityArgument.player()).executes(arguments -> {
 					ServerLevel world = arguments.getSource().getLevel();
 					double x = arguments.getSource().getPosition().x();
 					double y = arguments.getSource().getPosition().y();
@@ -35,20 +141,48 @@ public class SdbcCommand {
 						entity = FakePlayerFactory.getMinecraft(world);
 					Direction direction = entity.getDirection();
 
-					GivetpProcedure.execute(arguments, entity);
+					AddTPProcedure.execute(arguments, entity);
 					return 0;
-				})))).then(Commands.argument("take", StringArgumentType.word()).then(Commands.argument("amount", DoubleArgumentType.doubleArg(1)).then(Commands.argument("Player", EntityArgument.player()).executes(arguments -> {
-					ServerLevel world = arguments.getSource().getLevel();
-					double x = arguments.getSource().getPosition().x();
-					double y = arguments.getSource().getPosition().y();
-					double z = arguments.getSource().getPosition().z();
-					Entity entity = arguments.getSource().getEntity();
-					if (entity == null)
-						entity = FakePlayerFactory.getMinecraft(world);
-					Direction direction = entity.getDirection();
+				}))))).then(Commands.literal("technique")
+						.then(Commands.argument("technique", StringArgumentType.word()).then(Commands.argument("xp", DoubleArgumentType.doubleArg(1, 100000)).then(Commands.argument("player", EntityArgument.player()).executes(arguments -> {
+							ServerLevel world = arguments.getSource().getLevel();
+							double x = arguments.getSource().getPosition().x();
+							double y = arguments.getSource().getPosition().y();
+							double z = arguments.getSource().getPosition().z();
+							Entity entity = arguments.getSource().getEntity();
+							if (entity == null)
+								entity = FakePlayerFactory.getMinecraft(world);
+							Direction direction = entity.getDirection();
 
-					TaketpProcedure.execute(arguments, entity);
-					return 0;
-				})))));
+							AddTechniqueXPProcedure.execute(arguments, entity);
+							return 0;
+						}))))))
+				.then(Commands.literal("set").then(Commands.literal("transformation")
+						.then(Commands.argument("transformation", StringArgumentType.word()).then(Commands.argument("xp", DoubleArgumentType.doubleArg(1, 100000)).then(Commands.argument("player", EntityArgument.player()).executes(arguments -> {
+							ServerLevel world = arguments.getSource().getLevel();
+							double x = arguments.getSource().getPosition().x();
+							double y = arguments.getSource().getPosition().y();
+							double z = arguments.getSource().getPosition().z();
+							Entity entity = arguments.getSource().getEntity();
+							if (entity == null)
+								entity = FakePlayerFactory.getMinecraft(world);
+							Direction direction = entity.getDirection();
+
+							SetTrainingProcedure.execute(arguments, entity);
+							return 0;
+						}))))).then(Commands.literal("technique")
+								.then(Commands.argument("technique", StringArgumentType.word()).then(Commands.argument("xp", DoubleArgumentType.doubleArg(1, 100000)).then(Commands.argument("player", EntityArgument.player()).executes(arguments -> {
+									ServerLevel world = arguments.getSource().getLevel();
+									double x = arguments.getSource().getPosition().x();
+									double y = arguments.getSource().getPosition().y();
+									double z = arguments.getSource().getPosition().z();
+									Entity entity = arguments.getSource().getEntity();
+									if (entity == null)
+										entity = FakePlayerFactory.getMinecraft(world);
+									Direction direction = entity.getDirection();
+
+									SetTechniqueXPProcedure.execute(arguments);
+									return 0;
+								}))))))));
 	}
 }

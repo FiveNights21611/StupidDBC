@@ -9,7 +9,6 @@ import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.DeferredRegister;
 
 import net.minecraft.world.level.block.entity.BlockEntityType;
-import net.minecraft.world.level.block.Block;
 
 import net.mcreator.stupiddragonblockc.block.entity.UniversalCommunicatorBlockEntity;
 import net.mcreator.stupiddragonblockc.block.entity.TheRevivinatorBlockEntity;
@@ -18,11 +17,10 @@ import net.mcreator.stupiddragonblockc.StupidDbcMod;
 
 public class StupidDbcModBlockEntities {
 	public static final DeferredRegister<BlockEntityType<?>> REGISTRY = DeferredRegister.create(ForgeRegistries.BLOCK_ENTITY_TYPES, StupidDbcMod.MODID);
-	public static final RegistryObject<BlockEntityType<?>> THE_REVIVINATOR = register("the_revivinator", StupidDbcModBlocks.THE_REVIVINATOR, TheRevivinatorBlockEntity::new);
-	public static final RegistryObject<BlockEntityType<?>> GRAVITY_SIMULATOR = register("gravity_simulator", StupidDbcModBlocks.GRAVITY_SIMULATOR, GravitySimulatorBlockEntity::new);
-	public static final RegistryObject<BlockEntityType<?>> UNIVERSAL_COMMUNICATOR = register("universal_communicator", StupidDbcModBlocks.UNIVERSAL_COMMUNICATOR, UniversalCommunicatorBlockEntity::new);
-
-	private static RegistryObject<BlockEntityType<?>> register(String registryname, RegistryObject<Block> block, BlockEntityType.BlockEntitySupplier<?> supplier) {
-		return REGISTRY.register(registryname, () -> BlockEntityType.Builder.of(supplier, block.get()).build(null));
-	}
+	public static final RegistryObject<BlockEntityType<TheRevivinatorBlockEntity>> THE_REVIVINATOR = REGISTRY.register("the_revivinator",
+			() -> BlockEntityType.Builder.of(TheRevivinatorBlockEntity::new, StupidDbcModBlocks.THE_REVIVINATOR.get()).build(null));
+	public static final RegistryObject<BlockEntityType<GravitySimulatorBlockEntity>> GRAVITY_SIMULATOR = REGISTRY.register("gravity_simulator",
+			() -> BlockEntityType.Builder.of(GravitySimulatorBlockEntity::new, StupidDbcModBlocks.GRAVITY_SIMULATOR.get()).build(null));
+	public static final RegistryObject<BlockEntityType<UniversalCommunicatorBlockEntity>> UNIVERSAL_COMMUNICATOR = REGISTRY.register("universal_communicator",
+			() -> BlockEntityType.Builder.of(UniversalCommunicatorBlockEntity::new, StupidDbcModBlocks.UNIVERSAL_COMMUNICATOR.get()).build(null));
 }

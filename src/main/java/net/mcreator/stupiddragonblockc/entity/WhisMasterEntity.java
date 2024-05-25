@@ -56,6 +56,7 @@ public class WhisMasterEntity extends PathfinderMob {
 
 	public WhisMasterEntity(EntityType<WhisMasterEntity> type, Level world) {
 		super(type, world);
+		maxUpStep = 0.6f;
 		xpReward = 0;
 		setNoAi(false);
 		setPersistenceRequired();

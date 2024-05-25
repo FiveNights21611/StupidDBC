@@ -1,12 +1,11 @@
-Java Launcher: C:\Users\FiveNights2161\Desktop\Whatever Development Hell I decide to be in\MCreator20231\jdk\bin\java.exe
+Java Launcher: C:\Program Files\Pylo\MCreator\jdk\bin\java.exe
 Arguments: '--in-jar, C:\Users\FiveNights2161\Desktop\Whatever Development Hell I decide to be in\FullBackup202300110610\build\libs\modid-1.0.jar, --out-jar, C:\Users\FiveNights2161\Desktop\Whatever Development Hell I decide to be in\FullBackup202300110610\build\reobfJar\output.jar, --srg-in, C:\Users\FiveNights2161\Desktop\Whatever Development Hell I decide to be in\FullBackup202300110610\build\createMcpToSrg\output.tsrg, --live'
 Classpath:
  - C:\Users\FiveNights2161\.mcreator\gradle\caches\forge_gradle\maven_downloader\net\md-5\SpecialSource\1.11.0\SpecialSource-1.11.0-shaded.jar
- - C:\Users\FiveNights2161\.mcreator\gradle\caches\forge_gradle\deobf_dependencies\top\theillusivec4\curios\curios-forge\1.19.2-5.1.1.0_mapped_official_1.19.2\curios-forge-1.19.2-5.1.1.0_mapped_official_1.19.2-api.jar
- - C:\Users\FiveNights2161\.mcreator\gradle\caches\forge_gradle\deobf_dependencies\curse\maven\kleidersplayerrenderer-682065\4478427_mapped_official_1.19.2\kleidersplayerrenderer-682065-4478427_mapped_official_1.19.2.jar
+ - C:\Users\FiveNights2161\.mcreator\gradle\caches\forge_gradle\deobf_dependencies\curse\maven\kleidersplayerrenderer-682065\5083496_mapped_official_1.19.2\kleidersplayerrenderer-682065-5083496_mapped_official_1.19.2.jar
  - C:\Users\FiveNights2161\.mcreator\gradle\caches\forge_gradle\deobf_dependencies\com\github\Virtuoel\Pehkui\3.7.4-1.19.2-forge_mapped_official_1.19.2\Pehkui-3.7.4-1.19.2-forge_mapped_official_1.19.2.jar
  - C:\Users\FiveNights2161\.mcreator\gradle\caches\forge_gradle\deobf_dependencies\dev\kosmx\player-anim\player-animation-lib-forge\1.0.2_mapped_official_1.19.2\player-animation-lib-forge-1.0.2_mapped_official_1.19.2.jar
- - C:\Users\FiveNights2161\Desktop\Whatever Development Hell I decide to be in\FullBackup202300110610\build\fg_cache\net\minecraftforge\forge\1.19.2-43.2.0_mapped_official_1.19.2\forge-1.19.2-43.2.0_mapped_official_1.19.2.jar
+ - C:\Users\FiveNights2161\Desktop\Whatever Development Hell I decide to be in\FullBackup202300110610\build\fg_cache\net\minecraftforge\forge\1.19.2-43.2.0_mapped_official_1.19.2\forge-1.19.2-43.2.0_mapped_official_1.19.2-recomp.jar
  - C:\Users\FiveNights2161\.mcreator\gradle\caches\forge_gradle\minecraft_repo\versions\1.19.2\client-extra.jar
  - C:\Users\FiveNights2161\.mcreator\gradle\caches\modules-2\files-2.1\net.minecraftforge\fmlloader\1.19.2-43.2.0\3e6e8b7b5e1dbc6ee01a20f74675f223b64c7847\fmlloader-1.19.2-43.2.0.jar
  - C:\Users\FiveNights2161\.mcreator\gradle\caches\modules-2\files-2.1\net.minecraftforge\JarJarSelector\0.3.16\2a31421fb5e267249da103a644f23afb43d158af\JarJarSelector-0.3.16.jar

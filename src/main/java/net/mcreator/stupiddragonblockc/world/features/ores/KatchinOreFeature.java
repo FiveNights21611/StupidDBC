@@ -36,7 +36,10 @@ public class KatchinOreFeature extends OreFeature {
 	public static Feature<?> feature() {
 		FEATURE = new KatchinOreFeature();
 		CONFIGURED_FEATURE = FeatureUtils.register("stupid_dbc:katchin_ore", FEATURE,
-				new OreConfiguration(List.of(OreConfiguration.target(new BlockStateMatchTest(Blocks.STONE.defaultBlockState()), StupidDbcModBlocks.KATCHIN_ORE.get().defaultBlockState())), 16));
+				new OreConfiguration(List.of(OreConfiguration.target(new BlockStateMatchTest(Blocks.STONE.defaultBlockState()), StupidDbcModBlocks.KATCHIN_ORE.get().defaultBlockState()),
+						OreConfiguration.target(new BlockStateMatchTest(Blocks.GRANITE.defaultBlockState()), StupidDbcModBlocks.KATCHIN_ORE.get().defaultBlockState()),
+						OreConfiguration.target(new BlockStateMatchTest(Blocks.DIORITE.defaultBlockState()), StupidDbcModBlocks.KATCHIN_ORE.get().defaultBlockState()),
+						OreConfiguration.target(new BlockStateMatchTest(Blocks.ANDESITE.defaultBlockState()), StupidDbcModBlocks.KATCHIN_ORE.get().defaultBlockState())), 16));
 		PLACED_FEATURE = PlacementUtils.register("stupid_dbc:katchin_ore", CONFIGURED_FEATURE,
 				List.of(CountPlacement.of(10), InSquarePlacement.spread(), HeightRangePlacement.triangle(VerticalAnchor.absolute(0), VerticalAnchor.absolute(16)), BiomeFilter.biome()));
 		return FEATURE;

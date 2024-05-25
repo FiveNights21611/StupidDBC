@@ -36,13 +36,13 @@ public class BuyGodFormProcedure {
 							.orElse(new StupidDbcModVariables.PlayerVariables())).CosrOfGodForm
 					&& (entity.getCapability(StupidDbcModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new StupidDbcModVariables.PlayerVariables())).FPSSTrained >= 100000) {
 				if (entity instanceof Player _player && !_player.level.isClientSide())
-					_player.displayClientMessage(Component.literal("You don't have enough TP"), (false));
+					_player.displayClientMessage(Component.literal("You don't have enough TP"), false);
 			} else if ((entity.getCapability(StupidDbcModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new StupidDbcModVariables.PlayerVariables())).GodFormLevel == 0
 					&& (entity.getCapability(StupidDbcModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new StupidDbcModVariables.PlayerVariables())).tp >= (entity.getCapability(StupidDbcModVariables.PLAYER_VARIABLES_CAPABILITY, null)
 							.orElse(new StupidDbcModVariables.PlayerVariables())).CosrOfGodForm
 					&& (entity.getCapability(StupidDbcModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new StupidDbcModVariables.PlayerVariables())).FPSSTrained < 100000) {
 				if (entity instanceof Player _player && !_player.level.isClientSide())
-					_player.displayClientMessage(Component.literal("You need to train FPSS More!"), (false));
+					_player.displayClientMessage(Component.literal("You need to train FPSS More!"), false);
 			} else if ((entity.getCapability(StupidDbcModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new StupidDbcModVariables.PlayerVariables())).GodFormLevel == 1
 					&& (entity.getCapability(StupidDbcModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new StupidDbcModVariables.PlayerVariables())).tp >= (entity.getCapability(StupidDbcModVariables.PLAYER_VARIABLES_CAPABILITY, null)
 							.orElse(new StupidDbcModVariables.PlayerVariables())).CosrOfGodForm
@@ -68,14 +68,14 @@ public class BuyGodFormProcedure {
 					&& ((entity.getCapability(StupidDbcModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new StupidDbcModVariables.PlayerVariables())).FPSSTrained < 100000
 							|| (entity.getCapability(StupidDbcModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new StupidDbcModVariables.PlayerVariables())).SSGodTrained < 100000)) {
 				if (entity instanceof Player _player && !_player.level.isClientSide())
-					_player.displayClientMessage(Component.literal("You need to train FPSS and SSGod more!"), (false));
+					_player.displayClientMessage(Component.literal("You need to train FPSS and SSGod more!"), false);
 			} else if ((entity.getCapability(StupidDbcModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new StupidDbcModVariables.PlayerVariables())).GodFormLevel == 1
 					&& (entity.getCapability(StupidDbcModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new StupidDbcModVariables.PlayerVariables())).tp < (entity.getCapability(StupidDbcModVariables.PLAYER_VARIABLES_CAPABILITY, null)
 							.orElse(new StupidDbcModVariables.PlayerVariables())).CosrOfGodForm
 					&& (entity.getCapability(StupidDbcModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new StupidDbcModVariables.PlayerVariables())).FPSSTrained == 100000
 					&& (entity.getCapability(StupidDbcModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new StupidDbcModVariables.PlayerVariables())).SSGodTrained == 100000) {
 				if (entity instanceof Player _player && !_player.level.isClientSide())
-					_player.displayClientMessage(Component.literal("You don't have enough TP"), (false));
+					_player.displayClientMessage(Component.literal("You don't have enough TP"), false);
 			} else if ((entity.getCapability(StupidDbcModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new StupidDbcModVariables.PlayerVariables())).GodFormLevel == 2
 					&& (entity.getCapability(StupidDbcModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new StupidDbcModVariables.PlayerVariables())).tp >= (entity.getCapability(StupidDbcModVariables.PLAYER_VARIABLES_CAPABILITY, null)
 							.orElse(new StupidDbcModVariables.PlayerVariables())).CosrOfGodForm
@@ -109,17 +109,17 @@ public class BuyGodFormProcedure {
 					&& (entity.getCapability(StupidDbcModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new StupidDbcModVariables.PlayerVariables())).SSBlueTrained < 100000
 					&& (entity.getCapability(StupidDbcModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new StupidDbcModVariables.PlayerVariables())).SSGrade3Trained < 100000) {
 				if (entity instanceof Player _player && !_player.level.isClientSide())
-					_player.displayClientMessage(Component.literal("You Need To Train SSBlue and SSGrade 3 to the max!"), (false));
+					_player.displayClientMessage(Component.literal("You Need To Train SSBlue and SSGrade 3 to the max!"), false);
 			} else if ((entity.getCapability(StupidDbcModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new StupidDbcModVariables.PlayerVariables())).GodFormLevel == 2
 					&& (entity.getCapability(StupidDbcModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new StupidDbcModVariables.PlayerVariables())).tp < (entity.getCapability(StupidDbcModVariables.PLAYER_VARIABLES_CAPABILITY, null)
 							.orElse(new StupidDbcModVariables.PlayerVariables())).CosrOfGodForm
 					&& (entity.getCapability(StupidDbcModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new StupidDbcModVariables.PlayerVariables())).SSBlueTrained >= 100000
 					&& (entity.getCapability(StupidDbcModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new StupidDbcModVariables.PlayerVariables())).SSGrade3Trained >= 100000) {
 				if (entity instanceof Player _player && !_player.level.isClientSide())
-					_player.displayClientMessage(Component.literal("You Need More TP!"), (false));
+					_player.displayClientMessage(Component.literal("You Need More TP!"), false);
 			} else if ((entity.getCapability(StupidDbcModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new StupidDbcModVariables.PlayerVariables())).GodFormLevel == 3) {
 				if (entity instanceof Player _player && !_player.level.isClientSide())
-					_player.displayClientMessage(Component.literal("God Form Maxed"), (false));
+					_player.displayClientMessage(Component.literal("God Form Maxed"), false);
 			}
 		} else if (((entity.getCapability(StupidDbcModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new StupidDbcModVariables.PlayerVariables())).race).equals("\"Half-Saiyan\"")) {
 			if ((entity.getCapability(StupidDbcModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new StupidDbcModVariables.PlayerVariables())).GodFormLevel == 0
@@ -145,13 +145,13 @@ public class BuyGodFormProcedure {
 							.orElse(new StupidDbcModVariables.PlayerVariables())).CosrOfGodForm
 					&& (entity.getCapability(StupidDbcModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new StupidDbcModVariables.PlayerVariables())).FPSSTrained >= 100000) {
 				if (entity instanceof Player _player && !_player.level.isClientSide())
-					_player.displayClientMessage(Component.literal("You don't have enough TP"), (false));
+					_player.displayClientMessage(Component.literal("You don't have enough TP"), false);
 			} else if ((entity.getCapability(StupidDbcModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new StupidDbcModVariables.PlayerVariables())).GodFormLevel == 0
 					&& (entity.getCapability(StupidDbcModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new StupidDbcModVariables.PlayerVariables())).tp >= (entity.getCapability(StupidDbcModVariables.PLAYER_VARIABLES_CAPABILITY, null)
 							.orElse(new StupidDbcModVariables.PlayerVariables())).CosrOfGodForm
 					&& (entity.getCapability(StupidDbcModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new StupidDbcModVariables.PlayerVariables())).FPSSTrained < 100000) {
 				if (entity instanceof Player _player && !_player.level.isClientSide())
-					_player.displayClientMessage(Component.literal("You need to train FPSS More!"), (false));
+					_player.displayClientMessage(Component.literal("You need to train FPSS More!"), false);
 			} else if ((entity.getCapability(StupidDbcModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new StupidDbcModVariables.PlayerVariables())).GodFormLevel == 1
 					&& (entity.getCapability(StupidDbcModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new StupidDbcModVariables.PlayerVariables())).tp >= (entity.getCapability(StupidDbcModVariables.PLAYER_VARIABLES_CAPABILITY, null)
 							.orElse(new StupidDbcModVariables.PlayerVariables())).CosrOfGodForm
@@ -177,14 +177,14 @@ public class BuyGodFormProcedure {
 					&& ((entity.getCapability(StupidDbcModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new StupidDbcModVariables.PlayerVariables())).FPSSTrained < 100000
 							|| (entity.getCapability(StupidDbcModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new StupidDbcModVariables.PlayerVariables())).SSGodTrained < 100000)) {
 				if (entity instanceof Player _player && !_player.level.isClientSide())
-					_player.displayClientMessage(Component.literal("You need to train FPSS and SSGod more!"), (false));
+					_player.displayClientMessage(Component.literal("You need to train FPSS and SSGod more!"), false);
 			} else if ((entity.getCapability(StupidDbcModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new StupidDbcModVariables.PlayerVariables())).GodFormLevel == 1
 					&& (entity.getCapability(StupidDbcModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new StupidDbcModVariables.PlayerVariables())).tp < (entity.getCapability(StupidDbcModVariables.PLAYER_VARIABLES_CAPABILITY, null)
 							.orElse(new StupidDbcModVariables.PlayerVariables())).CosrOfGodForm
 					&& (entity.getCapability(StupidDbcModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new StupidDbcModVariables.PlayerVariables())).FPSSTrained >= 100000
 					&& (entity.getCapability(StupidDbcModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new StupidDbcModVariables.PlayerVariables())).SSGodTrained >= 100000) {
 				if (entity instanceof Player _player && !_player.level.isClientSide())
-					_player.displayClientMessage(Component.literal("You don't have enough TP"), (false));
+					_player.displayClientMessage(Component.literal("You don't have enough TP"), false);
 			} else if ((entity.getCapability(StupidDbcModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new StupidDbcModVariables.PlayerVariables())).GodFormLevel == 2
 					&& (entity.getCapability(StupidDbcModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new StupidDbcModVariables.PlayerVariables())).tp >= (entity.getCapability(StupidDbcModVariables.PLAYER_VARIABLES_CAPABILITY, null)
 							.orElse(new StupidDbcModVariables.PlayerVariables())).CosrOfGodForm
@@ -210,14 +210,14 @@ public class BuyGodFormProcedure {
 					&& (entity.getCapability(StupidDbcModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new StupidDbcModVariables.PlayerVariables())).SSBlueTrained < 100000
 					&& (entity.getCapability(StupidDbcModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new StupidDbcModVariables.PlayerVariables())).SSGrade3Trained < 100000) {
 				if (entity instanceof Player _player && !_player.level.isClientSide())
-					_player.displayClientMessage(Component.literal("You Need To Train SSBlue and SSGrade 3 to the max!"), (false));
+					_player.displayClientMessage(Component.literal("You Need To Train SSBlue and SSGrade 3 to the max!"), false);
 			} else if ((entity.getCapability(StupidDbcModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new StupidDbcModVariables.PlayerVariables())).GodFormLevel == 2
 					&& (entity.getCapability(StupidDbcModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new StupidDbcModVariables.PlayerVariables())).tp < (entity.getCapability(StupidDbcModVariables.PLAYER_VARIABLES_CAPABILITY, null)
 							.orElse(new StupidDbcModVariables.PlayerVariables())).CosrOfGodForm
 					&& (entity.getCapability(StupidDbcModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new StupidDbcModVariables.PlayerVariables())).SSBlueTrained >= 100000
 					&& (entity.getCapability(StupidDbcModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new StupidDbcModVariables.PlayerVariables())).SSGrade3Trained >= 100000) {
 				if (entity instanceof Player _player && !_player.level.isClientSide())
-					_player.displayClientMessage(Component.literal("You Need More TP!"), (false));
+					_player.displayClientMessage(Component.literal("You Need More TP!"), false);
 			} else if ((entity.getCapability(StupidDbcModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new StupidDbcModVariables.PlayerVariables())).GodFormLevel == 3
 					&& (entity.getCapability(StupidDbcModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new StupidDbcModVariables.PlayerVariables())).tp >= (entity.getCapability(StupidDbcModVariables.PLAYER_VARIABLES_CAPABILITY, null)
 							.orElse(new StupidDbcModVariables.PlayerVariables())).CosrOfGodForm
@@ -243,14 +243,14 @@ public class BuyGodFormProcedure {
 					&& (entity.getCapability(StupidDbcModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new StupidDbcModVariables.PlayerVariables())).SSBlueTrained >= 100000
 					&& (entity.getCapability(StupidDbcModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new StupidDbcModVariables.PlayerVariables())).SSBlueEvolvedTraining >= 75000) {
 				if (entity instanceof Player _player && !_player.level.isClientSide())
-					_player.displayClientMessage(Component.literal("You Need More TP!"), (false));
+					_player.displayClientMessage(Component.literal("You Need More TP!"), false);
 			} else if ((entity.getCapability(StupidDbcModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new StupidDbcModVariables.PlayerVariables())).GodFormLevel == 3
 					&& (entity.getCapability(StupidDbcModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new StupidDbcModVariables.PlayerVariables())).tp >= (entity.getCapability(StupidDbcModVariables.PLAYER_VARIABLES_CAPABILITY, null)
 							.orElse(new StupidDbcModVariables.PlayerVariables())).CosrOfGodForm
 					&& ((entity.getCapability(StupidDbcModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new StupidDbcModVariables.PlayerVariables())).SSBlueTrained < 100000
 							|| (entity.getCapability(StupidDbcModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new StupidDbcModVariables.PlayerVariables())).SSBlueEvolvedTraining < 75000)) {
 				if (entity instanceof Player _player && !_player.level.isClientSide())
-					_player.displayClientMessage(Component.literal("You need to train SSBlue and SSBlue Evolved to the Max!"), (false));
+					_player.displayClientMessage(Component.literal("You need to train SSBlue and SSBlue Evolved to the Max!"), false);
 			} else if ((entity.getCapability(StupidDbcModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new StupidDbcModVariables.PlayerVariables())).GodFormLevel == 4
 					&& (entity.getCapability(StupidDbcModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new StupidDbcModVariables.PlayerVariables())).tp >= (entity.getCapability(StupidDbcModVariables.PLAYER_VARIABLES_CAPABILITY, null)
 							.orElse(new StupidDbcModVariables.PlayerVariables())).CosrOfGodForm
@@ -284,14 +284,14 @@ public class BuyGodFormProcedure {
 					&& ((entity.getCapability(StupidDbcModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new StupidDbcModVariables.PlayerVariables())).ssblue2training >= 10000
 							|| (entity.getCapability(StupidDbcModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new StupidDbcModVariables.PlayerVariables())).SSRose2Training >= 10000)) {
 				if (entity instanceof Player _player && !_player.level.isClientSide())
-					_player.displayClientMessage(Component.literal("You Need More TP!"), (false));
+					_player.displayClientMessage(Component.literal("You Need More TP!"), false);
 			} else if ((entity.getCapability(StupidDbcModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new StupidDbcModVariables.PlayerVariables())).GodFormLevel == 4
 					&& (entity.getCapability(StupidDbcModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new StupidDbcModVariables.PlayerVariables())).tp >= (entity.getCapability(StupidDbcModVariables.PLAYER_VARIABLES_CAPABILITY, null)
 							.orElse(new StupidDbcModVariables.PlayerVariables())).CosrOfGodForm
 					&& ((entity.getCapability(StupidDbcModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new StupidDbcModVariables.PlayerVariables())).ssblue2training < 10000
 							|| (entity.getCapability(StupidDbcModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new StupidDbcModVariables.PlayerVariables())).SSRose2Training < 10000)) {
 				if (entity instanceof Player _player && !_player.level.isClientSide())
-					_player.displayClientMessage(Component.literal("You need to train SSBlue and SSBlue Evolved to the Max!"), (false));
+					_player.displayClientMessage(Component.literal("You need to train SSBlue and SSBlue Evolved to the Max!"), false);
 			}
 		} else if (((entity.getCapability(StupidDbcModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new StupidDbcModVariables.PlayerVariables())).race).equals("\"Human\"")) {
 			if ((entity.getCapability(StupidDbcModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new StupidDbcModVariables.PlayerVariables())).GodFormLevel == 0
@@ -325,16 +325,16 @@ public class BuyGodFormProcedure {
 							.orElse(new StupidDbcModVariables.PlayerVariables())).CosrOfGodForm
 					&& (entity.getCapability(StupidDbcModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new StupidDbcModVariables.PlayerVariables())).BuffedTraning >= 50000) {
 				if (entity instanceof Player _player && !_player.level.isClientSide())
-					_player.displayClientMessage(Component.literal("You don't have enough TP"), (false));
+					_player.displayClientMessage(Component.literal("You don't have enough TP"), false);
 			} else if ((entity.getCapability(StupidDbcModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new StupidDbcModVariables.PlayerVariables())).GodFormLevel == 0
 					&& (entity.getCapability(StupidDbcModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new StupidDbcModVariables.PlayerVariables())).tp >= (entity.getCapability(StupidDbcModVariables.PLAYER_VARIABLES_CAPABILITY, null)
 							.orElse(new StupidDbcModVariables.PlayerVariables())).CosrOfGodForm
 					&& (entity.getCapability(StupidDbcModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new StupidDbcModVariables.PlayerVariables())).BuffedTraning < 50000) {
 				if (entity instanceof Player _player && !_player.level.isClientSide())
-					_player.displayClientMessage(Component.literal("You need to train Buffed More!"), (false));
+					_player.displayClientMessage(Component.literal("You need to train Buffed More!"), false);
 			} else if ((entity.getCapability(StupidDbcModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new StupidDbcModVariables.PlayerVariables())).GodFormLevel == 1) {
 				if (entity instanceof Player _player && !_player.level.isClientSide())
-					_player.displayClientMessage(Component.literal("God Form Maxed"), (false));
+					_player.displayClientMessage(Component.literal("God Form Maxed"), false);
 			}
 		}
 	}

@@ -30,7 +30,7 @@ public class OozaruConditionsProcedure {
 	private static void execute(@Nullable Event event, LevelAccessor world, double x, double y, double z, Entity entity) {
 		if (entity == null)
 			return;
-		if (entity.getLookAngle().y == 1 && world.canSeeSkyFromBelowWater(new BlockPos(x, y, z)) == true && world.dimensionType().moonPhase(world.dayTime()) == 0 && !(world instanceof Level _lvl && _lvl.isDay())
+		if (entity.getLookAngle().y == 1 && world.canSeeSkyFromBelowWater(new BlockPos(x, y, z)) == true && world.dimensionType().moonPhase(world.dayTime()) == 0 && !(world instanceof Level _lvl3 && _lvl3.isDay())
 				&& (entity.getCapability(StupidDbcModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new StupidDbcModVariables.PlayerVariables())).hasTail == true) {
 			{
 				String _setval = "\"Oozaru\"";

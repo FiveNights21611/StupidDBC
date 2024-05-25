@@ -19,7 +19,7 @@ public class HoldKatchinShardDoProcedure {
 				|| ((entity.getCapability(StupidDbcModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new StupidDbcModVariables.PlayerVariables())).race).equals("\"Half-Saiyan\"")
 				|| ((entity.getCapability(StupidDbcModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new StupidDbcModVariables.PlayerVariables())).race).equals("\"Human\""))) {
 			if (entity instanceof Player _player && !_player.level.isClientSide())
-				_player.displayClientMessage(Component.literal("It seems you are not from the same world as this metal, making it impossible to interact with."), (false));
+				_player.displayClientMessage(Component.literal("It seems you are not from the same world as this metal, making it impossible to interact with."), false);
 			if (world instanceof Level _level && !_level.isClientSide()) {
 				ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, new ItemStack(StupidDbcModItems.RAW_KATCHIN.get()));
 				entityToSpawn.setPickUpDelay(10);
@@ -34,7 +34,7 @@ public class HoldKatchinShardDoProcedure {
 				|| ((entity.getCapability(StupidDbcModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new StupidDbcModVariables.PlayerVariables())).race).equals("\"Human\""))
 				&& (entity.getCapability(StupidDbcModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new StupidDbcModVariables.PlayerVariables())).trueStrength < 100) {
 			if (entity instanceof Player _player && !_player.level.isClientSide())
-				_player.displayClientMessage(Component.literal("This metal seems to be too heavy..."), (false));
+				_player.displayClientMessage(Component.literal("This metal seems to be too heavy..."), false);
 			if (world instanceof Level _level && !_level.isClientSide()) {
 				ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, new ItemStack(StupidDbcModItems.RAW_KATCHIN.get()));
 				entityToSpawn.setPickUpDelay(10);
@@ -50,7 +50,7 @@ public class HoldKatchinShardDoProcedure {
 				&& (entity.getCapability(StupidDbcModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new StupidDbcModVariables.PlayerVariables())).trueStrength >= 100) {
 			if ((entity.getCapability(StupidDbcModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new StupidDbcModVariables.PlayerVariables())).HasPickedUpKatchinBefore == false) {
 				if (entity instanceof Player _player && !_player.level.isClientSide())
-					_player.displayClientMessage(Component.literal("This metal seems to be heavy, good for a weight..."), (false));
+					_player.displayClientMessage(Component.literal("This metal seems to be heavy, good for a weight..."), false);
 				{
 					boolean _setval = true;
 					entity.getCapability(StupidDbcModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {

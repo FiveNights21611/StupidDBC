@@ -5,7 +5,7 @@ repositories {
 }
 
 dependencies {
-  implementation fg.deobf("curse.maven:kleidersplayerrenderer-682065:4478427")
+  implementation fg.deobf("curse.maven:kleidersplayerrenderer-682065:5083496")
 }
 
 repositories {
@@ -16,17 +16,6 @@ repositories {
 
 dependencies {
   implementation fg.deobf('com.github.Virtuoel:Pehkui:3.7.4-1.19.2-forge')
-}
-
-repositories {
-maven {
-  url = "https://maven.theillusivec4.top/"
-  }
-}
-
-dependencies {
-  runtimeOnly fg.deobf("top.theillusivec4.curios:curios-forge:1.19.2-5.1.1.0")
-  compileOnly fg.deobf("top.theillusivec4.curios:curios-forge:1.19.2-5.1.1.0:api")
 }
 
 minecraft {

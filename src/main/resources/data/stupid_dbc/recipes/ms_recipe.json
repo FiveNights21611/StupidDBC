@@ -1,22 +1,37 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    "ARA",
-    "AEA",
-    "ASA"
+    "012",
+    "345",
+    "678"
   ],
   "key": {
-    "A": {
+    "0": {
       "item": "stupid_dbc:raw_katchin"
     },
-    "R": {
+    "1": {
       "item": "minecraft:redstone"
     },
-    "E": {
+    "2": {
+      "item": "stupid_dbc:raw_katchin"
+    },
+    "3": {
+      "item": "stupid_dbc:raw_katchin"
+    },
+    "4": {
       "item": "minecraft:redstone_lamp"
     },
-    "S": {
+    "5": {
+      "item": "stupid_dbc:raw_katchin"
+    },
+    "6": {
+      "item": "stupid_dbc:raw_katchin"
+    },
+    "7": {
       "tag": "forge:stained_glass_panes"
+    },
+    "8": {
+      "item": "stupid_dbc:raw_katchin"
     }
   },
   "result": {

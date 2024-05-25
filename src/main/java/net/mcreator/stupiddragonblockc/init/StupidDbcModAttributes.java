@@ -20,9 +20,9 @@ import net.mcreator.stupiddragonblockc.StupidDbcMod;
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
 public class StupidDbcModAttributes {
 	public static final DeferredRegister<Attribute> ATTRIBUTES = DeferredRegister.create(ForgeRegistries.ATTRIBUTES, StupidDbcMod.MODID);
-	public static final RegistryObject<Attribute> ENTITY_DBC_MAX_HEALTH = ATTRIBUTES.register("entity_dbc_max_health", () -> (new RangedAttribute(StupidDbcMod.MODID + ".attribute" + ".entity_dbc_max_health", 0, 0, 1000000000)).setSyncable(true));
-	public static final RegistryObject<Attribute> ENTITY_DBC_HEALTH = ATTRIBUTES.register("entity_dbc_health", () -> (new RangedAttribute(StupidDbcMod.MODID + ".attribute" + ".entity_dbc_health", 0, 0, 1000000000)).setSyncable(true));
-	public static final RegistryObject<Attribute> ENTITY_DBC_SPAWNED_IN = ATTRIBUTES.register("entity_dbc_spawned_in", () -> (new RangedAttribute(StupidDbcMod.MODID + ".attribute" + ".entity_dbc_spawned_in", 0, 0, 1)).setSyncable(true));
+	public static final RegistryObject<Attribute> ENTITYDBCMAXHEALTH = ATTRIBUTES.register("entity_dbc_max_health", () -> (new RangedAttribute("attribute." + StupidDbcMod.MODID + ".entity_dbc_max_health", 0, 0, 1000000000)).setSyncable(true));
+	public static final RegistryObject<Attribute> ENTITYDBCHEALTH = ATTRIBUTES.register("entity_dbc_health", () -> (new RangedAttribute("attribute." + StupidDbcMod.MODID + ".entity_dbc_health", 0, 0, 1000000000)).setSyncable(true));
+	public static final RegistryObject<Attribute> ENTITYDBCSPAWNEDIN = ATTRIBUTES.register("entity_dbc_spawned_in", () -> (new RangedAttribute("attribute." + StupidDbcMod.MODID + ".entity_dbc_spawned_in", 0, 0, 1)).setSyncable(true));
 
 	@SubscribeEvent
 	public static void register(FMLConstructModEvent event) {
@@ -33,8 +33,8 @@ public class StupidDbcModAttributes {
 
 	@SubscribeEvent
 	public static void addAttributes(EntityAttributeModificationEvent event) {
-		event.add(StupidDbcModEntities.VEGETA_SS_1.get(), ENTITY_DBC_MAX_HEALTH.get());
-		event.add(StupidDbcModEntities.VEGETA_SS_1.get(), ENTITY_DBC_HEALTH.get());
-		event.add(StupidDbcModEntities.VEGETA_SS_1.get(), ENTITY_DBC_SPAWNED_IN.get());
+		event.add(StupidDbcModEntities.VEGETA_SS_1.get(), ENTITYDBCMAXHEALTH.get());
+		event.add(StupidDbcModEntities.VEGETA_SS_1.get(), ENTITYDBCHEALTH.get());
+		event.add(StupidDbcModEntities.VEGETA_SS_1.get(), ENTITYDBCSPAWNEDIN.get());
 	}
 }

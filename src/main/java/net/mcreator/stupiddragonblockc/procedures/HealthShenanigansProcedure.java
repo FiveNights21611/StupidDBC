@@ -52,8 +52,8 @@ public class HealthShenanigansProcedure {
 							_ent.getName().getString(), _ent.getDisplayName(), _ent.level.getServer(), _ent), "attribute @s minecraft:generic.max_health base set 20");
 				}
 			}
-			if (entity instanceof LivingEntity _entity)
-				_entity.addEffect(new MobEffectInstance(MobEffects.HEAL, 1, 10, (true), (false)));
+			if (entity instanceof LivingEntity _entity && !_entity.level.isClientSide())
+				_entity.addEffect(new MobEffectInstance(MobEffects.HEAL, 1, 10, true, false));
 			entity.fallDistance = 0;
 		}
 	}
