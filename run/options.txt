@@ -1,5 +1,5 @@
 version:3120
-autoJump:true
+autoJump:false
 autoSuggestions:true
 chatColors:true
 chatLinks:true
@@ -33,7 +33,7 @@ guiScale:3
 particles:0
 maxFps:260
 graphicsMode:2
-ao:1
+ao:2
 prioritizeChunkUpdates:0
 biomeBlendRadius:2
 renderClouds:"true"
@@ -63,7 +63,7 @@ useNativeTransport:true
 mainHand:"right"
 attackIndicator:1
 narrator:0
-tutorialStep:movement
+tutorialStep:none
 mouseWheelSensitivity:1.0
 rawMouseInput:true
 glDebugVerbosity:1
@@ -116,7 +116,7 @@ key_key.stupid_dbc.transform:key.keyboard.g
 key_key.stupid_dbc.de_transform:key.keyboard.h
 key_key.stupid_dbc.transformation_type:key.keyboard.x
 key_key.stupid_dbc.charge_up_true:key.keyboard.c
-key_key.stupid_dbc.charge_down_true:key.keyboard.left.shift
+key_key.stupid_dbc.charge_down_true:key.keyboard.left.alt
 key_key.stupid_dbc.debug_keybind:key.keyboard.0
 key_key.stupid_dbc.flight:key.keyboard.f
 soundCategory_master:1.0

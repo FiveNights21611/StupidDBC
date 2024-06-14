@@ -48,6 +48,8 @@
 	"In percentage, the amount" = 2.0
 	#How often it tries to give legendary to the player
 	"In minutes" = 20.0
+	"Numbers of Levels Achievable with Potential Unlock" = 10.0
+	"Max Power Level Accesible" = 50.0
 
 ["Ki Drain"]
 	"Super Saiyan Ki Drain" = 5.0
@@ -115,6 +117,7 @@
 
 ["Skill TP Costs"]
 	"Cost of Fly" = 50.0
+	"Cost of Potential Unlock" = 50.0
 
 ["Ultra Instinct Stats"]
 	"Ultra Instinct Omen Price" = 750000.0

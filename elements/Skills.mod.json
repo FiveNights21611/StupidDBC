@@ -275,12 +275,12 @@
         "type": "imagebutton",
         "data": {
           "name": "imagebutton_stats",
-          "image": "stats.png",
-          "hoveredImage": "statshover.png",
+          "image": "statsnew.png",
+          "hoveredImage": "statshovernew.png",
           "onClick": {
             "name": "ToStats"
           },
-          "x": 69,
+          "x": 66,
           "y": 204
         }
       },
@@ -288,12 +288,12 @@
         "type": "imagebutton",
         "data": {
           "name": "imagebutton_skillsbutton",
-          "image": "skillsbutton.png",
-          "hoveredImage": "skillshover.png",
+          "image": "skillsnew.png",
+          "hoveredImage": "skillshovernew.png",
           "onClick": {
             "name": "ToSkills"
           },
-          "x": 86,
+          "x": 85,
           "y": 204
         }
       },
@@ -301,12 +301,12 @@
         "type": "imagebutton",
         "data": {
           "name": "imagebutton_transformationtraining",
-          "image": "transformationtraining.png",
-          "hoveredImage": "transformationtraininghover.png",
+          "image": "transformationtrainingnew.png",
+          "hoveredImage": "transformationtraininghovernew.png",
           "onClick": {
             "name": "ToTransformationTraining"
           },
-          "x": 103,
+          "x": 105,
           "y": 204
         }
       },
@@ -314,13 +314,67 @@
         "type": "imagebutton",
         "data": {
           "name": "imagebutton_techniquetraining",
-          "image": "techniquetraining.png",
-          "hoveredImage": "techniquetraininghover.png",
+          "image": "techniquetrainingnew.png",
+          "hoveredImage": "techniquetraininghovernew.png",
           "onClick": {
             "name": "OpenTechniqueTraining"
           },
-          "x": 120,
+          "x": 124,
           "y": 204
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_buttonnew",
+          "image": "buttonnew.png",
+          "hoveredImage": "buttonhovernew.png",
+          "onClick": {
+            "name": "LevelUpPotentialUnlock"
+          },
+          "displayCondition": {
+            "name": "AlreadyBoughtPotentialUnlock"
+          },
+          "x": 213,
+          "y": 42
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_potential_unlocked_level",
+          "text": {
+            "fixedValue": "",
+            "name": "PotentialUnlockedLevel"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "AlreadyBoughtPotentialUnlock"
+          },
+          "x": 231,
+          "y": 46
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_potential_unlock_price",
+          "text": {
+            "fixedValue": "",
+            "name": "PotentialUnlockPrice"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "AlreadyBoughtPotentialUnlock"
+          },
+          "x": 217,
+          "y": 59
         }
       }
     ],

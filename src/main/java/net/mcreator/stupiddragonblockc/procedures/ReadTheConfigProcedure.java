@@ -132,6 +132,9 @@ public class ReadTheConfigProcedure {
 		StupidDbcModVariables.UltraInstinctOmenDodgeChance = (double) TheConfigConfiguration.UIOMENDODGE.get();
 		StupidDbcModVariables.UltraInstinctOmenCounterChance = (double) TheConfigConfiguration.UIOMENCOUNTER.get();
 		StupidDbcModVariables.UltraInstinctOmenCounterPercentage = (double) TheConfigConfiguration.UIOMENCOUNTERPERCENTAGE.get();
+		StupidDbcModVariables.potentialUnlockPrice = (double) TheConfigConfiguration.POTENTIALCOST.get();
+		StupidDbcModVariables.potentialUnlockLevels = (double) TheConfigConfiguration.POTENTIAL_LEVEL_MAX.get();
+		StupidDbcModVariables.powerPercentMax = (double) TheConfigConfiguration.POWERMAX.get();
 		StupidDbcMod.LOGGER.info("Finally done... so many variables... but now that we've done that, you can play and go beyond!");
 	}
 }

@@ -17,6 +17,7 @@ import net.mcreator.stupiddragonblockc.procedures.ToStatsProcedure;
 import net.mcreator.stupiddragonblockc.procedures.ToSkillsProcedure;
 import net.mcreator.stupiddragonblockc.procedures.OpenTechniqueTrainingProcedure;
 import net.mcreator.stupiddragonblockc.procedures.LevelUpUltimateProcedure;
+import net.mcreator.stupiddragonblockc.procedures.LevelUpPotentialUnlockProcedure;
 import net.mcreator.stupiddragonblockc.procedures.LevelUpFlyProcedure;
 import net.mcreator.stupiddragonblockc.procedures.BuySuperFormProcedure;
 import net.mcreator.stupiddragonblockc.procedures.BuyKaiokenProcedure;
@@ -105,6 +106,10 @@ public class SkillsButtonMessage {
 		if (buttonID == 8) {
 
 			OpenTechniqueTrainingProcedure.execute(world, x, y, z, entity);
+		}
+		if (buttonID == 9) {
+
+			LevelUpPotentialUnlockProcedure.execute(entity);
 		}
 	}
 

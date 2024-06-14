@@ -7763,6 +7763,137 @@
           "src/main/resources/assets/stupid_dbc/blockstates/dragon_block.json"
         ]
       }
+    },
+    {
+      "name": "DragonBlockBlockItem",
+      "type": "blockitemextend",
+      "sortid": 405,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dragon_block_block_item",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/stupiddragonblockc/local_templates/DragonBlockBlockItemBI.java"
+        ]
+      }
+    },
+    {
+      "name": "BuyPotentialUnlock",
+      "type": "procedure",
+      "sortid": 406,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "buy_potential_unlock",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/stupiddragonblockc/procedures/BuyPotentialUnlockProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "LevelUpPotentialUnlock",
+      "type": "procedure",
+      "sortid": 407,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "level_up_potential_unlock",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/stupiddragonblockc/procedures/LevelUpPotentialUnlockProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "PotentialUnlockedLevel",
+      "type": "procedure",
+      "sortid": 408,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "potential_unlocked_level",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/stupiddragonblockc/procedures/PotentialUnlockedLevelProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "PotentialUnlockPrice",
+      "type": "procedure",
+      "sortid": 409,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "potential_unlock_price",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/stupiddragonblockc/procedures/PotentialUnlockPriceProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ShowPriceOfPotentialUnlock",
+      "type": "procedure",
+      "sortid": 410,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "show_price_of_potential_unlock",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/stupiddragonblockc/procedures/ShowPriceOfPotentialUnlockProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "AlreadyBoughtPotentialUnlock",
+      "type": "procedure",
+      "sortid": 411,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "already_bought_potential_unlock",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/stupiddragonblockc/procedures/AlreadyBoughtPotentialUnlockProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -9271,6 +9402,36 @@
       "type": "logic",
       "scope": "player_lifetime",
       "value": "false"
+    },
+    {
+      "name": "potentialUnlockLevel",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "costOfPotentialUnlock",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "50.0"
+    },
+    {
+      "name": "potentialUnlockPrice",
+      "type": "number",
+      "scope": "global",
+      "value": "0"
+    },
+    {
+      "name": "potentialUnlockLevels",
+      "type": "number",
+      "scope": "global",
+      "value": "0"
+    },
+    {
+      "name": "powerPercentMax",
+      "type": "number",
+      "scope": "global",
+      "value": "0"
     }
   ],
   "sound_elements": [],
@@ -9340,6 +9501,7 @@
       "key.categories.sdbc": "Stupid Dragon Block C",
       "advancements.kill_wither.descr": "Kill the Wither",
       "key.stupid_dbc.charge_down_true": "Second Function",
+      "gui.stupid_dbc.picollo_communicator.label_already_unlocked_potential": "Already Unlocked Potential",
       "item.stupid_dragon_block_c.keyboard": "Keyboard",
       "gui.stupid_dbc.training_menu.label_golden_oozaru_vargoldenoozaru": "Golden Oozaru: \u003cVAR:GoldenOozaruTraining",
       "item.stupid_dbc.icon": "Icon",

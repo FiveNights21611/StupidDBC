@@ -144,6 +144,9 @@ public class StupidDbcModVariables {
 	public static double UltraInstinctOmenCounterChance = 0;
 	public static double UltraInstinctOmenCounterPercentage = 0;
 	public static double UIOmenHeatCharge = 0;
+	public static double potentialUnlockPrice = 0;
+	public static double potentialUnlockLevels = 0;
+	public static double powerPercentMax = 0;
 
 	@SubscribeEvent
 	public static void init(FMLCommonSetupEvent event) {
@@ -287,6 +290,9 @@ public class StupidDbcModVariables {
 			clone.kaiokenx100Training = original.kaiokenx100Training;
 			clone.SSRoseGrade2Training = original.SSRoseGrade2Training;
 			clone.hasTail = original.hasTail;
+			clone.potentialUnlockLevel = original.potentialUnlockLevel;
+			clone.costOfPotentialUnlock = original.costOfPotentialUnlock;
+			clone.tailWrapped = original.tailWrapped;
 			if (!event.isWasDeath()) {
 				clone.transformation = original.transformation;
 				clone.technique = original.technique;
@@ -653,6 +659,9 @@ public class StupidDbcModVariables {
 		public double EndermiteNearby = 0;
 		public boolean hasTail = false;
 		public boolean TailApplied = false;
+		public double potentialUnlockLevel = 0;
+		public double costOfPotentialUnlock = 50.0;
+		public boolean tailWrapped = false;
 
 		public void syncPlayerVariables(Entity entity) {
 			if (entity instanceof ServerPlayer serverPlayer)
@@ -797,6 +806,9 @@ public class StupidDbcModVariables {
 			nbt.putDouble("EndermiteNearby", EndermiteNearby);
 			nbt.putBoolean("hasTail", hasTail);
 			nbt.putBoolean("TailApplied", TailApplied);
+			nbt.putDouble("potentialUnlockLevel", potentialUnlockLevel);
+			nbt.putDouble("costOfPotentialUnlock", costOfPotentialUnlock);
+			nbt.putBoolean("tailWrapped", tailWrapped);
 			return nbt;
 		}
 
@@ -938,6 +950,9 @@ public class StupidDbcModVariables {
 			EndermiteNearby = nbt.getDouble("EndermiteNearby");
 			hasTail = nbt.getBoolean("hasTail");
 			TailApplied = nbt.getBoolean("TailApplied");
+			potentialUnlockLevel = nbt.getDouble("potentialUnlockLevel");
+			costOfPotentialUnlock = nbt.getDouble("costOfPotentialUnlock");
+			tailWrapped = nbt.getBoolean("tailWrapped");
 		}
 	}
 
@@ -1107,6 +1122,9 @@ public class StupidDbcModVariables {
 					variables.EndermiteNearby = message.data.EndermiteNearby;
 					variables.hasTail = message.data.hasTail;
 					variables.TailApplied = message.data.TailApplied;
+					variables.potentialUnlockLevel = message.data.potentialUnlockLevel;
+					variables.costOfPotentialUnlock = message.data.costOfPotentialUnlock;
+					variables.tailWrapped = message.data.tailWrapped;
 				}
 			});
 			context.setPacketHandled(true);

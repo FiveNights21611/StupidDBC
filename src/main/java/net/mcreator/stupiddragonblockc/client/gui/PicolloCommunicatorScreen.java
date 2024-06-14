@@ -10,8 +10,11 @@ import net.minecraft.client.gui.components.ImageButton;
 import net.minecraft.client.Minecraft;
 
 import net.mcreator.stupiddragonblockc.world.inventory.PicolloCommunicatorMenu;
+import net.mcreator.stupiddragonblockc.procedures.ShowPriceOfPotentialUnlockProcedure;
 import net.mcreator.stupiddragonblockc.procedures.ShowPriceOfFlyProcedure;
+import net.mcreator.stupiddragonblockc.procedures.PotentialUnlockPriceProcedure;
 import net.mcreator.stupiddragonblockc.procedures.FlyPriceProcedure;
+import net.mcreator.stupiddragonblockc.procedures.AlreadyBoughtPotentialUnlockProcedure;
 import net.mcreator.stupiddragonblockc.procedures.AlreadyBoughtFlyProcedure;
 import net.mcreator.stupiddragonblockc.network.PicolloCommunicatorButtonMessage;
 import net.mcreator.stupiddragonblockc.StupidDbcMod;
@@ -27,6 +30,7 @@ public class PicolloCommunicatorScreen extends AbstractContainerScreen<PicolloCo
 	private final int x, y, z;
 	private final Player entity;
 	ImageButton imagebutton_button;
+	ImageButton imagebutton_buttonnew;
 
 	public PicolloCommunicatorScreen(PicolloCommunicatorMenu container, Inventory inventory, Component text) {
 		super(container, inventory, text);
@@ -82,6 +86,12 @@ public class PicolloCommunicatorScreen extends AbstractContainerScreen<PicolloCo
 					FlyPriceProcedure.execute(entity), 22, 38, -12829636);
 		if (AlreadyBoughtFlyProcedure.execute(entity))
 			this.font.draw(poseStack, Component.translatable("gui.stupid_dbc.picollo_communicator.label_already_bought_fly"), 23, 38, -12829636);
+		if (ShowPriceOfPotentialUnlockProcedure.execute(entity))
+			this.font.draw(poseStack,
+
+					PotentialUnlockPriceProcedure.execute(entity), 22, 62, -12829636);
+		if (AlreadyBoughtPotentialUnlockProcedure.execute(entity))
+			this.font.draw(poseStack, Component.translatable("gui.stupid_dbc.picollo_communicator.label_already_unlocked_potential"), 22, 62, -12829636);
 	}
 
 	@Override
@@ -102,5 +112,19 @@ public class PicolloCommunicatorScreen extends AbstractContainerScreen<PicolloCo
 		});
 		guistate.put("button:imagebutton_button", imagebutton_button);
 		this.addRenderableWidget(imagebutton_button);
+		imagebutton_buttonnew = new ImageButton(this.leftPos + 4, this.topPos + 59, 16, 16, 0, 0, 16, new ResourceLocation("stupid_dbc:textures/screens/atlas/imagebutton_buttonnew.png"), 16, 32, e -> {
+			if (ShowPriceOfPotentialUnlockProcedure.execute(entity)) {
+				StupidDbcMod.PACKET_HANDLER.sendToServer(new PicolloCommunicatorButtonMessage(1, x, y, z));
+				PicolloCommunicatorButtonMessage.handleButtonAction(entity, 1, x, y, z);
+			}
+		}) {
+			@Override
+			public void render(PoseStack ms, int gx, int gy, float ticks) {
+				if (ShowPriceOfPotentialUnlockProcedure.execute(entity))
+					super.render(ms, gx, gy, ticks);
+			}
+		};
+		guistate.put("button:imagebutton_buttonnew", imagebutton_buttonnew);
+		this.addRenderableWidget(imagebutton_buttonnew);
 	}
 }

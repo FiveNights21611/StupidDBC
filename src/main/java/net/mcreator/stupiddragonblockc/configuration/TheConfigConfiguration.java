@@ -46,6 +46,8 @@ public class TheConfigConfiguration {
 	public static final ForgeConfigSpec.ConfigValue<Double> LEGENDARYMULTIPLIERBONUS;
 	public static final ForgeConfigSpec.ConfigValue<Double> CHANCEFORLEGENDARY;
 	public static final ForgeConfigSpec.ConfigValue<Double> FREQUENCYOFLEGENDARY;
+	public static final ForgeConfigSpec.ConfigValue<Double> POTENTIAL_LEVEL_MAX;
+	public static final ForgeConfigSpec.ConfigValue<Double> POWERMAX;
 	public static final ForgeConfigSpec.ConfigValue<Double> SSKIDRAIN;
 	public static final ForgeConfigSpec.ConfigValue<Double> SSG2KIDRAIN;
 	public static final ForgeConfigSpec.ConfigValue<Double> SSG3KIDRAIN;
@@ -103,6 +105,7 @@ public class TheConfigConfiguration {
 	public static final ForgeConfigSpec.ConfigValue<Double> KAIOKEN50PRICE;
 	public static final ForgeConfigSpec.ConfigValue<Double> KAIOKEN100PRICE;
 	public static final ForgeConfigSpec.ConfigValue<Double> FLYCOST;
+	public static final ForgeConfigSpec.ConfigValue<Double> POTENTIALCOST;
 	public static final ForgeConfigSpec.ConfigValue<Double> UIOMENPRICE;
 	public static final ForgeConfigSpec.ConfigValue<Double> UIOMENKD;
 	public static final ForgeConfigSpec.ConfigValue<Double> UIOMENMULTIPLIER;
@@ -160,6 +163,8 @@ public class TheConfigConfiguration {
 		LEGENDARYMULTIPLIERBONUS = BUILDER.define("Legendary Multiplier Bonus", (double) 0.2);
 		CHANCEFORLEGENDARY = BUILDER.define("In percentage, the amount", (double) 2);
 		FREQUENCYOFLEGENDARY = BUILDER.comment("How often it tries to give legendary to the player").define("In minutes", (double) 20);
+		POTENTIAL_LEVEL_MAX = BUILDER.define("Numbers of Levels Achievable with Potential Unlock", (double) 10);
+		POWERMAX = BUILDER.define("Max Power Level Accesible", (double) 50);
 		BUILDER.pop();
 		BUILDER.push("Ki Drain");
 		SSKIDRAIN = BUILDER.define("Super Saiyan Ki Drain", (double) 5);
@@ -227,6 +232,7 @@ public class TheConfigConfiguration {
 		BUILDER.pop();
 		BUILDER.push("Skill TP Costs");
 		FLYCOST = BUILDER.define("Cost of Fly", (double) 50);
+		POTENTIALCOST = BUILDER.define("Cost of Potential Unlock", (double) 50);
 		BUILDER.pop();
 		BUILDER.push("Ultra Instinct Stats");
 		UIOMENPRICE = BUILDER.define("Ultra Instinct Omen Price", (double) 750000);

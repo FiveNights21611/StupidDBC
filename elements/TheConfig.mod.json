@@ -758,6 +758,42 @@
             "enablecomment": true,
             "onlyComment": false,
             "entityType": "EntityAgeable"
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 10.0,
+            "textDefault": "",
+            "comment": "",
+            "vardisplay": "Numbers of Levels Achievable with Potential Unlock",
+            "varname": "potential_level_max",
+            "enablecomment": false,
+            "onlyComment": false,
+            "entityType": "CUSTOM:KingKai"
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 50.0,
+            "textDefault": "",
+            "comment": "Without Potential Unlock",
+            "vardisplay": "Max Power Level Accesible",
+            "varname": "powermax",
+            "enablecomment": false,
+            "onlyComment": false,
+            "entityType": "CUSTOM:KingKai"
           }
         ]
       },
@@ -1806,6 +1842,24 @@
             "comment": "",
             "vardisplay": "Cost of Fly",
             "varname": "flycost",
+            "enablecomment": false,
+            "onlyComment": false,
+            "entityType": "CUSTOM:KingKai"
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 50.0,
+            "textDefault": "",
+            "comment": "",
+            "vardisplay": "Cost of Potential Unlock",
+            "varname": "potentialcost",
             "enablecomment": false,
             "onlyComment": false,
             "entityType": "CUSTOM:KingKai"

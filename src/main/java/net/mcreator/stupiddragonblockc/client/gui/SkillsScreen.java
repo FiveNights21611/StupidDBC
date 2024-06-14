@@ -18,12 +18,15 @@ import net.mcreator.stupiddragonblockc.procedures.SuperFormLevelProcedure;
 import net.mcreator.stupiddragonblockc.procedures.ShowUltimateUpgradesProcedure;
 import net.mcreator.stupiddragonblockc.procedures.ShowKaiokenProcedure;
 import net.mcreator.stupiddragonblockc.procedures.ShowGodFormProcedure;
+import net.mcreator.stupiddragonblockc.procedures.PotentialUnlockedLevelProcedure;
+import net.mcreator.stupiddragonblockc.procedures.PotentialUnlockPriceProcedure;
 import net.mcreator.stupiddragonblockc.procedures.KaiokenLevelProcedure;
 import net.mcreator.stupiddragonblockc.procedures.GodFormLevelProcedure;
 import net.mcreator.stupiddragonblockc.procedures.GetThePriceProcedure;
 import net.mcreator.stupiddragonblockc.procedures.FlyPriceProcedure;
 import net.mcreator.stupiddragonblockc.procedures.FlyLevelProcedure;
 import net.mcreator.stupiddragonblockc.procedures.AlreadyBoughtUltimateProcedure;
+import net.mcreator.stupiddragonblockc.procedures.AlreadyBoughtPotentialUnlockProcedure;
 import net.mcreator.stupiddragonblockc.procedures.AlreadyBoughtFlyProcedure;
 import net.mcreator.stupiddragonblockc.network.SkillsButtonMessage;
 import net.mcreator.stupiddragonblockc.StupidDbcMod;
@@ -47,6 +50,7 @@ public class SkillsScreen extends AbstractContainerScreen<SkillsMenu> {
 	ImageButton imagebutton_skillsbutton;
 	ImageButton imagebutton_transformationtraining;
 	ImageButton imagebutton_techniquetraining;
+	ImageButton imagebutton_buttonnew;
 
 	public SkillsScreen(SkillsMenu container, Inventory inventory, Component text) {
 		super(container, inventory, text);
@@ -132,6 +136,14 @@ public class SkillsScreen extends AbstractContainerScreen<SkillsMenu> {
 			this.font.draw(poseStack,
 
 					FlyPriceProcedure.execute(entity), 6, 139, -12829636);
+		if (AlreadyBoughtPotentialUnlockProcedure.execute(entity))
+			this.font.draw(poseStack,
+
+					PotentialUnlockedLevelProcedure.execute(entity), 167, 9, -12829636);
+		if (AlreadyBoughtPotentialUnlockProcedure.execute(entity))
+			this.font.draw(poseStack,
+
+					PotentialUnlockPriceProcedure.execute(entity), 153, 22, -12829636);
 	}
 
 	@Override
@@ -208,7 +220,7 @@ public class SkillsScreen extends AbstractContainerScreen<SkillsMenu> {
 		};
 		guistate.put("button:imagebutton_button4", imagebutton_button4);
 		this.addRenderableWidget(imagebutton_button4);
-		imagebutton_stats = new ImageButton(this.leftPos + 5, this.topPos + 167, 12, 12, 0, 0, 12, new ResourceLocation("stupid_dbc:textures/screens/atlas/imagebutton_stats.png"), 12, 24, e -> {
+		imagebutton_stats = new ImageButton(this.leftPos + 2, this.topPos + 167, 16, 16, 0, 0, 16, new ResourceLocation("stupid_dbc:textures/screens/atlas/imagebutton_stats.png"), 16, 32, e -> {
 			if (true) {
 				StupidDbcMod.PACKET_HANDLER.sendToServer(new SkillsButtonMessage(5, x, y, z));
 				SkillsButtonMessage.handleButtonAction(entity, 5, x, y, z);
@@ -216,7 +228,7 @@ public class SkillsScreen extends AbstractContainerScreen<SkillsMenu> {
 		});
 		guistate.put("button:imagebutton_stats", imagebutton_stats);
 		this.addRenderableWidget(imagebutton_stats);
-		imagebutton_skillsbutton = new ImageButton(this.leftPos + 22, this.topPos + 167, 12, 12, 0, 0, 12, new ResourceLocation("stupid_dbc:textures/screens/atlas/imagebutton_skillsbutton.png"), 12, 24, e -> {
+		imagebutton_skillsbutton = new ImageButton(this.leftPos + 21, this.topPos + 167, 16, 16, 0, 0, 16, new ResourceLocation("stupid_dbc:textures/screens/atlas/imagebutton_skillsbutton.png"), 16, 32, e -> {
 			if (true) {
 				StupidDbcMod.PACKET_HANDLER.sendToServer(new SkillsButtonMessage(6, x, y, z));
 				SkillsButtonMessage.handleButtonAction(entity, 6, x, y, z);
@@ -224,7 +236,7 @@ public class SkillsScreen extends AbstractContainerScreen<SkillsMenu> {
 		});
 		guistate.put("button:imagebutton_skillsbutton", imagebutton_skillsbutton);
 		this.addRenderableWidget(imagebutton_skillsbutton);
-		imagebutton_transformationtraining = new ImageButton(this.leftPos + 39, this.topPos + 167, 12, 12, 0, 0, 12, new ResourceLocation("stupid_dbc:textures/screens/atlas/imagebutton_transformationtraining.png"), 12, 24, e -> {
+		imagebutton_transformationtraining = new ImageButton(this.leftPos + 41, this.topPos + 167, 16, 16, 0, 0, 16, new ResourceLocation("stupid_dbc:textures/screens/atlas/imagebutton_transformationtraining.png"), 16, 32, e -> {
 			if (true) {
 				StupidDbcMod.PACKET_HANDLER.sendToServer(new SkillsButtonMessage(7, x, y, z));
 				SkillsButtonMessage.handleButtonAction(entity, 7, x, y, z);
@@ -232,7 +244,7 @@ public class SkillsScreen extends AbstractContainerScreen<SkillsMenu> {
 		});
 		guistate.put("button:imagebutton_transformationtraining", imagebutton_transformationtraining);
 		this.addRenderableWidget(imagebutton_transformationtraining);
-		imagebutton_techniquetraining = new ImageButton(this.leftPos + 56, this.topPos + 167, 12, 12, 0, 0, 12, new ResourceLocation("stupid_dbc:textures/screens/atlas/imagebutton_techniquetraining.png"), 12, 24, e -> {
+		imagebutton_techniquetraining = new ImageButton(this.leftPos + 60, this.topPos + 167, 16, 16, 0, 0, 16, new ResourceLocation("stupid_dbc:textures/screens/atlas/imagebutton_techniquetraining.png"), 16, 32, e -> {
 			if (true) {
 				StupidDbcMod.PACKET_HANDLER.sendToServer(new SkillsButtonMessage(8, x, y, z));
 				SkillsButtonMessage.handleButtonAction(entity, 8, x, y, z);
@@ -240,5 +252,19 @@ public class SkillsScreen extends AbstractContainerScreen<SkillsMenu> {
 		});
 		guistate.put("button:imagebutton_techniquetraining", imagebutton_techniquetraining);
 		this.addRenderableWidget(imagebutton_techniquetraining);
+		imagebutton_buttonnew = new ImageButton(this.leftPos + 149, this.topPos + 5, 16, 16, 0, 0, 16, new ResourceLocation("stupid_dbc:textures/screens/atlas/imagebutton_buttonnew.png"), 16, 32, e -> {
+			if (AlreadyBoughtPotentialUnlockProcedure.execute(entity)) {
+				StupidDbcMod.PACKET_HANDLER.sendToServer(new SkillsButtonMessage(9, x, y, z));
+				SkillsButtonMessage.handleButtonAction(entity, 9, x, y, z);
+			}
+		}) {
+			@Override
+			public void render(PoseStack ms, int gx, int gy, float ticks) {
+				if (AlreadyBoughtPotentialUnlockProcedure.execute(entity))
+					super.render(ms, gx, gy, ticks);
+			}
+		};
+		guistate.put("button:imagebutton_buttonnew", imagebutton_buttonnew);
+		this.addRenderableWidget(imagebutton_buttonnew);
 	}
 }

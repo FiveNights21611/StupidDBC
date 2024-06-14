@@ -12,6 +12,7 @@ import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.core.BlockPos;
 
 import net.mcreator.stupiddragonblockc.world.inventory.PicolloCommunicatorMenu;
+import net.mcreator.stupiddragonblockc.procedures.BuyPotentialUnlockProcedure;
 import net.mcreator.stupiddragonblockc.procedures.BuyFlyProcedure;
 import net.mcreator.stupiddragonblockc.StupidDbcMod;
 
@@ -65,6 +66,10 @@ public class PicolloCommunicatorButtonMessage {
 		if (buttonID == 0) {
 
 			BuyFlyProcedure.execute(entity);
+		}
+		if (buttonID == 1) {
+
+			BuyPotentialUnlockProcedure.execute(entity);
 		}
 	}
 

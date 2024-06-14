@@ -89,6 +89,59 @@
           "x": 149,
           "y": 75
         }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_buttonnew",
+          "image": "buttonnew.png",
+          "hoveredImage": "buttonhovernew.png",
+          "onClick": {
+            "name": "BuyPotentialUnlock"
+          },
+          "displayCondition": {
+            "name": "ShowPriceOfPotentialUnlock"
+          },
+          "x": 130,
+          "y": 96
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_potential_unlock_price",
+          "text": {
+            "fixedValue": "",
+            "name": "PotentialUnlockPrice"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "ShowPriceOfPotentialUnlock"
+          },
+          "x": 148,
+          "y": 99
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_already_unlocked_potential",
+          "text": {
+            "fixedValue": "Already Unlocked Potential"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "AlreadyBoughtPotentialUnlock"
+          },
+          "x": 148,
+          "y": 99
+        }
       }
     ],
     "onOpen": {
