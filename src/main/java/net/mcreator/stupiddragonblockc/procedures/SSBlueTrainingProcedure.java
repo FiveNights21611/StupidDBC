@@ -8,6 +8,6 @@ public class SSBlueTrainingProcedure {
 	public static String execute(Entity entity) {
 		if (entity == null)
 			return "";
-		return "SSBlue: " + new java.text.DecimalFormat("###,###").format((entity.getCapability(StupidDbcModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new StupidDbcModVariables.PlayerVariables())).SSBlueTrained);
+		return "SSBlue: " + new java.text.DecimalFormat("###.##").format((entity.getCapability(StupidDbcModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new StupidDbcModVariables.PlayerVariables())).SSBlueTrained / 1000);
 	}
 }

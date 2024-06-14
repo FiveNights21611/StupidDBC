@@ -8,6 +8,6 @@ public class SS3TrainingProcedure {
 	public static String execute(Entity entity) {
 		if (entity == null)
 			return "";
-		return "SS3: " + new java.text.DecimalFormat("###,###").format((entity.getCapability(StupidDbcModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new StupidDbcModVariables.PlayerVariables())).SS3Trained);
+		return "SS3: " + new java.text.DecimalFormat("###.##").format((entity.getCapability(StupidDbcModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new StupidDbcModVariables.PlayerVariables())).SS3Trained / 1000);
 	}
 }

@@ -8,6 +8,6 @@ public class GetKaiokenx10TrainingProcedure {
 	public static String execute(Entity entity) {
 		if (entity == null)
 			return "";
-		return "Kaioken x10: " + new java.text.DecimalFormat("###,###.##").format((entity.getCapability(StupidDbcModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new StupidDbcModVariables.PlayerVariables())).kaiokenx10Training);
+		return "Kaioken x10: " + new java.text.DecimalFormat("###.##").format((entity.getCapability(StupidDbcModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new StupidDbcModVariables.PlayerVariables())).kaiokenx10Training / 1000);
 	}
 }

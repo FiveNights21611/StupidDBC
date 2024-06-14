@@ -3372,6 +3372,7 @@
       "locked_code": false,
       "registry_name": "do_picollo_lines",
       "metadata": {
+        "return_type": "string",
         "files": [
           "src/main/java/net/mcreator/stupiddragonblockc/procedures/DoPicolloLinesProcedure.java"
         ],
@@ -7886,6 +7887,25 @@
         "return_type": "logic",
         "files": [
           "src/main/java/net/mcreator/stupiddragonblockc/procedures/AlreadyBoughtPotentialUnlockProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "GeneratePicolloLines",
+      "type": "procedure",
+      "sortid": 412,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "generate_picollo_lines",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/stupiddragonblockc/procedures/GeneratePicolloLinesProcedure.java"
         ],
         "dependencies": [
           {

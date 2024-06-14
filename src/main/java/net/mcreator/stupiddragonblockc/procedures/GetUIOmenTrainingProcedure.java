@@ -8,6 +8,7 @@ public class GetUIOmenTrainingProcedure {
 	public static String execute(Entity entity) {
 		if (entity == null)
 			return "";
-		return "Ultra Instinct Omen: " + new java.text.DecimalFormat("###,###.##").format((entity.getCapability(StupidDbcModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new StupidDbcModVariables.PlayerVariables())).UltraInstinctOmenTraining);
+		return "Ultra Instinct Omen: "
+				+ new java.text.DecimalFormat("###.##").format((entity.getCapability(StupidDbcModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new StupidDbcModVariables.PlayerVariables())).UltraInstinctOmenTraining / 1000);
 	}
 }

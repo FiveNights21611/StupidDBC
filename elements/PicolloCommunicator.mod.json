@@ -15,7 +15,8 @@
         "data": {
           "name": "label_varpiccolospeaking",
           "text": {
-            "fixedValue": "<VAR:PiccoloSpeaking>"
+            "fixedValue": "<VAR:PiccoloSpeaking>",
+            "name": "DoPicolloLines"
           },
           "color": {
             "value": -12829636,
@@ -36,7 +37,7 @@
             "value": -12829636,
             "falpha": 0.0
           },
-          "x": 143,
+          "x": 141,
           "y": 39
         }
       },
@@ -145,7 +146,7 @@
       }
     ],
     "onOpen": {
-      "name": "DoPicolloLines"
+      "name": "GeneratePicolloLines"
     },
     "gridSettings": {
       "sx": 18,

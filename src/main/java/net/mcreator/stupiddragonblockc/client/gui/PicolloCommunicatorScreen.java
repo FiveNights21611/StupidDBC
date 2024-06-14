@@ -14,6 +14,7 @@ import net.mcreator.stupiddragonblockc.procedures.ShowPriceOfPotentialUnlockProc
 import net.mcreator.stupiddragonblockc.procedures.ShowPriceOfFlyProcedure;
 import net.mcreator.stupiddragonblockc.procedures.PotentialUnlockPriceProcedure;
 import net.mcreator.stupiddragonblockc.procedures.FlyPriceProcedure;
+import net.mcreator.stupiddragonblockc.procedures.DoPicolloLinesProcedure;
 import net.mcreator.stupiddragonblockc.procedures.AlreadyBoughtPotentialUnlockProcedure;
 import net.mcreator.stupiddragonblockc.procedures.AlreadyBoughtFlyProcedure;
 import net.mcreator.stupiddragonblockc.network.PicolloCommunicatorButtonMessage;
@@ -78,8 +79,10 @@ public class PicolloCommunicatorScreen extends AbstractContainerScreen<PicolloCo
 
 	@Override
 	protected void renderLabels(PoseStack poseStack, int mouseX, int mouseY) {
-		this.font.draw(poseStack, Component.translatable("gui.stupid_dbc.picollo_communicator.label_varpiccolospeaking"), 2, 20, -12829636);
-		this.font.draw(poseStack, Component.translatable("gui.stupid_dbc.picollo_communicator.label_communicating_with_picollo"), 17, 2, -12829636);
+		this.font.draw(poseStack,
+
+				DoPicolloLinesProcedure.execute(entity), 2, 20, -12829636);
+		this.font.draw(poseStack, Component.translatable("gui.stupid_dbc.picollo_communicator.label_communicating_with_picollo"), 15, 2, -12829636);
 		if (ShowPriceOfFlyProcedure.execute(entity))
 			this.font.draw(poseStack,
 

@@ -13,7 +13,7 @@ import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.core.BlockPos;
 
-import net.mcreator.stupiddragonblockc.procedures.DoPicolloLinesProcedure;
+import net.mcreator.stupiddragonblockc.procedures.GeneratePicolloLinesProcedure;
 import net.mcreator.stupiddragonblockc.init.StupidDbcModMenus;
 
 import java.util.function.Supplier;
@@ -41,7 +41,7 @@ public class PicolloCommunicatorMenu extends AbstractContainerMenu implements Su
 			this.y = pos.getY();
 			this.z = pos.getZ();
 		}
-		DoPicolloLinesProcedure.execute(entity);
+		GeneratePicolloLinesProcedure.execute(entity);
 	}
 
 	@Override

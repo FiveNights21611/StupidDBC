@@ -8,6 +8,7 @@ import net.minecraftforge.event.TickEvent;
 import net.minecraft.world.phys.Vec3;
 import net.minecraft.world.phys.AABB;
 import net.minecraft.world.level.LevelAccessor;
+import net.minecraft.world.entity.monster.EnderMan;
 import net.minecraft.world.entity.Entity;
 
 import net.mcreator.stupiddragonblockc.network.StupidDbcModVariables;
@@ -34,26 +35,30 @@ public class GetEndermanNearbyProcedure {
 	private static void execute(@Nullable Event event, LevelAccessor world, double x, double y, double z, Entity entity) {
 		if (entity == null)
 			return;
-		{
-			double _setval = 0;
-			entity.getCapability(StupidDbcModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-				capability.endermanNearby = _setval;
-				capability.syncPlayerVariables(entity);
-			});
-		}
-		{
-			final Vec3 _center = new Vec3(x, y, z);
-			List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(10 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).collect(Collectors.toList());
-			for (Entity entityiterator : _entfound) {
-				if ((entity.getCapability(StupidDbcModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new StupidDbcModVariables.PlayerVariables())).endermanNearby >= 10) {
-					{
-						double _setval = (entity.getCapability(StupidDbcModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new StupidDbcModVariables.PlayerVariables())).endermanNearby + 1;
-						entity.getCapability(StupidDbcModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-							capability.endermanNearby = _setval;
-							capability.syncPlayerVariables(entity);
-						});
+		if (!world.getEntitiesOfClass(EnderMan.class, AABB.ofSize(new Vec3(x, y, z), 10, 10, 10), e -> true).isEmpty() == true) {
+			{
+				final Vec3 _center = new Vec3(x, y, z);
+				List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(10 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center)))
+						.collect(Collectors.toList());
+				for (Entity entityiterator : _entfound) {
+					if ((entity.getCapability(StupidDbcModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new StupidDbcModVariables.PlayerVariables())).endermanNearby >= 10) {
+						{
+							double _setval = (entity.getCapability(StupidDbcModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new StupidDbcModVariables.PlayerVariables())).endermanNearby + 1;
+							entity.getCapability(StupidDbcModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+								capability.endermanNearby = _setval;
+								capability.syncPlayerVariables(entity);
+							});
+						}
 					}
 				}
+			}
+		} else {
+			{
+				double _setval = 0;
+				entity.getCapability(StupidDbcModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+					capability.endermanNearby = _setval;
+					capability.syncPlayerVariables(entity);
+				});
 			}
 		}
 	}
